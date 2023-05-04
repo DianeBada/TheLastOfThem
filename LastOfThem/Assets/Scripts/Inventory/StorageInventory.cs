@@ -1,21 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StorageInventory : MonoBehaviour
 {
 
-    private List<Object> storage = new List<Object>();
+    private List<GameObject> storage = new List<GameObject>();
+    private List<Image> storageImage = new List<Image>();
+
     private int maxCapacity = 50;
 
     PCInventory playerInventoryScript;
     GameObject player;
+    
+    GameObject panel;
+    bool panelActive;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerInventoryScript = player.GetComponent<PCInventory>();
+
+        panel = GameObject.FindGameObjectWithTag("InventoryPanel");
 
     }
 
@@ -25,25 +33,38 @@ public class StorageInventory : MonoBehaviour
         
     }
 
-    void OnTriggerStay(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if(Input.GetKeyDown(KeyCode.Return))
+        if(Input.GetKeyDown(KeyCode.Q)) //button to bring up inventory
         {
-
             if(other.gameObject.tag == "Storage")
             {
-                if((storage.Count != (maxCapacity-1)))
+                // panel.SetActive(true);
+                // for(int i=0; i<storage.Length; i++)
+                // {
+                //     //cycle through images
+                // }
+
+                if((storage.Count != (maxCapacity)))
                 {
-                   playerInventoryScript.playerInventory.Remove(other.gameObject);  
-                    storage.Add(other.gameObject);  
+                    //cycle through playerInventory through hands and select item
+                    playerInventoryScript.playerInventory.Remove(other.gameObject);  
+                    storage.Add(other.gameObject); 
+                    other.gameObject.SetActive(false);
 
                 } else{
                     Debug.Log("Inventory full");
                 }
-               
             } 
-            
-          
         }
+    }
+
+    private void OnTriggerExit(Collider other) {
+
+        if(other.gameObject.tag == "Storage")
+        {
+            panel.SetActive(false);
+        }
+
     }
 }
