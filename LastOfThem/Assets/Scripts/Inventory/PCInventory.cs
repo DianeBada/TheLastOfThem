@@ -8,8 +8,7 @@ public class PCInventory : MonoBehaviour
     public List<GameObject> playerInventory = new List<GameObject>();
     public List<GameObject> handInventory = new List<GameObject>();
 
-    public List<string> pickableObjs = new List<string>(){"Flower"};
-    public List<string> pickableWeapons = new List<string>(){"Gun", "Stick"};
+    public List<string> pickableObjs = new List<string>(){"Chemical", "Flashlight", "Siren", "Syringe", "Rock"};
 
     private int maxCapacity = 10;
     int index = 0;
@@ -23,7 +22,9 @@ public class PCInventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-           if(Input.GetKeyDown(KeyCode.Return)) //moving items from hand ti bag
+
+//moving items from hand to bag      
+           if(Input.GetKeyDown(KeyCode.Return)) 
         {
             if(playerInventory.Count != (maxCapacity))
             {
@@ -35,28 +36,61 @@ public class PCInventory : MonoBehaviour
 
         }
 
+  //rotate clockwise through bag objects in hand
         if(Input.GetKeyDown(KeyCode.J))
         {
             if(index<playerInventory.Count)
             {
                 index++;
-                handInventory[0] = playerInventory[index];
-                // handInventory[1]
+            } else if(index==playerInventory.Count) {
+                index = 0;
             }
-            
-        } else if(Input.GetKeyDown(KeyCode.K))
-        {
 
-        }
+            handInventory[0] = playerInventory[index];
+            handInventory[1] = playerInventory[index+1];
 
-        if(Input.GetKeyDown(KeyCode.L)) {
-            if(handInventory!=null)
+            playerInventory.Remove(handInventory[0]);
+            playerInventory.Remove(handInventory[1]);
+
+            if(Input.GetKeyDown(KeyCode.K)) //put left hand object in bag 
             {
+                //highlight handInventory[0];
+                playerInventory.Add(handInventory[0]);
                 handInventory.RemoveAt(0);
-            } else{
-                Debug.Log("There is nothing in your hands to drop");
+            }   
+            
+        } else if(Input.GetKeyDown(KeyCode.L)) //rotate anticlockwise through bag objects in hand
+        {
+             if(index<playerInventory.Count)
+            {
+                index--;
+            } else if(index==playerInventory.Count) {
+                index = 0;
             }
+
+            handInventory[0] = playerInventory[index];
+            handInventory[1] = playerInventory[index-1];
+
+            playerInventory.Remove(handInventory[0]);
+            playerInventory.Remove(handInventory[1]);
+
+              if(Input.GetKeyDown(KeyCode.K)) //put right hand object in bag 
+            {
+                //highlight handInventory[0];
+                playerInventory.Add(handInventory[1]);
+                handInventory.RemoveAt(1);
+            } 
         }
+
+        //unequip
+        // if(Input.GetKeyDown(KeyCode.L)) {
+        //     if(handInventory!=null)
+        //     {
+        //         handInventory.RemoveAt(0);
+        //     } else{
+        //         Debug.Log("There is nothing in your hands to drop");
+        //     }
+        // }
     }
 
     void OnCollisionStay(Collision other)
@@ -67,8 +101,8 @@ public class PCInventory : MonoBehaviour
         {
             if(handInventory.Count<2)
             {
-                if(handInventory==null)
-                {
+                // if(handInventory==null)
+                //{
                     for(int i=0; i<pickableObjs.Count; i++)
                     {
                         if(other.gameObject.tag == pickableObjs[i])
@@ -77,34 +111,36 @@ public class PCInventory : MonoBehaviour
                             //move position of other gameObject to player's hand
                         }
                     }
-                } else if((handInventory[0].tag!="Gun") && (other.gameObject.tag!="Gun"))
-                {
-                    for(int i=0; i<pickableObjs.Count; i++)
-                    {
-                        if(other.gameObject.tag == pickableObjs[i])
-                            {
-                                handInventory.Add(other.gameObject);
-                                //move position of other gameObject to player's hand
-                            }
-                    }
+                //} 
+                //no weapons - this designed for single hand held gun
+                // else if((handInventory[0].tag!="Gun") && (other.gameObject.tag!="Gun"))
+                // {
+                //     for(int i=0; i<pickableObjs.Count; i++)
+                //     {
+                //         if(other.gameObject.tag == pickableObjs[i])
+                //             {
+                //                 handInventory.Add(other.gameObject);
+                //                 //move position of other gameObject to player's hand
+                //             }
+                //     }
                
-                } else if(((handInventory[0].tag=="Gun") && other.gameObject.tag!="Gun") || ((handInventory[0].tag!="Gun") && other.gameObject.tag=="Gun")) {
-                   for(int i=0; i<pickableObjs.Count; i++)
-                   {
-                        if(other.gameObject.tag == pickableObjs[i])
-                        {
-                            playerInventory.Add(handInventory[0]); //add first object to bag
-                            handInventory.RemoveAt(0); //remove object from hand
+                // } else if(((handInventory[0].tag=="Gun") && other.gameObject.tag!="Gun") || ((handInventory[0].tag!="Gun") && other.gameObject.tag=="Gun")) {
+                //    for(int i=0; i<pickableObjs.Count; i++)
+                //    {
+                //         if(other.gameObject.tag == pickableObjs[i])
+                //         {
+                //             playerInventory.Add(handInventory[0]); //add first object to bag
+                //             handInventory.RemoveAt(0); //remove object from hand
                             
-                            handInventory.Add(other.gameObject);
-                            //move position of other gameObject to player's hand
+                //             handInventory.Add(other.gameObject);
+                //             //move position of other gameObject to player's hand
 
-                        }
-                   }
+                //         }
+                //    }
                    
-                }
+                // }
             } else{
-                Debug.Log("hand full, move something to bag first");
+                Debug.Log("hand full, move something to bag, or drop something first");
             }
 
            
