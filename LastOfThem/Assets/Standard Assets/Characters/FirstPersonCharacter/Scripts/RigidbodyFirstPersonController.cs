@@ -22,7 +22,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 #if !MOBILE_INPUT
             private bool m_Running;
-            public bool isWalking;
 
 #endif
 

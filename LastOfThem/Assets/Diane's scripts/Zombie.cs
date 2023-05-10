@@ -7,35 +7,102 @@ public class Zombie : MonoBehaviour
 {
     public float speed = 1.0f;              // zombie movement speed
     public float detectionDistance = 5.0f;  // distance at which the zombie detects the player
-    public Transform player;               // reference to the player's transform component
+    public float attackDistance = 1.5f;     // distance at which the zombie attacks the player
+    public float damage = 10.0f;            // amount of damage the zombie inflicts on the player per attack
+    public float chaseInterval = 1.0f;      // interval at which the zombie checks if the player is within detection distance
 
-    private bool isChasing = false;        // flag to indicate if the zombie is chasing the player
+    private Transform player;               // reference to the player's transform component
+    private NavMeshAgent navMeshAgent;      // reference to the zombie's NavMeshAgent component
+    private bool isChasing = false;         // flag to indicate if the zombie is chasing the player
+    private bool isMoving = false;          // flag to indicate if the zombie is moving to a new destination
+    private float timeSinceLastCheck = 0f;  // time since the zombie last checked if the player is within detection distance
 
-    void Update()
+    private void Start()
     {
-        // calculate the distance between the zombie and the player
-        float distance = Vector3.Distance(transform.position, player.position);
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        RandomDestination();
+    }
 
-        // if the player is within detection distance and the zombie is not already chasing, start chasing
-        if (distance <= detectionDistance && !isChasing)
+    private void Update()
+    {
+        timeSinceLastCheck += Time.deltaTime;
+
+        // check if it's time to check if the player is within detection distance
+        if (timeSinceLastCheck >= chaseInterval)
         {
-            isChasing = true;
+            timeSinceLastCheck = 0f;
+
+            float distance = Vector3.Distance(transform.position, player.position);
+
+            // if the player is within detection distance, start chasing the player
+            if (distance <= detectionDistance)
+            {
+                StartChasing();
+            }
+            // otherwise, stop chasing the player
+            else
+            {
+                StopChasing();
+            }
         }
 
-        // if the zombie is chasing, move towards the player
         if (isChasing)
         {
-            transform.LookAt(player);                        // look at the player
-            transform.position += transform.forward * speed * Time.deltaTime; // move towards the player
+            float distance = Vector3.Distance(transform.position, player.position);
+
+            // if the player is within attack distance, attack the player
+            if (distance <= attackDistance)
+            {
+                AttackPlayer();
+                navMeshAgent.SetDestination(transform.position);
+                isMoving = false;
+            }
+            // otherwise, continue chasing the player
+            else
+            {
+                navMeshAgent.SetDestination(player.position);
+                isMoving = true;
+            }
         }
-        else
+        else if (!isMoving)
         {
-            // if the zombie is not chasing, move randomly
-            Vector3 randomDirection = Random.insideUnitSphere * 5.0f;
-            randomDirection += transform.position;
-            NavMeshHit hit;
-            NavMesh.SamplePosition(randomDirection, out hit, 5.0f, NavMesh.AllAreas);
-            transform.position = Vector3.Lerp(transform.position, hit.position, speed * Time.deltaTime);
+            // if the zombie is not already moving, set a new random destination
+            RandomDestination();
         }
+        else if (!navMeshAgent.pathPending && navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+        {
+            // if the zombie has reached its destination, set a new random destination
+            RandomDestination();
+        }
+    }
+
+    private void RandomDestination()
+    {
+        Vector3 randomDirection = Random.insideUnitSphere * detectionDistance;
+        randomDirection += transform.position;
+        NavMeshHit hit;
+        NavMesh.SamplePosition(randomDirection, out hit, detectionDistance, 1);
+        navMeshAgent.SetDestination(hit.position);
+        isMoving = true;
+    }
+
+    private void AttackPlayer()
+    {
+        // inflict damage on the player
+        //player.GetComponent<Health>().TakeDamage(damage);
+    }
+
+    public void StartChasing()
+    {
+        isChasing = true;
+        navMeshAgent.SetDestination(player.position);
+    }
+
+    public void StopChasing()
+    {
+        isChasing = false;
+        navMeshAgent.SetDestination(transform.position);
+        isMoving = false;
     }
 }

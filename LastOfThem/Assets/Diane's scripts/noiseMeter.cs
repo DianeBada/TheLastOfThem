@@ -1,79 +1,84 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System;
 using UnityEngine.UI;
-
 
 public class noiseMeter : MonoBehaviour
 {
-    public UnityStandardAssets.Characters.FirstPerson.FirstPersonController fp;
-    public UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController rb;
+    public float noiseDetectionRange = 10.0f;
+    public float noiseIncreasePerSecond = 0.1f;
 
-    public float noiseIncreaseRate = 0.2f; // the rate at which the noise level increases per second
-    public float noiseThreshold = 1.0f; // the noise level at which zombies become alerted
-    public float detectionRange = 10.0f; // the maximum distance at which zombies can be detected
-    public LayerMask detectionLayers; // the layers to consider when detecting zombies
-
-    private float currentNoiseLevel = 0.0f; // the current noise level
-    //private bool isWalking = false; // whether the player is currently walking
-    private int zombiesInRange = 0; // the number of zombies within detection range
-
-    public Slider noiseSlider;
-
-    private void Update()
+    private bool isWalking = false;
+    private bool isRunning = false;
+    private bool isJumping = false;
+    public float noisemeter = 0;
+    public Slider noiseMeterSlider; // assign this in the Inspector
+    // Update is called once per frame
+    void Update()
     {
-        if (rb.isWalking && zombiesInRange > 0)
+        // Check if player is walking, running or jumping
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
         {
-            Debug.Log("the character is walking and there are zombies here");
-            currentNoiseLevel += noiseIncreaseRate * Time.deltaTime;
+            isWalking = true;
+            Debug.Log("ey i am walking in the noisemeter script");
+        }
+
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+
+        if (Mathf.Abs(horizontalInput) > 0 || Mathf.Abs(verticalInput) > 0)
+        {
+            isWalking = true;
         }
         else
         {
-            currentNoiseLevel = Mathf.Max(0.0f, currentNoiseLevel - noiseIncreaseRate * Time.deltaTime);
+            isWalking = false;
+        }
+        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
+        {
+            isWalking = false;
+        }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            isRunning = true;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            isRunning = false;
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            isJumping = true;
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            isJumping = false;
         }
 
-        // update the slider value based on the current noise level
-        noiseSlider.value = currentNoiseLevel / noiseThreshold;
-
-        if(fp.isMoving)
+        // Check if any zombie is within the noise detection range
+        bool isZombieInRange = false;
+        foreach (GameObject zombie in GameObject.FindGameObjectsWithTag("Zombie"))
         {
-            Debug.Log("the player is walking - fps script");
-
-        }
-    }
-
-    public void SetWalking(bool walking)
-    {
-        fp.isMoving = walking;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (detectionLayers == (detectionLayers | (1 << other.gameObject.layer))) // check if the collider is on one of the detection layers
-        {
-            Zombie zombie = other.gameObject.GetComponent<Zombie>();
-            if (zombie != null)
+            float distanceToZombie = Vector3.Distance(transform.position, zombie.transform.position);
+            if (distanceToZombie < noiseDetectionRange)
             {
-                zombiesInRange++; // increase the count of zombies in range
+                isZombieInRange = true;
+                break;
             }
         }
-    }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (detectionLayers == (detectionLayers | (1 << other.gameObject.layer))) // check if the collider is on one of the detection layers
+        // Increase noise meter gradually if player is making noise and a zombie is in range
+        if ((isWalking || isRunning || isJumping) && isZombieInRange)
         {
-            Zombie zombie = other.gameObject.GetComponent<Zombie>();
-            if (zombie != null)
-            {
-                zombiesInRange--; // decrease the count of zombies in range
-            }
+            noisemeter += noiseIncreasePerSecond * Time.deltaTime;
         }
+        else
+        {
+            noisemeter = Mathf.Max(0.0f, noisemeter - noiseIncreasePerSecond * Time.deltaTime);
+        }
+
+        // Do something with the noise meter, such as displaying it on a UI element
+        Debug.Log("Noise meter: " + noisemeter);
+
+        noiseMeterSlider.value = noisemeter;
     }
 
-    public bool IsAlerted()
-    {
-        return currentNoiseLevel >= noiseThreshold;
-    }
 }

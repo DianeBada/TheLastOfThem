@@ -42,6 +42,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public bool m_Jumping;
         private AudioSource m_AudioSource;
         public bool isMoving = false; // a boolean variable to check if the player is moving
+        public bool isJumping;
+        public bool isRunning;
+        public bool isWalking;
 
 
         // Use this for initialization
@@ -68,6 +71,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+                isJumping = true;
+
             }
 
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
@@ -76,6 +81,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 PlayLandingSound();
                 m_MoveDir.y = 0f;
                 m_Jumping = false;
+                isJumping = false;
+
             }
             if (!m_CharacterController.isGrounded && !m_Jumping && m_PreviouslyGrounded)
             {
@@ -84,8 +91,24 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
 
-           
 
+            float speed;
+            GetInput(out speed);
+            if (speed > m_WalkSpeed && !isJumping)
+            {
+                isRunning = true;
+                isWalking = false;
+            }
+            else if (speed > 0 && speed <= m_WalkSpeed && !isJumping)
+            {
+                isWalking = true;
+                isRunning = false;
+            }
+            else
+            {
+                isWalking = false;
+                isRunning = false;
+            }
         }
 
 
@@ -125,6 +148,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     PlayJumpSound();
                     m_Jump = false;
                     m_Jumping = true;
+                    isJumping = true;
                 }
             }
             else
