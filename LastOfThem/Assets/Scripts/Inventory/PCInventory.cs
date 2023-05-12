@@ -8,15 +8,22 @@ public class PCInventory : MonoBehaviour
     public List<GameObject> playerInventory = new List<GameObject>();
     public List<GameObject> handInventory = new List<GameObject>();
 
-    public List<string> pickableObjs = new List<string>(){"Chemical", "Flashlight", "Siren", "Syringe", "Rock"};
+    public List<string> pickableObjs = new List<string>(){"Chemical", "Flashlight", "Siren", "Syringe", "Rock", "TestTube"};
 
     private int maxCapacity = 10;
     int index = 0;
 
+    Vector3 fwd;
+    Vector3 down;
+    float distance = 1f;
+    RaycastHit hit;
+    int layerMask = 6;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        fwd = transform.TransformDirection(Vector3.forward);
+        down = transform.TransformDirection(-Vector3.up);
     }
 
     // Update is called once per frame
@@ -93,22 +100,55 @@ public class PCInventory : MonoBehaviour
         // }
     }
 
-    void OnCollisionStay(Collision other)
+    // void OnCollisionEnter(Collision other)
+    void FixedUpdate() 
     {
      
-          
-        if(Input.GetKeyDown(KeyCode.P)) //pick up - hand
-        {
+       
+     if ((Physics.Raycast(transform.position, fwd, out hit, distance, layerMask)) || (Physics.Raycast(transform.position, down, out hit, distance, layerMask)))
+   
+  
+    {
+        Debug.Log("Can pick up");
+
+    // Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, radius, layerMask);
+
+    // Debug.Log(hitColliders.Length);
+
+    // for(int a=0; a<hitColliders.Length; a++)
+    // {
+    //      Debug.Log("overlap sphere colliding: "+hitColliders[a].GetComponent<Collider>().name);
+    //     for(int b=0; b<pickableObjs.Count; b++)
+    //     {
+    //         if(hitColliders[a].tag == pickableObjs[b])
+    //         {
+    //             Debug.Log("Can pick up (using overlap sphere)");
+    //         }
+    //     }
+    // }
+
+        // if(Physics.Raycast(transform.position, down, out hit, distance)){
+        //     Debug.Log(hit.transform.gameObject);
+        // }
+            
             if(handInventory.Count<2)
             {
-                // if(handInventory==null)
-                //{
+                 
+                if(handInventory==null)
+                {
                     for(int i=0; i<pickableObjs.Count; i++)
                     {
-                        if(other.gameObject.tag == pickableObjs[i])
+                        if(hit.collider.tag == pickableObjs[i]) 
                         {
-                            handInventory.Add(other.gameObject);
-                            //move position of other gameObject to player's hand
+                            
+                            Debug.Log(hit.transform.gameObject);
+                            if(Input.GetKeyDown(KeyCode.P))
+                            {
+                                
+                                handInventory.Add(hit.transform.gameObject);
+                                hit.transform.gameObject.SetActive(false); //move position of other gameObject to player's hand
+                            }
+
                         }
                     }
                 //} 
@@ -136,17 +176,19 @@ public class PCInventory : MonoBehaviour
                 //             //move position of other gameObject to player's hand
 
                 //         }
-                //    }
+                    }
                    
-                // }
-            } else{
+                 }
+                 else{
                 Debug.Log("hand full, move something to bag, or drop something first");
-            }
+                }
+            } 
 
            
         }
+    
 
-    }
+    
 
     void handChange() //when player is holding another object or placing more items in bag
     {
