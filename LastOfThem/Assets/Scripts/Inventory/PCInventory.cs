@@ -11,21 +11,28 @@ public class PCInventory : MonoBehaviour
     private int maxCapacity = 10;
     int index = 0;
 
+    bool addToBag;
+    int bagTime = 3; //time to place object in bag
+
+    public bool canPick;
+
     // Update is called once per frame
     void Update()
     {
-
-//moving items from hand to bag      
-           if(Input.GetKeyDown(KeyCode.Return)) 
+    
+        if(playerInventory.Count >= (maxCapacity))
         {
-            if(playerInventory.Count != (maxCapacity))
+
+            addToBag = false;
+            Debug.Log("Bag full");
+
+            if(handInventory.Count>0)
             {
-                playerInventory.Add(handInventory[0]);
-                handInventory.RemoveAt(0); 
-            }else{
-                Debug.Log("Bag full");
+                Debug.Log("Bag full, cannot place item in inventory");
             }
 
+        } else{
+            addToBag = true;
         }
 
   //rotate clockwise through bag objects in hand
@@ -123,5 +130,67 @@ public class PCInventory : MonoBehaviour
 
            
         }
+
+    public IEnumerator moveObjToBag(GameObject obj)
+    {
+
+        if(addToBag)
+        {
+                //show object on screen
+            if(handInventory.Count>=1) //can only pick up one object at a time, unless bag full then can hold two objects
+            {
+                bagTime = 0;
+
+                for(int i = 1; i < handInventory.Count; i++) {
+                    handInventory.RemoveAt(i);
+                }
+            } else{
+                handInventory.Add(obj);
+
+                yield return new WaitForSeconds(bagTime);
+                //show object in right hand
+
+                obj.SetActive(false);
+                playerInventory.Add(handInventory[0]);
+                handInventory.RemoveAt(0);
+
+                for(int i = 0; i < handInventory.Count; i++) {
+                    Debug.Log("handInventory size: "+handInventory.Count);
+                    Debug.Log("handInventory: "+handInventory[i]);
+                }
+
+                for(int i = 0; i < playerInventory.Count; i++) {
+                    Debug.Log("playerInventory size: "+playerInventory.Count);
+                    Debug.Log("personalInventory: "+playerInventory[i]);
+                }
+
+                canPick = true;
+        }
+        }else if((addToBag==false) && (handInventory.Count==1)) { //if bag full and object in one hand, can only add one more object in other hand
+
+            for(int i = 2; i < handInventory.Count; i++) {
+                handInventory.RemoveAt(i);
+            }
+
+            handInventory.Add(obj);
+            //show object in left hand
+
+            for(int i = 0; i < handInventory.Count; i++) {
+                    Debug.Log("handInventory size: "+handInventory.Count);
+                    Debug.Log("handInventory: "+handInventory[i]);
+                }
+
+                for(int i = 0; i < playerInventory.Count; i++) {
+                    Debug.Log("playerInventory size: "+playerInventory.Count);
+                    Debug.Log("personalInventory: "+playerInventory[i]);
+                }
+
+                canPick = true;
+        } else{
+            Debug.Log("The bag is full, please remove an item"); //leaving object in had so player can drop
+        }
+
+       
+    }
     
 }
