@@ -6,30 +6,30 @@ public class ObjectPickUP : MonoBehaviour
 {
    private Transform parentObject;
 
-    // Start is called before the first frame update
+    GameObject player;
+    PCInventory pcInventory;
+
+    int bagTime = 3; //time to place object in bag
+
     void Start()
     {
-        parentObject = GameObject.FindGameObjectWithTag("ParentPickUp").transform;
+       parentObject = GameObject.FindGameObjectWithTag("ParentPickUp").transform;
+        pcInventory = parentObject.GetComponent<PCInventory>();
     }
-
-    // Update is called once per frame
-    /* void Update()
-     {
-
-     }*/
 
     private void OnTriggerEnter(Collider other)
     {
-        
-        if (other.CompareTag("Player"))
+                if (other.CompareTag("Player"))
         {
-            
+
+            // Debug.Log("Can press E");
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log(other.name);
-                this.transform.SetParent(parentObject);
+                this.gameObject.transform.SetParent(parentObject);
+
             }
-                
+
         }
     }
 
@@ -38,14 +38,30 @@ public class ObjectPickUP : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-
+            // Debug.Log("Can press E");
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log(other.name);
                 this.gameObject.transform.SetParent(parentObject);
-            }
 
+                StartCoroutine("moveObjToBag");
+            }
         }
+    }
+
+    IEnumerator moveObjToBag()
+    {
+        //show object on screen
+
+        if(pcInventory.handInventory.Count==2)
+        {
+            bagTime = 0;
+        }
+
+        pcInventory.handInventory.Add(this.gameObject);
+        Debug.Log(pcInventory.handInventory);
+        yield return new WaitForSeconds(bagTime);
+        this.gameObject.SetActive(false);
     }
 
 
