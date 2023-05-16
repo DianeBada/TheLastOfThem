@@ -28,6 +28,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
+
         private Camera m_Camera;
         public bool m_Jump;
         private float m_YRotation;
@@ -45,6 +46,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public bool isJumping;
         public bool isRunning;
         public bool isWalking;
+        private bool m_IsCrouching;
+
+        private bool isCrouching = false;
+        public float crouchSpeed = 2f;
+        public float crouchHeight = 0.01f;
+        public float normalHeight = 5f;
+        public float crouchFOV = 60f;
+        public float normalFOV = 90f;
 
 
         // Use this for initialization
@@ -60,6 +69,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+            isCrouching = false;
+
         }
 
 
@@ -74,6 +85,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 isJumping = true;
 
             }
+
+            if (Input.GetKeyDown(KeyCode.C)) 
+            {
+                Debug.Log("presssed C");
+             
+                    ToggleCrouch();
+                
+            }
+           
 
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
             {
@@ -98,17 +118,29 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 isRunning = true;
                 isWalking = false;
+                isCrouching = false;
             }
             else if (speed > 0 && speed <= m_WalkSpeed && !isJumping)
             {
                 isWalking = true;
                 isRunning = false;
+                isCrouching = false;
+
             }
             else
             {
                 isWalking = false;
                 isRunning = false;
+                isCrouching = false;
+
             }
+
+            if (isCrouching)
+                speed = crouchSpeed;
+            else if (m_IsWalking)
+                speed = m_WalkSpeed;
+            else
+                speed = m_RunSpeed;
         }
 
 
@@ -117,6 +149,30 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource.clip = m_LandSound;
             m_AudioSource.Play();
             m_NextStep = m_StepCycle + .5f;
+        }
+
+        private void ToggleCrouch()
+        {
+            if (m_IsCrouching)
+            {
+                // Uncrouch
+                m_CharacterController.height = normalHeight;
+                m_Camera.fieldOfView = normalFOV;
+                m_Camera.transform.localPosition = m_OriginalCameraPosition;
+            }
+            else
+            {
+                // Crouch
+                m_CharacterController.height = crouchHeight;
+                m_Camera.fieldOfView = crouchFOV;
+                m_Camera.transform.localPosition = new Vector3(
+                    m_Camera.transform.localPosition.x,
+                    crouchHeight - m_OriginalCameraPosition.y,
+                    m_Camera.transform.localPosition.z
+                );
+            }
+
+            m_IsCrouching = !m_IsCrouching;
         }
 
 
@@ -136,6 +192,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_MoveDir.x = desiredMove.x*speed;
             m_MoveDir.z = desiredMove.z*speed;
+
+            if (isCrouching)
+                speed = crouchSpeed;
+            else if (m_IsWalking)
+                speed = m_WalkSpeed;
+            else
+                speed = m_RunSpeed;
 
 
             if (m_CharacterController.isGrounded)
@@ -286,4 +349,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
     }
+
+
+
 }
