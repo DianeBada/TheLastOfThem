@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class ObjectPickUP : MonoBehaviour
 {
-   private Transform parentObject;
+    private Transform parentObject;
+    [SerializeField] private GameObject textPanel;
+    private bool pickedUp = false;
 
     // Start is called before the first frame update
     void Start()
     {
         parentObject = GameObject.FindGameObjectWithTag("ParentPickUp").transform;
+        textPanel.SetActive(false);
+        pickedUp = false;
     }
 
     // Update is called once per frame
@@ -21,13 +25,16 @@ public class ObjectPickUP : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !pickedUp)
         {
-            
+            textPanel.SetActive(true);
+
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log(other.name);
+                //Debug.Log(other.name);
                 this.transform.SetParent(parentObject);
+                textPanel.SetActive(false);
+                pickedUp = true;
             }
                 
         }
@@ -36,16 +43,25 @@ public class ObjectPickUP : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !pickedUp)
         {
+
+            textPanel.SetActive(true);
 
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log(other.name);
                 this.gameObject.transform.SetParent(parentObject);
+                textPanel.SetActive(false);
+                pickedUp = true;
             }
 
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        textPanel.SetActive(false);
     }
 
 
