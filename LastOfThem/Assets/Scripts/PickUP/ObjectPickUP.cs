@@ -8,36 +8,16 @@ public class ObjectPickUP : MonoBehaviour
     [SerializeField] private GameObject textPanel;
     private bool pickedUp = false;
 
-    // Start is called before the first frame update
+    PCInventory pcInventory;
+
     void Start()
     {
+
         parentObject = GameObject.FindGameObjectWithTag("ParentPickUp").transform;
+        pcInventory = parentObject.GetComponent<PCInventory>();
+        
         textPanel.SetActive(false);
         pickedUp = false;
-    }
-
-    // Update is called once per frame
-    /* void Update()
-     {
-
-     }*/
-
-    private void OnTriggerEnter(Collider other)
-    {
-        
-        if (other.CompareTag("Player") && !pickedUp)
-        {
-            textPanel.SetActive(true);
-
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                //Debug.Log(other.name);
-                this.transform.SetParent(parentObject);
-                textPanel.SetActive(false);
-                pickedUp = true;
-            }
-                
-        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -54,10 +34,12 @@ public class ObjectPickUP : MonoBehaviour
                 this.gameObject.transform.SetParent(parentObject);
                 textPanel.SetActive(false);
                 pickedUp = true;
+                pcInventory.canPick = false;
+                StartCoroutine(pcInventory.moveObjToBag(this.gameObject));
             }
-
+             
+            }
         }
-    }
 
     private void OnTriggerExit(Collider other)
     {
