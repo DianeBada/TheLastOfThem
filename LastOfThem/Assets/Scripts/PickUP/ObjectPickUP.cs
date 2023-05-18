@@ -10,7 +10,6 @@ public class ObjectPickUP : MonoBehaviour
     PCInventory pcInventory;
 
 
-
     void Start()
     {
        parentObject = GameObject.FindGameObjectWithTag("ParentPickUp").transform;
@@ -35,4 +34,3 @@ public class ObjectPickUP : MonoBehaviour
         }
     }
 }
-
