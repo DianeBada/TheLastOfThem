@@ -16,7 +16,7 @@ public class PCInventory : MonoBehaviour
     private int maxHand = 1; //for now player can only have one obj in hand. Makes picking and dropping more intuitive for player
 
     bool addToBag;
-    int bagTime = 3; //time to place object in bag
+    int bagTime = 1; //time to place object in bag
 
     public bool canPick;
 
@@ -56,7 +56,7 @@ public class PCInventory : MonoBehaviour
 
         if(addToBag)
         {
-                //show object on screen
+            //play pick up animation
             if(handInventory.Count>=1) //can only pick up one object at a time, unless bag full then can hold two objects
             {
                 bagTime = 0;
