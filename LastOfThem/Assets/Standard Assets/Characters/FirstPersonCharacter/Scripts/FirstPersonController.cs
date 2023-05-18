@@ -10,7 +10,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (AudioSource))]
     public class FirstPersonController : MonoBehaviour
     {
-        [SerializeField] private bool m_IsWalking;
+        [SerializeField] public bool m_IsWalking;
         [SerializeField] private float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
         [SerializeField] [Range(0f, 1f)] private float m_RunstepLenghten;
@@ -28,8 +28,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
+
         private Camera m_Camera;
-        private bool m_Jump;
+        public bool m_Jump;
         private float m_YRotation;
         private Vector2 m_Input;
         private Vector3 m_MoveDir = Vector3.zero;
@@ -39,8 +40,21 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private Vector3 m_OriginalCameraPosition;
         private float m_StepCycle;
         private float m_NextStep;
-        private bool m_Jumping;
+        public bool m_Jumping;
         private AudioSource m_AudioSource;
+        public bool isMoving = false; // a boolean variable to check if the player is moving
+        public bool isJumping;
+        public bool isRunning;
+        public bool isWalking;
+        private bool m_IsCrouching;
+
+        private bool isCrouching = false;
+        public float crouchSpeed = 2f;
+        public float crouchHeight = 0.01f;
+        public float normalHeight = 5f;
+        public float crouchFOV = 60f;
+        public float normalFOV = 90f;
+
 
         // Use this for initialization
         private void Start()
@@ -55,6 +69,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+            isCrouching = false;
+
         }
 
 
@@ -66,7 +82,18 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+                isJumping = true;
+
             }
+
+            if (Input.GetKeyDown(KeyCode.C)) 
+            {
+                Debug.Log("presssed C");
+             
+                    ToggleCrouch();
+                
+            }
+           
 
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
             {
@@ -74,6 +101,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 PlayLandingSound();
                 m_MoveDir.y = 0f;
                 m_Jumping = false;
+                isJumping = false;
+
             }
             if (!m_CharacterController.isGrounded && !m_Jumping && m_PreviouslyGrounded)
             {
@@ -81,6 +110,37 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
+
+
+            float speed;
+            GetInput(out speed);
+            if (speed > m_WalkSpeed && !isJumping)
+            {
+                isRunning = true;
+                isWalking = false;
+                isCrouching = false;
+            }
+            else if (speed > 0 && speed <= m_WalkSpeed && !isJumping)
+            {
+                isWalking = true;
+                isRunning = false;
+                isCrouching = false;
+
+            }
+            else
+            {
+                isWalking = false;
+                isRunning = false;
+                isCrouching = false;
+
+            }
+
+            if (isCrouching)
+                speed = crouchSpeed;
+            else if (m_IsWalking)
+                speed = m_WalkSpeed;
+            else
+                speed = m_RunSpeed;
         }
 
 
@@ -91,6 +151,30 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_NextStep = m_StepCycle + .5f;
         }
 
+        private void ToggleCrouch()
+        {
+            if (m_IsCrouching)
+            {
+                // Uncrouch
+                m_CharacterController.height = normalHeight;
+                m_Camera.fieldOfView = normalFOV;
+                m_Camera.transform.localPosition = m_OriginalCameraPosition;
+            }
+            else
+            {
+                // Crouch
+                m_CharacterController.height = crouchHeight;
+                m_Camera.fieldOfView = crouchFOV;
+                m_Camera.transform.localPosition = new Vector3(
+                    m_Camera.transform.localPosition.x,
+                    crouchHeight - m_OriginalCameraPosition.y,
+                    m_Camera.transform.localPosition.z
+                );
+            }
+
+            m_IsCrouching = !m_IsCrouching;
+        }
+
 
         private void FixedUpdate()
         {
@@ -98,6 +182,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
             Vector3 desiredMove = transform.forward*m_Input.y + transform.right*m_Input.x;
+
 
             // get a normal for the surface that is being touched to move along it
             RaycastHit hitInfo;
@@ -107,6 +192,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_MoveDir.x = desiredMove.x*speed;
             m_MoveDir.z = desiredMove.z*speed;
+
+            if (isCrouching)
+                speed = crouchSpeed;
+            else if (m_IsWalking)
+                speed = m_WalkSpeed;
+            else
+                speed = m_RunSpeed;
 
 
             if (m_CharacterController.isGrounded)
@@ -119,6 +211,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     PlayJumpSound();
                     m_Jump = false;
                     m_Jumping = true;
+                    isJumping = true;
                 }
             }
             else
@@ -256,4 +349,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
     }
+
+
+
 }
