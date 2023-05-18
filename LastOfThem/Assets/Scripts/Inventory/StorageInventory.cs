@@ -20,10 +20,10 @@ public class StorageInventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("MainCamera");
         playerInventoryScript = player.GetComponent<PCInventory>();
 
-        panel = GameObject.FindGameObjectWithTag("InventoryPanel");
+        // panel = GameObject.FindGameObjectWithTag("InventoryPanel");
 
     }
 

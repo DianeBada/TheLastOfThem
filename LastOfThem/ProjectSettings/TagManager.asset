@@ -7,6 +7,8 @@ TagManager:
   - Stick
   - Storage
   - Zombie
+  - ParentPickUp
+  - TestTube
   layers:
   - Default
   - TransparentFX
