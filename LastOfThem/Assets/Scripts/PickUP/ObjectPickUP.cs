@@ -4,32 +4,48 @@ using UnityEngine;
 
 public class ObjectPickUP : MonoBehaviour
 {
-   private Transform parentObject;
+//    private Transform parentObject;
+   private Transform objPickUp;
 
     GameObject player;
     PCInventory pcInventory;
 
+    bool keyPressed;
 
     void Start()
     {
-       parentObject = GameObject.FindGameObjectWithTag("ParentPickUp").transform;
-        pcInventory = parentObject.GetComponent<PCInventory>();
+    //    parentObject = GameObject.FindGameObjectWithTag("ParentPickUp").transform;
+
+        pcInventory = this.gameObject.GetComponent<PCInventory>();
+    }
+
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            keyPressed = true;
+        } 
     }
 
     private void OnTriggerStay(Collider other)
     {
-
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PickUp"))
         {
-            // Debug.Log("Can press E");
-            if (Input.GetKeyDown(KeyCode.E))
+            if (keyPressed)
             {
-                Debug.Log(other.name);
-                this.gameObject.transform.SetParent(parentObject);
-                pcInventory.canPick = false;
+                keyPressed = false;
 
-                StartCoroutine(pcInventory.moveObjToBag(this.gameObject));
-                
+                    pcInventory.handInventory.Add(other.gameObject);
+
+                    if (pcInventory.handInventory.Count>1) //can only pick up one object at a time
+                    {
+                        for(int i = 1; i < pcInventory.handInventory.Count; i++) {
+                            pcInventory.handInventory.RemoveAt(i);
+                        }
+                    } 
+
+                    StartCoroutine(pcInventory.moveObjToBag(other.gameObject));
+                    // other.gameObject.transform.SetParent(gameObject);  
             }
         }
     }

@@ -16,9 +16,7 @@ public class PCInventory : MonoBehaviour
     private int maxHand = 1; //for now player can only have one obj in hand. Makes picking and dropping more intuitive for player
 
     bool addToBag;
-    int bagTime = 1; //time to place object in bag
-
-    public bool canPick;
+    float bagTime = 3f; //time to place object in bag
 
     void Update()
     {
@@ -28,11 +26,6 @@ public class PCInventory : MonoBehaviour
 
             addToBag = false;
             Debug.Log("Bag full");
-
-            if(handInventory.Count>0)
-            {
-                Debug.Log("Bag full, cannot place item in inventory");
-            }
 
         } else{
             addToBag = true;
@@ -56,33 +49,20 @@ public class PCInventory : MonoBehaviour
 
         if(addToBag)
         {
-            //play pick up animation
-            if(handInventory.Count>=1) //can only pick up one object at a time, unless bag full then can hold two objects
-            {
-                bagTime = 0;
+            //play pick up animation   
+                      
+            playerInventory.Add(handInventory[0]);
+            obj.SetActive(false);              //ideally move exaxt pos of gameoject to match animation instead of setting false
+            handInventory[0].transform.SetParent(this.gameObject.transform);
+            handInventory.Clear();
 
-                for(int i = 1; i < handInventory.Count; i++) {
-                    handInventory.RemoveAt(i);
-                }
-            } else{
-                handInventory.Add(obj);
-
-                yield return new WaitForSeconds(bagTime);
-                //show object in right hand
-
-                obj.SetActive(false);
-                playerInventory.Add(handInventory[0]);
-                handInventory.RemoveAt(0);
-
-                canPick = true;
-            }
+            Debug.Log("playerInventory size: "+playerInventory.Count);
         }
         else{
+            handInventory.Clear();
             Debug.Log("The bag is full, please remove an item"); //leaving object in had so player can drop
         }
-
-        Debug.Log("handInventory size: "+handInventory.Count);
-        Debug.Log("playerInventory size: "+playerInventory.Count);
+       
     }
     
 }
