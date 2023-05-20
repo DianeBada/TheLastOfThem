@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Stick
   - Storage
+  - Zombie
   - ParentPickUp
   - TestTube
   layers:
@@ -15,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Zombie
   - 
   - 
   - 

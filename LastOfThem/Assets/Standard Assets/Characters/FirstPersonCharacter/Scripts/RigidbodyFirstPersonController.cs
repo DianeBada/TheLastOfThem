@@ -4,8 +4,8 @@ using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
-    [RequireComponent(typeof (Rigidbody))]
-    [RequireComponent(typeof (CapsuleCollider))]
+    [RequireComponent(typeof(Rigidbody))]
+    [RequireComponent(typeof(CapsuleCollider))]
     public class RigidbodyFirstPersonController : MonoBehaviour
     {
         [Serializable]
@@ -22,6 +22,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 #if !MOBILE_INPUT
             private bool m_Running;
+
 #endif
 
             public void UpdateDesiredTargetSpeed(Vector2 input)
@@ -81,6 +82,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public MovementSettings movementSettings = new MovementSettings();
         public MouseLook mouseLook = new MouseLook();
         public AdvancedSettings advancedSettings = new AdvancedSettings();
+        public bool isWalking;
+        public bool isRunning;
+        public bool hasJumped;
 
 
         private Rigidbody m_RigidBody;
@@ -133,6 +137,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (CrossPlatformInputManager.GetButtonDown("Jump") && !m_Jump)
             {
                 m_Jump = true;
+                hasJumped = true;
             }
         }
 
@@ -184,6 +189,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 }
             }
             m_Jump = false;
+
+            if(m_RigidBody.velocity.magnitude >0.1f)
+            {
+                isWalking = true;
+            }
+            else
+            {
+                isWalking = false;
+            }
         }
 
 
@@ -217,6 +231,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     x = CrossPlatformInputManager.GetAxis("Horizontal"),
                     y = CrossPlatformInputManager.GetAxis("Vertical")
                 };
+            isWalking = true;
 			movementSettings.UpdateDesiredTargetSpeed(input);
             return input;
         }
