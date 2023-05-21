@@ -8,15 +8,10 @@ public class PCInventory : MonoBehaviour
     public List<GameObject> playerInventory = new List<GameObject>();
     public List<GameObject> handInventory = new List<GameObject>();
 
-    private List<GameObject> currentInventory = new List<GameObject>();
-
-    //public List<GameObject> totalInventory = new List<GameObject>(); //playerInventory and handInventory
-
     private int maxCapacity = 10;
-    private int maxHand = 1; //for now player can only have one obj in hand. Makes picking and dropping more intuitive for player
+    //private int maxHand = 1; //for now player can only have one obj in hand. Makes picking and dropping more intuitive for player
 
     bool addToBag;
-    float bagTime = 3f; //time to place object in bag
 
     void Update()
     {
@@ -44,7 +39,7 @@ public class PCInventory : MonoBehaviour
         }
     }
 
-    public IEnumerator moveObjToBag(GameObject obj)
+    public void moveObjToBag(GameObject obj)
     {
 
         if(addToBag)
@@ -66,4 +61,3 @@ public class PCInventory : MonoBehaviour
     }
     
 }
-

@@ -14,8 +14,6 @@ public class ObjectPickUP : MonoBehaviour
 
     void Start()
     {
-    //    parentObject = GameObject.FindGameObjectWithTag("ParentPickUp").transform;
-
         pcInventory = this.gameObject.GetComponent<PCInventory>();
     }
 
@@ -44,8 +42,7 @@ public class ObjectPickUP : MonoBehaviour
                         }
                     } 
 
-                    StartCoroutine(pcInventory.moveObjToBag(other.gameObject));
-                    // other.gameObject.transform.SetParent(gameObject);  
+                    pcInventory.moveObjToBag(other.gameObject);
             }
         }
     }
