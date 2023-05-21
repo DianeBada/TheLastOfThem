@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1166.3315, g: 871.22656, b: 710.43164, a: 1}
+  m_IndirectSpecularColor: {r: 1052.9692, g: 740.44336, b: 503.792, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -591,6 +591,7 @@ MonoBehaviour:
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
+  chaseInterval: 1
 --- !u!195 &380282012
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1201,7 +1202,7 @@ RectTransform:
   m_GameObject: {fileID: 1074678925}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 506927965}
@@ -1213,7 +1214,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -47.2, y: -81.1}
+  m_AnchoredPosition: {x: -250, y: -159}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1074678927
@@ -2035,7 +2036,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1303283065
+--- !u!82 &1303283067 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8200000, guid: 0362bac363d427044bebec705849e38a, type: 3}
+  m_PrefabInstance: {fileID: 1718466987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1303283070
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2048,9 +2054,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noiseDetectionRange: 10
-  noiseIncreasePerSecond: 0.05
+  noiseIncreasePerSecond: 0.1
   noisemeter: 0
   noiseMeterSlider: {fileID: 1074678927}
+  footstepAudioSource: {fileID: 0}
 --- !u!1 &1459755817
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,7 +2376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.781971
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2377,7 +2384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 61.155624
+      value: 67.72
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2414,6 +2421,18 @@ PrefabInstance:
     - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_IsWalking
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
+      propertyPath: volumeSlider
+      value: 
+      objectReference: {fileID: 1074678927}
+    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
+      propertyPath: m_FootstepAudioSource
+      value: 
+      objectReference: {fileID: 1303283067}
+    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
+      propertyPath: zombieLayerMask.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 6062330126967726726, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: fp

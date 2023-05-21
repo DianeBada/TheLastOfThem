@@ -11,14 +11,19 @@ public class noiseMeter : MonoBehaviour
     private bool isJumping = false;
     public float noisemeter = 0;
     public Slider noiseMeterSlider; // assign this in the Inspector
-    // Update is called once per frame
+    public AudioSource footstepAudioSource; // Reference to the existing AudioSource component in the FirstPersonController
+
+    private void Start()
+    {
+        footstepAudioSource = GameObject.FindWithTag("Player").GetComponent<AudioSource>();
+    }
+
     void Update()
     {
-        // Check if player is walking, running or jumping
+        // Check if player is walking, running, or jumping
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
         {
             isWalking = true;
-            Debug.Log("ey i am walking in the noisemeter script");
         }
 
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -32,22 +37,27 @@ public class noiseMeter : MonoBehaviour
         {
             isWalking = false;
         }
+
         if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
         {
             isWalking = false;
         }
+
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             isRunning = true;
         }
+
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             isRunning = false;
         }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             isJumping = true;
         }
+
         if (Input.GetKeyUp(KeyCode.Space))
         {
             isJumping = false;
@@ -75,10 +85,13 @@ public class noiseMeter : MonoBehaviour
             noisemeter = Mathf.Max(0.0f, noisemeter - noiseIncreasePerSecond * Time.deltaTime);
         }
 
+        // Update the noise meter slider value
+        noiseMeterSlider.value = noisemeter;
+
+        // Update the volume of the footstep audio source based on the noise meter value
+        footstepAudioSource.volume = noisemeter;
+
         // Do something with the noise meter, such as displaying it on a UI element
         Debug.Log("Noise meter: " + noisemeter);
-
-        noiseMeterSlider.value = noisemeter;
     }
-
 }
