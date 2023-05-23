@@ -46,4 +46,14 @@ public class ObjectPickUP : MonoBehaviour
             }
         }
     }
+    
+    private void Drop(GameObject objToDrop)
+    {
+        if(keyPressed)
+        {
+            pcInventory.Remove(objToDrop);
+            objToDrop.transform.SetParent(null);
+            //dropping animation
+        }
+    }
 }
