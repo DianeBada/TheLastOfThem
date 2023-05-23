@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using TMPro;
 
 public class InventoryUI : MonoBehaviour
 {
@@ -16,7 +17,12 @@ public class InventoryUI : MonoBehaviour
     private GameObject[] tubeBtns;
 
     private List<GameObject> pcTubes = new List<GameObject>(); //testTubes in the personal inventory
+    private List<GameObject> pcRadio = new List<GameObject>(); //radio in the personal inventory
+    private List<GameObject> pcRocks = new List<GameObject>(); //rocks in the personal inventory
 
+    TextMeshProUGUI radioText;
+    TextMeshProUGUI rockText;
+    TextMeshProUGUI tubeText;
 
     void Start()
     {
@@ -27,12 +33,11 @@ public class InventoryUI : MonoBehaviour
         tubeImg = GameObject.FindGameObjectsWithTag("TubeImg");
         tubeBtns = GameObject.FindGameObjectsWithTag("TubeBtn");
 
-        //set all buttons inactive
-        
-        //sort arrays
+        radioText = GameObject.Find("RadioText").GetComponent<TextMeshProUGUI>();
+        rockText = GameObject.Find("RockText").GetComponent<TextMeshProUGUI>();
+        tubeText = GameObject.Find("TubeText").GetComponent<TextMeshProUGUI>();
 
-        
-        Debug.Log("tube image count: "+tubeImg.Length+ " tube btn count: "+tubeBtns.Length);
+        //sort arrays
 
         updateTestTubeList();
     }
@@ -51,6 +56,10 @@ public class InventoryUI : MonoBehaviour
                 panelOpen = true;
             }
         } 
+
+        radioText.text = pcRadio.Count.ToString();
+        rockText.text = pcRocks.Count.ToString();
+        tubeText.text = pcTubes.Count.ToString();
     }
 
     public void updateTestTubeList()
@@ -84,6 +93,7 @@ public class InventoryUI : MonoBehaviour
     {
         pcInventory.playerInventory.Remove(pcTubes[0]);
         Debug.Log("pc inventory: "+pcInventory.playerInventory.Count);
+        pcTubes[0].transform.SetParent(null);
         updateTestTubeList();
     }
 

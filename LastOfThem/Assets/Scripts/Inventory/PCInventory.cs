@@ -56,7 +56,7 @@ public class PCInventory : MonoBehaviour
             //play pick up animation   
                       
             playerInventory.Add(handInventory[0]);
-            obj.SetActive(false);              //ideally move exaxt pos of gameoject to match animation instead of setting false
+            //change position of child so visible on screen         
             handInventory[0].transform.SetParent(this.gameObject.transform);
             handInventory.Clear();
 
@@ -73,5 +73,6 @@ public class PCInventory : MonoBehaviour
         }
        
     }
+
     
 }
