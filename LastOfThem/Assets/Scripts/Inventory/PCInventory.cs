@@ -7,13 +7,22 @@ public class PCInventory : MonoBehaviour
 
     public List<GameObject> playerInventory = new List<GameObject>();
     public List<GameObject> handInventory = new List<GameObject>();
+    
+    InventoryUI inventoryUI;
+    GameObject Canvas;
 
     private int maxCapacity = 10;
     //private int maxHand = 1; //for now player can only have one obj in hand. Makes picking and dropping more intuitive for player
 
     bool addToBag;
 
-    void Update()
+    private void Start()
+    {
+        Canvas = GameObject.FindGameObjectWithTag("Canvas");
+        inventoryUI = Canvas.GetComponent<InventoryUI>();
+    }
+
+    private void Update()
     {
     
         if(playerInventory.Count >= (maxCapacity))
@@ -50,6 +59,11 @@ public class PCInventory : MonoBehaviour
             obj.SetActive(false);              //ideally move exaxt pos of gameoject to match animation instead of setting false
             handInventory[0].transform.SetParent(this.gameObject.transform);
             handInventory.Clear();
+
+            if(obj.name=="TestTube")
+            {
+                inventoryUI.updateTestTubeList();
+            }
 
             Debug.Log("playerInventory size: "+playerInventory.Count);
         }
