@@ -32,7 +32,6 @@ public class ObjectPickUP : MonoBehaviour
         {
             if (keyPressed)
             {
-                Debug.Log("is colliding with pickup");
                 keyPressed = false;
 
                     pcInventory.handInventory.Add(other.gameObject);
