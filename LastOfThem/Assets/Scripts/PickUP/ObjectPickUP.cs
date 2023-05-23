@@ -27,10 +27,12 @@ public class ObjectPickUP : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        
         if (other.CompareTag("PickUp"))
         {
             if (keyPressed)
             {
+                Debug.Log("is colliding with pickup");
                 keyPressed = false;
 
                     pcInventory.handInventory.Add(other.gameObject);

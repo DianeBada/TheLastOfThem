@@ -76,7 +76,7 @@ public class noiseMeter : MonoBehaviour
         }
 
         // Do something with the noise meter, such as displaying it on a UI element
-        Debug.Log("Noise meter: " + noisemeter);
+        // Debug.Log("Noise meter: " + noisemeter);
 
         noiseMeterSlider.value = noisemeter;
     }
