@@ -9,6 +9,12 @@ TagManager:
   - Zombie
   - ParentPickUp
   - TestTube
+  - PickUp
+  - InventoryPanel
+  - TubeImg
+  - Canvas
+  - TubeBtn
+  - Picked
   layers:
   - Default
   - TransparentFX

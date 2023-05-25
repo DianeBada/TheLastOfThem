@@ -39,11 +39,6 @@ public class StorageInventory : MonoBehaviour
         {
             if(other.gameObject.tag == "Storage")
             {
-                // panel.SetActive(true);
-                // for(int i=0; i<storage.Length; i++)
-                // {
-                //     //cycle through images
-                // }
 
                 if((storage.Count != (maxCapacity)))
                 {
