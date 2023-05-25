@@ -30,6 +30,7 @@ public class ObjectPickUP : MonoBehaviour
         
         if (other.CompareTag("PickUp"))
         {
+
             if (keyPressed)
             {
                 keyPressed = false;
@@ -43,6 +44,7 @@ public class ObjectPickUP : MonoBehaviour
                         }
                     } 
 
+                    other.gameObject.tag = "Picked";
                     pcInventory.moveObjToBag(other.gameObject);
             }
         }

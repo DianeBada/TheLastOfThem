@@ -94,6 +94,7 @@ public class InventoryUI : MonoBehaviour
         pcInventory.playerInventory.Remove(pcTubes[0]);
         Debug.Log("pc inventory: "+pcInventory.playerInventory.Count);
         pcTubes[0].transform.SetParent(null);
+        pcTubes[0].tag = "PickUp";
         updateTestTubeList();
     }
 
