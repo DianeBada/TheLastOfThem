@@ -15,6 +15,7 @@ public class PCInventory : MonoBehaviour
     //private int maxHand = 1; //for now player can only have one obj in hand. Makes picking and dropping more intuitive for player
 
     bool addToBag;
+    int timeToBag = 2;
 
     private void Start()
     {
@@ -48,7 +49,7 @@ public class PCInventory : MonoBehaviour
         }
     }
 
-    public void moveObjToBag(GameObject obj)
+    public IEnumerator moveObjToBag(GameObject obj)
     {
 
         if(addToBag)
@@ -66,6 +67,9 @@ public class PCInventory : MonoBehaviour
             }
 
             Debug.Log("playerInventory size: "+playerInventory.Count);
+
+            yield return new WaitForSeconds(timeToBag);
+            obj.SetActive(false);
         }
         else{
             handInventory.Clear();

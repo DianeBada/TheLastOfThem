@@ -45,7 +45,7 @@ public class ObjectPickUP : MonoBehaviour
                     } 
 
                     other.gameObject.tag = "Picked";
-                    pcInventory.moveObjToBag(other.gameObject);
+                    StartCoroutine(pcInventory.moveObjToBag(other.gameObject));
             }
         }
     }
