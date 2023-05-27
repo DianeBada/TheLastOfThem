@@ -8,7 +8,7 @@ using UnityEngine;
 public class TestTube : ScriptableObject
 {
     [SerializeField] private string chemical;
-    [SerializeField] private bool collected;
+    [SerializeField] private bool collected = false;
     [SerializeField] private GameObject asset;
 
     public void PrintChemical()
@@ -19,5 +19,10 @@ public class TestTube : ScriptableObject
     public void PickUp()
     {
         this.collected = true;
+    }
+
+    public bool Picked()
+    {
+        return collected;
     }
 }

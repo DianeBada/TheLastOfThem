@@ -40,6 +40,17 @@ public class Tube : MonoBehaviour
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
             StartCoroutine(PickUpObject());
+
+        }
+
+        if (other.CompareTag("Player") && !testTube.Picked() )
+        {
+            if (this.gameObject.activeInHierarchy)
+            {
+                Debug.Log("bugggy");
+                StartCoroutine(PickUpObject());
+            }
+            
         }
     }
 
