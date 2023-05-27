@@ -79,6 +79,11 @@ public class InventoryUI : MonoBehaviour
                 pcRocks.Add(pcInventory.playerInventory[i]);
                 Debug.Log("Rocks: "+pcRocks.Count);
             }
+
+            if (pcInventory.playerInventory[i].name.Contains("TestTube"))
+            {
+                pcTubes.Add(pcInventory.playerInventory[i]);
+            }
         }
 
         //update UI
@@ -103,5 +108,6 @@ public class InventoryUI : MonoBehaviour
         pcTubes[0].tag = "PickUp";
         updateTestTubeList();
     }
+
 
 }
