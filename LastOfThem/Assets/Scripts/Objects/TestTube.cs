@@ -16,4 +16,8 @@ public class TestTube : ScriptableObject
         Debug.Log(chemical);
     }
     
+    public void PickUp()
+    {
+        this.collected = true;
+    }
 }

@@ -60,7 +60,7 @@ public class PCInventory : MonoBehaviour
             handInventory[0].transform.SetParent(this.gameObject.transform);
             handInventory.Clear();
 
-            if(obj.name=="TestTube")
+            if(obj.name =="TestTube")
             {
                 inventoryUI.updateTestTubeList();
             }
@@ -73,6 +73,32 @@ public class PCInventory : MonoBehaviour
         }
        
     }
+
+    public void AddObjectToInventory(GameObject obj)
+    {
+        playerInventory.Add(obj);
+        
+        if (handInventory.Count > 0)
+        {
+            for (int i = 0; i <handInventory.Count-1; i++)
+            {
+                handInventory.RemoveAt(i);
+                handInventory[i].SetActive(false);
+            }
+        }
+        handInventory.Add(obj);
+        if (obj.name.Contains("TestTube"))
+        {
+            inventoryUI.updateTestTubeList();
+        }
+    }
+
+    public void RemoveFromHand(GameObject obj)
+    {
+        handInventory.Clear();
+        obj.SetActive(false);
+    }
+        
 
     
 }
