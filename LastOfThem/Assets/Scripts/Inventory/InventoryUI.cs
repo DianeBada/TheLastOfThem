@@ -73,6 +73,12 @@ public class InventoryUI : MonoBehaviour
                 pcTubes.Add(pcInventory.playerInventory[i]);
                 Debug.Log("Test tubes: "+pcTubes.Count);
             }
+
+              if(pcInventory.playerInventory[i].name=="Rocks")
+            {
+                pcRocks.Add(pcInventory.playerInventory[i]);
+                Debug.Log("Rocks: "+pcRocks.Count);
+            }
         }
 
         //update UI
