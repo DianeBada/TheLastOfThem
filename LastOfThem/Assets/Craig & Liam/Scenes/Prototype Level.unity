@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1178.6699, g: 891.1084, b: 737.6421, a: 1}
+  m_IndirectSpecularColor: {r: 1057.9082, g: 753.7783, b: 522.0327, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1397,6 +1397,7 @@ MonoBehaviour:
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  distance: 0
 --- !u!195 &380282012
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2482,7 +2483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &680160330
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5328,7 +5329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1125944136
 RectTransform:
   m_ObjectHideFlags: 0

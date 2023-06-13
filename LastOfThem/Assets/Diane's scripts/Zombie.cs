@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -16,16 +17,21 @@ public class Zombie : MonoBehaviour
     private bool isChasing = false;         // flag to indicate if the zombie is chasing the player
     private bool isMoving = false;          // flag to indicate if the zombie is moving to a new destination
     private float timeSinceLastCheck = 0f;  // time since the zombie last checked if the player is within detection distance
+    public float distance;
+
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         navMeshAgent = GetComponent<NavMeshAgent>();
         RandomDestination();
-    }
+          distance = Vector3.Distance(transform.position, player.position);
 
-    private void Update()
+}
+
+private void Update()
     {
+        Info();
         timeSinceLastCheck += Time.deltaTime;
 
         // check if it's time to check if the player is within detection distance
@@ -33,7 +39,7 @@ public class Zombie : MonoBehaviour
         {
             timeSinceLastCheck = 0f;
 
-            float distance = Vector3.Distance(transform.position, player.position);
+
 
             // if the player is within detection distance, start chasing the player
             if (distance <= detectionDistance)
@@ -104,5 +110,10 @@ public class Zombie : MonoBehaviour
         isChasing = false;
         navMeshAgent.SetDestination(transform.position);
         isMoving = false;
+    }
+
+    public void Info()
+    {
+        Debug.Log(gameObject.name + " " + distance);
     }
 }
