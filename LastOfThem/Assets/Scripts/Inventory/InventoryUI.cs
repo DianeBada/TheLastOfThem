@@ -24,6 +24,8 @@ public class InventoryUI : MonoBehaviour
     TextMeshProUGUI rockText;
     TextMeshProUGUI tubeText;
 
+
+
     void Start()
     {
         InventoryPanel = GameObject.FindGameObjectWithTag("InventoryPanel");

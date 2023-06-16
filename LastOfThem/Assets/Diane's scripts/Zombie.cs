@@ -90,7 +90,7 @@ public class Zombie : MonoBehaviour
     private void AttackPlayer()
     {
         // inflict damage on the player
-        //player.GetComponent<Health>().TakeDamage(damage);
+        player.GetComponent<PlayerHealth>().TakeDamage(damage);
     }
 
     public void StartChasing()
@@ -104,5 +104,13 @@ public class Zombie : MonoBehaviour
         isChasing = false;
         navMeshAgent.SetDestination(transform.position);
         isMoving = false;
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            Debug.Log("enemy is attacking the player");
+        }
     }
 }
