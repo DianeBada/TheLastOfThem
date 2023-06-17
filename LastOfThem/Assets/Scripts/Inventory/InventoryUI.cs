@@ -16,7 +16,7 @@ public class InventoryUI : MonoBehaviour
     private GameObject[] tubeImg;
     private GameObject[] tubeBtns;
 
-    private List<GameObject> pcTubes = new List<GameObject>(); //testTubes in the personal inventory
+    public List<GameObject> pcTubes = new List<GameObject>(); //testTubes in the personal inventory
     private List<GameObject> pcRadio = new List<GameObject>(); //radio in the personal inventory
     private List<GameObject> pcRocks = new List<GameObject>(); //rocks in the personal inventory
 
@@ -24,7 +24,7 @@ public class InventoryUI : MonoBehaviour
     TextMeshProUGUI rockText;
     TextMeshProUGUI tubeText;
 
-
+    private bool keyPressed;
 
     void Start()
     {
@@ -62,6 +62,21 @@ public class InventoryUI : MonoBehaviour
         radioText.text = pcRadio.Count.ToString();
         rockText.text = pcRocks.Count.ToString();
         tubeText.text = pcTubes.Count.ToString();
+
+
+        //unequip
+       if(Input.GetKeyDown(KeyCode.E))
+        {
+            keyPressed = true;
+
+            if(keyPressed && pcInventory.playerInventory.Count!=0 && panelOpen)
+            {
+                keyPressed = false;
+
+                dropTestTube();
+                //highlight testtube in panel
+            }
+        } 
     }
 
     public void updateTestTubeList()
@@ -70,7 +85,7 @@ public class InventoryUI : MonoBehaviour
         pcTubes.Clear();
         for(int i = 0; i < pcInventory.playerInventory.Count; i++) { 
             
-            if(pcInventory.playerInventory[i].name=="TestTube")
+            if(pcInventory.playerInventory[i].name=="TestTube-VFX")
             {
                 pcTubes.Add(pcInventory.playerInventory[i]);
                 Debug.Log("Test tubes: "+pcTubes.Count);
@@ -82,10 +97,10 @@ public class InventoryUI : MonoBehaviour
                 Debug.Log("Rocks: "+pcRocks.Count);
             }
 
-            if (pcInventory.playerInventory[i].name.Contains("TestTube"))
-            {
-                pcTubes.Add(pcInventory.playerInventory[i]);
-            }
+            // if (pcInventory.playerInventory[i].name.Contains("TestTube"))
+            // {
+            //     pcTubes.Add(pcInventory.playerInventory[i]);
+            // }
         }
 
         //update UI
@@ -110,6 +125,5 @@ public class InventoryUI : MonoBehaviour
         pcTubes[0].tag = "PickUp";
         updateTestTubeList();
     }
-
 
 }
