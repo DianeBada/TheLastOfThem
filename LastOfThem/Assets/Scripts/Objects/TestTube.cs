@@ -25,4 +25,9 @@ public class TestTube : ScriptableObject
     {
         return collected;
     }
+
+    public void Drop()
+    {
+        this.collected = false;
+    }
 }

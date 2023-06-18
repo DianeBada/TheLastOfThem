@@ -10,6 +10,8 @@ public class Tube : MonoBehaviour
     private PCInventory pcInventory;
     private GameObject player;
 
+    public bool drop;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +19,14 @@ public class Tube : MonoBehaviour
         indicator.SetActive(false);
         pcInventory = FindObjectOfType<PCInventory>();
         player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    private void Update() {
+        if(drop)
+        {
+             testTube.Drop();
+             drop = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)

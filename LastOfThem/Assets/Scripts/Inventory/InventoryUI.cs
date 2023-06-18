@@ -89,7 +89,7 @@ public class InventoryUI : MonoBehaviour
             if(keyPressed && panelOpen)
             {
                 keyPressed = false;
-                dropTestTube();  
+                dropObj();  
             }
       
         } else if(Input.GetKeyDown(KeyCode.RightArrow))
@@ -119,6 +119,9 @@ public class InventoryUI : MonoBehaviour
     {
 
         pcTubes.Clear();
+        pcRocks.Clear();
+        pcRadio.Clear();
+
         for(int i = 0; i < pcInventory.playerInventory.Count; i++) { 
             
             if(pcInventory.playerInventory[i].name.Contains("TestTube"))
@@ -165,9 +168,14 @@ public class InventoryUI : MonoBehaviour
     }
 
 //  UI BUTTONS
-    public void dropTestTube()
+    public void dropObj()
     {
         //needs to be updated to work with cycle
+        //cycleInventory[cycleIndex].GetComponent<TestTube>().Drop();
+        updateCycleInventory();
+        // Debug.Log("status of current object "+cycleInventory[cycleIndex].GetComponent<Tube>().drop);
+        // cycleInventory[cycleIndex].GetComponent<Tube>().drop=true;
+
         pcInventory.playerInventory.Remove(cycleInventory[cycleIndex]);
         Debug.Log("pc inventory: "+pcInventory.playerInventory.Count);
         pcTubes[0].transform.SetParent(null);
