@@ -569,6 +569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2503898881088350180}
   - component: {fileID: 8218448657240960422}
+  - component: {fileID: 4201564464278120756}
   m_Layer: 0
   m_Name: ParentPickUp
   m_TagString: ParentPickUp
@@ -605,3 +606,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInventory: []
   handInventory: []
+--- !u!114 &4201564464278120756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463421984730893344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87f363b44a7f4fa79ff8af2e816cf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
