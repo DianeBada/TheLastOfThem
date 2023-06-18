@@ -25,4 +25,10 @@ public class TestTube : ScriptableObject
     {
         return collected;
     }
+
+    public void Refresh()
+    {
+        this.collected = false;
+        PrintChemical();
+    }
 }
