@@ -77,10 +77,11 @@ public class PCInventory : MonoBehaviour
                 handInventory[i].SetActive(false);
             }
         }
+        
         handInventory.Add(obj);
-        if (obj.name.Contains("TestTube"))
+        if (obj.name.Contains("TestTube") || obj.name.Contains("Radio"))
         {
-            inventoryUI.updateTestTubeList();
+            inventoryUI.updatePCList();
         }
     }
 
