@@ -26,8 +26,9 @@ public class TestTube : ScriptableObject
         return collected;
     }
 
-    public void Drop()
+    public void Refresh()
     {
         this.collected = false;
+        PrintChemical();
     }
 }

@@ -15,7 +15,7 @@ public class Tube : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        testTube.PrintChemical();
+        testTube.Refresh();
         indicator.SetActive(false);
         pcInventory = FindObjectOfType<PCInventory>();
         player = GameObject.FindGameObjectWithTag("Player");
@@ -47,13 +47,13 @@ public class Tube : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
+        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E) && !testTube.Picked())
         {
             StartCoroutine(PickUpObject());
 
         }
 
-        if (other.CompareTag("Player") && !testTube.Picked() )
+        /*if (other.CompareTag("Player") && !testTube.Picked() )
         {
             if (this.gameObject.activeInHierarchy)
             {
@@ -61,7 +61,7 @@ public class Tube : MonoBehaviour
                 StartCoroutine(PickUpObject());
             }
             
-        }
+        }*/
     }
 
     private IEnumerator PickUpObject()
