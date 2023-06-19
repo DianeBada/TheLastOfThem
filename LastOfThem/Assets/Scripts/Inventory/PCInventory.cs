@@ -79,7 +79,7 @@ public class PCInventory : MonoBehaviour
         }
         
         handInventory.Add(obj);
-        if (obj.name.Contains("TestTube") || obj.name.Contains("Radio"))
+        if (obj.name.Contains("TestTube") || obj.name.Contains("Radio") || obj.name.Contains("Syringe"))
         {
             inventoryUI.updatePCList();
         }

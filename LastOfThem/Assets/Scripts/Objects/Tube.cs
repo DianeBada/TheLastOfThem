@@ -24,7 +24,7 @@ public class Tube : MonoBehaviour
     private void Update() {
         if(drop)
         {
-             testTube.Drop();
+             testTube.Refresh();
              drop = false;
         }
     }
