@@ -39,10 +39,15 @@ public class noiseMeter : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             isRunning = true;
+            // noise increase per second when running
+            noiseIncreasePerSecond *= 2f;
         }
+
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             isRunning = false;
+            //  to its original value
+            noiseIncreasePerSecond /= 2f;
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
