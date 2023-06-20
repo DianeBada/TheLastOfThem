@@ -24,6 +24,8 @@ public class InventoryUI : MonoBehaviour
     TextMeshProUGUI rockText;
     TextMeshProUGUI tubeText;
 
+    private bool hasRadio = false;
+    public noiseMeter soundMeter;
 
 
     void Start()
@@ -62,6 +64,15 @@ public class InventoryUI : MonoBehaviour
         radioText.text = pcRadio.Count.ToString();
         rockText.text = pcRocks.Count.ToString();
         tubeText.text = pcTubes.Count.ToString();
+
+        hasRadio = pcRadio.Count > 0;
+
+        // Update sound meter based on radio possession
+        if (hasRadio)
+        {
+            // Increase sound meter level
+            soundMeter.IncreaseSoundMeter();
+        }
     }
 
     public void updateTestTubeList()

@@ -8,12 +8,21 @@ public class noiseMeter : MonoBehaviour
     [SerializeField] private float speedIncrease = 2f;
     [SerializeField] private float noisemeter = 0;
 
+
     private bool isWalking = false;
     private bool isRunning = false;
     private bool isJumping = false;
    
 
     [SerializeField] private Slider noiseMeterSlider; // assign this in the Inspector
+
+
+
+    public void IncreaseSoundMeter()
+    {
+        noisemeter += noiseIncreasePerSecond * Time.deltaTime;
+        noiseMeterSlider.value = noisemeter;
+    }
     // Update is called once per frame
     void Update()
     {
