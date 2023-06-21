@@ -25,6 +25,7 @@ public class Tube : MonoBehaviour
         if(drop)
         {
              testTube.Refresh();
+             Debug.Log("refreshed chemical");
              drop = false;
         }
     }
@@ -62,6 +63,11 @@ public class Tube : MonoBehaviour
             }
             
         }*/
+    }
+
+    public TestTube getTestTube()
+    {
+        return testTube;
     }
 
     private IEnumerator PickUpObject()
