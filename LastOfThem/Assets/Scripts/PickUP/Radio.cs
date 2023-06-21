@@ -71,4 +71,9 @@ public class Radio : MonoBehaviour
         picked = false;
     }
 
+    public bool IsPicked()
+    {
+        return picked;
+    }
+
 }
