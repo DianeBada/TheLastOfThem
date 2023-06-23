@@ -10,6 +10,8 @@ public class TestTube : ScriptableObject
     [SerializeField] private string chemical;
     [SerializeField] private bool collected = false;
     [SerializeField] private GameObject asset;
+    [SerializeField] private Color color;
+    [SerializeField] private bool isInCure = false;
 
     public void PrintChemical()
     {
@@ -29,6 +31,16 @@ public class TestTube : ScriptableObject
     public void Refresh()
     {
         this.collected = false;
-        PrintChemical();
+        //PrintChemical();
+    }
+
+    public Color GetColor()
+    {
+        return color;
+    }
+
+    public bool IsInCureFormula()
+    {
+        return isInCure;
     }
 }

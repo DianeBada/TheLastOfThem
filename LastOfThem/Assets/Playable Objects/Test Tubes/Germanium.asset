@@ -15,3 +15,4 @@ MonoBehaviour:
   chemical: Germanium
   collected: 0
   asset: {fileID: 5663914850313861223, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
+  color: {r: 1, g: 0.947481, b: 0.3803922, a: 0}
