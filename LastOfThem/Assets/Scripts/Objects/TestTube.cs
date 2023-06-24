@@ -21,6 +21,7 @@ public class TestTube : ScriptableObject
     public void PickUp()
     {
         this.collected = true;
+
     }
 
     public bool Picked()
@@ -42,5 +43,10 @@ public class TestTube : ScriptableObject
     public bool IsInCureFormula()
     {
         return isInCure;
+    }
+
+    public string GetChemical()
+    {
+        return chemical;
     }
 }

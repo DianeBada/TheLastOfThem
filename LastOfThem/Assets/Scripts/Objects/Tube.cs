@@ -65,6 +65,7 @@ public class Tube : MonoBehaviour
         pcInventory.AddObjectToInventory(this.gameObject);
         this.transform.SetParent(player.transform);
         testTube.PickUp();
+        gameManager.ActivateTestTubeInMixingRoom(testTube.GetChemical());
         yield return new WaitForSecondsRealtime(2.5f);
         pcInventory.RemoveFromHand(this.gameObject);
         

@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int correctChemicalsInSyringe;
     [SerializeField] private GameObject FirstPersonController;
     [SerializeField] private GameObject mixingRoomCamera;
+    [SerializeField] private List<GameObject> testTubesInMixingRoom;
 
 
     // Start is called before the first frame update
@@ -17,6 +18,11 @@ public class GameManager : MonoBehaviour
         inMixingRoom = false;
         canMix = true;
         correctChemicalsInSyringe = 0;
+
+        foreach (GameObject testTube in testTubesInMixingRoom)
+        {
+            testTube.SetActive(false);
+        }
     }
 
     private void Update()
@@ -73,6 +79,19 @@ public class GameManager : MonoBehaviour
         FirstPersonController.transform.SetPositionAndRotation(this.transform.position, this.transform.rotation);
         FirstPersonController.SetActive(true);
         mixingRoomCamera.SetActive(false);
+    }
+
+    public void ActivateTestTubeInMixingRoom(string testTubeChemical)
+    {
+        
+        foreach (GameObject testTubeObject in testTubesInMixingRoom)
+        {
+            if (testTubeObject.name.Contains(testTubeChemical))
+            {
+                //Debug.Log(testTubeChemical);
+                testTubeObject.SetActive(true);
+            }
+        }
     }
     
 }
