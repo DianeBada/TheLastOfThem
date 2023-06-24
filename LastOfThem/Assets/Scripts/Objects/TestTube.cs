@@ -24,6 +24,11 @@ public class TestTube : ScriptableObject
 
     }
 
+    public void Drop()
+    {
+        this.collected = false;
+    }
+
     public bool Picked()
     {
         return collected;
@@ -49,4 +54,6 @@ public class TestTube : ScriptableObject
     {
         return chemical;
     }
+
+    
 }

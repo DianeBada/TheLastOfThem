@@ -103,6 +103,21 @@ public class PCInventory : MonoBehaviour
         obj.SetActive(false);
     }
         
+    public void RemoveTestTubeFromInventory(TestTube testTube)
+    {
+        //playerInventory.Remove(obj);
 
+        GameObject currentTestTube = null;
+
+        foreach(GameObject obj in playerInventory)
+        {
+            if (obj.name.Contains(testTube.GetChemical()))
+            {
+                currentTestTube = obj;
+            }
+        }
+        playerInventory.Remove(currentTestTube);
+        inventoryUI.updateTestTubeList();
+    }
     
 }

@@ -42,11 +42,19 @@ public class Tube : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E) && !testTube.Picked())
-        {
-            StartCoroutine(PickUpObject());
 
+        if (other.CompareTag("Player"))
+        {
+            if (Input.GetKeyDown(KeyCode.E) && !testTube.Picked())
+            {
+                StartCoroutine(PickUpObject());
+
+            }
+
+            
         }
+
+       
 
         /*if (other.CompareTag("Player") && !testTube.Picked() )
         {
@@ -94,14 +102,18 @@ public class Tube : MonoBehaviour
     public void DropTestTube()
     {
         StartCoroutine(DeactivateTestTube());
-
         if (testTube.IsInCureFormula())
         {
             gameManager.IncrementCorrectChemicals();
+            
             //make the test tube reappear in leave function
+            //testTube.Drop();
         }
+        pcInventory.RemoveTestTubeFromInventory(testTube);
         
     }
+
+   
 
     private IEnumerator DeactivateTestTube()
     {
@@ -116,3 +128,82 @@ public class Tube : MonoBehaviour
 
 
 }
+
+
+
+public class Radio : MonoBehaviour
+{
+    [SerializeField] private GameObject indicator;
+
+    private GameObject player;
+    private bool picked = false;
+    private bool canDrop = false;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        indicator.SetActive(false);
+        player = GameObject.FindGameObjectWithTag("Player");
+        picked = false;
+        canDrop = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player") && !picked)
+        {
+            indicator.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player") && !picked)
+        {
+            indicator.SetActive(false);
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E) && !picked)
+        {
+            StartCoroutine(PickUpObject());
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) && canDrop)
+        {
+            StartCoroutine(DropObject());
+
+        }
+    }
+
+
+
+    private IEnumerator PickUpObject()
+    {
+        indicator.SetActive(false);
+        picked = true;
+        this.transform.SetParent(player.transform);
+        yield return new WaitForSecondsRealtime(0.5f);
+        canDrop = true;
+
+    }
+
+    private IEnumerator DropObject()
+    {
+
+        this.transform.SetParent(null);
+        canDrop = false;
+        yield return new WaitForSecondsRealtime(0.5f);
+        picked = false;
+    }
+
+    public bool IsPicked()
+    {
+        return picked;
+    }
+
+}
+
