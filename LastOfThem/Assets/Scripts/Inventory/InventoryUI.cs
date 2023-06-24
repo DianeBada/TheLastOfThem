@@ -69,6 +69,15 @@ public class InventoryUI : MonoBehaviour
         
         if(pcInventory.playerInventory.Count>0)
         {
+            if (cycleIndex >= pcInventory.playerInventory.Count)
+            {
+                cycleIndex = 0;
+            }
+            else if (cycleIndex < 0)
+            {
+                cycleIndex = (pcInventory.playerInventory.Count) - 1;
+            }
+            //Debug.Log(cycleIndex);
             chemicalName.text = pcInventory.playerInventory[cycleIndex].name;
         }
 
