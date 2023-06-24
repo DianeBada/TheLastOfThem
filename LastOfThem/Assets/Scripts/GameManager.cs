@@ -7,17 +7,25 @@ public class GameManager : MonoBehaviour
     [SerializeField] private bool inMixingRoom;
     [SerializeField] private bool canMix;
     [SerializeField] private int correctChemicalsInSyringe;
+    [SerializeField] private GameObject FirstPersonController;
+    [SerializeField] private GameObject mixingRoomCamera;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        /*inMixingRoom = false;
+        inMixingRoom = false;
         canMix = true;
-        correctChemicalsInSyringe = 0;*/
+        correctChemicalsInSyringe = 0;
     }
 
-   
+    private void Update()
+    {
+        if(inMixingRoom && Input.GetKeyDown(KeyCode.X))
+        {
+            ExitMixingRoom();
+        }
+    }
 
     public bool IsInMixingRoom()
     {
@@ -50,6 +58,21 @@ public class GameManager : MonoBehaviour
             return false;
         }
 
-        
     }
+
+    public void EnterMixingRoom()
+    {
+        inMixingRoom = true;
+        FirstPersonController.SetActive(false);
+        mixingRoomCamera.SetActive(true);
+    }
+
+    public void ExitMixingRoom()
+    {
+        inMixingRoom = false;
+        FirstPersonController.transform.SetPositionAndRotation(this.transform.position, this.transform.rotation);
+        FirstPersonController.SetActive(true);
+        mixingRoomCamera.SetActive(false);
+    }
+    
 }
