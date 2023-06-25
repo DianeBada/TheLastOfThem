@@ -34,6 +34,6 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("player has died");
+       // Debug.Log("player has died");
     }
 }

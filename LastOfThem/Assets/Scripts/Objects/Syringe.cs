@@ -7,11 +7,24 @@ public class Syringe : MonoBehaviour
 
     private Color syringeColor;
     private bool containsCure;
+
     // Start is called before the first frame update
     void Start()
     {
         syringeColor = Color.white;
         containsCure = false;
+        Disppear();
+    }
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+       
+        if (collision.gameObject.CompareTag("Zombie"))
+        {
+            InjectZombie();
+        }
+
     }
 
     public Color GetSyringeColor()
@@ -32,12 +45,14 @@ public class Syringe : MonoBehaviour
     private void Appear()
     {
         //set active
+        this.gameObject.SetActive(true);
         Debug.Log("Syringe has now appeared");
     }
 
     private void Disppear()
     {
         //set inactive
+        this.gameObject.SetActive(false);
         Debug.Log("Syringe has now disappeared");
     }
 
