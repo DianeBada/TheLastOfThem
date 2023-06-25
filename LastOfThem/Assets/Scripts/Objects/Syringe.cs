@@ -32,9 +32,11 @@ public class Syringe : MonoBehaviour
         return syringeColor;
     }
 
-    public void SetSyringColor(Color newColor)
+    public void SetSyringeColor(Color newColor)
     {
         this.syringeColor = newColor;
+        var syringeRenderer = this.gameObject.GetComponent<MeshRenderer>();
+         syringeRenderer.materials[0].color = newColor;
     }
 
     private void InjectZombie()
@@ -42,12 +44,12 @@ public class Syringe : MonoBehaviour
         Debug.Log("Zombie Injected");
     }
 
-    private void Appear()
+    /*public void Appear()
     {
         //set active
         this.gameObject.SetActive(true);
         Debug.Log("Syringe has now appeared");
-    }
+    }*/
 
     private void Disppear()
     {

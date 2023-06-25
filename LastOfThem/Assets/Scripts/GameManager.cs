@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int correctChemicalsInSyringe;
     [SerializeField] private GameObject FirstPersonController;
     [SerializeField] private GameObject mixingRoomCamera;
+    [SerializeField] private GameObject syringe;
     [SerializeField] private List<GameObject> testTubesInMixingRoom;
 
 
@@ -79,6 +80,11 @@ public class GameManager : MonoBehaviour
         FirstPersonController.transform.SetPositionAndRotation(this.transform.position, this.transform.rotation);
         FirstPersonController.SetActive(true);
         mixingRoomCamera.SetActive(false);
+    }
+
+    public void AppearSyringe()
+    {
+        syringe.SetActive(true);
     }
 
     public void ActivateTestTubeInMixingRoom(string testTubeChemical)

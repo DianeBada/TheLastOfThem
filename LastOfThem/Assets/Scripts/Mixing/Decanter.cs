@@ -8,12 +8,13 @@ public class Decanter : MonoBehaviour
     [SerializeField] private int testTubesDropped;
 
     private GameManager gameManager;
+    private Syringe syringe;
     // Start is called before the first frame update
     void Start()
     {
-
-        testTubesDropped = 0;
+        //testTubesDropped = 0;
         gameManager = FindObjectOfType<GameManager>();
+        syringe = FindObjectOfType<Syringe>();
     }
 
  
@@ -45,19 +46,33 @@ public class Decanter : MonoBehaviour
         if (testTubesDropped == 3)
         {
             gameManager.SetCanMix(false);
+            StartCoroutine(ThreeTestTubesDropped());
 
         }
+    }
+
+    private IEnumerator ThreeTestTubesDropped()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        testTubesDropped = 0;
+        gameManager.ExitMixingRoom();
+        gameManager.AppearSyringe();
+        syringe.SetSyringeColor(GetDecanterCurrentColor());
     }
 
     private void MoveTestTubeDown(GameObject testTube)
     {
         testTube.transform.DOMoveX(this.transform.position.x + 0.2f, 0.5f);
         testTube.transform.DOMoveY(this.transform.position.y - 3, 3f);
-        
     }
 
-  
 
+    private Color GetDecanterCurrentColor()
+    {
+        var cubeRenderer = this.gameObject.GetComponent<MeshRenderer>();
+        return cubeRenderer.materials[0].color;
+    }
+    
     private Color GetNewDecanterColor( TestTube testTube)
     {
         var cubeRenderer = this.gameObject.GetComponent<MeshRenderer>();
@@ -77,10 +92,8 @@ public class Decanter : MonoBehaviour
     private void SetNewDecanterColor(Color newColor)
     {
         var cubeRenderer = this.gameObject.GetComponent<MeshRenderer>();
-       // cubeRenderer.materials[0].SetColor("_BaseColor", newColor);
         cubeRenderer.materials[0].DOColor(newColor, 2f);
     }
 
 }
 
-    //Color.Lerp(color1, color2, 0.5f)  startColor = Color.Lerp(Color.blue, Color.red, 0.5);}

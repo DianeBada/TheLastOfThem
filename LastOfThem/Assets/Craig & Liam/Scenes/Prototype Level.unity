@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1166.4453, g: 871.2949, b: 710.4551, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5311,7 +5311,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1303283066}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &295227663
 AudioSource:
@@ -8020,6 +8020,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &468515514 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4401822833054275200, guid: 0362bac363d427044bebec705849e38a, type: 3}
+  m_PrefabInstance: {fileID: 1718466987}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &470983711 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6360566818951569017, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
@@ -18128,6 +18133,7 @@ MonoBehaviour:
   correctChemicalsInSyringe: 0
   FirstPersonController: {fileID: 1096928941}
   mixingRoomCamera: {fileID: 671661629}
+  syringe: {fileID: 468515514}
   testTubesInMixingRoom:
   - {fileID: 312603563}
   - {fileID: 2076000485}
@@ -30375,7 +30381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -38199,6 +38205,10 @@ PrefabInstance:
     - target: {fileID: 6536757368454162224, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
       propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Value.z
       value: 0.3803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542478442686057190, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
+      propertyPath: testTubesDropped
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6584532470898418529, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
       propertyPath: m_StaticEditorFlags
