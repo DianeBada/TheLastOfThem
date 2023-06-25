@@ -16,6 +16,8 @@ public class InventoryUI : MonoBehaviour
     private GameObject[] tubeImg;
     private GameObject[] tubeBtns;
 
+    private List<int> allowedIndices = new List<int>();
+
     TextMeshProUGUI tubeText;
 
     private bool keyPressed;
@@ -79,6 +81,17 @@ public class InventoryUI : MonoBehaviour
             }
             //Debug.Log(cycleIndex);
             chemicalName.text = pcInventory.playerInventory[cycleIndex].name;
+
+
+            tubeBtns[cycleIndex].GetComponent<Image>().color = Color.yellow;
+
+            for(int i = 0; i < pcInventory.playerInventory.Count; i++) {
+
+                if(i!=cycleIndex)
+                {
+                    tubeBtns[i].GetComponent<Image>().color = Color.white;
+                }
+            }
         }
 
 
@@ -120,15 +133,15 @@ public class InventoryUI : MonoBehaviour
     public void initialhighlight() //selects where the player begins cycling from
     {
 
-        tubeBtns[cycleIndex].GetComponent<Image>().color = Color.yellow;
+        // tubeBtns[cycleIndex].GetComponent<Image>().color = Color.yellow;
 
-        for(int i = 0; i < pcInventory.playerInventory.Count; i++) {
+        // for(int i = 0; i < pcInventory.playerInventory.Count; i++) {
 
-            if(i!=cycleIndex)
-            {
-                tubeBtns[i].GetComponent<Image>().color = Color.white;
-            }
-        }
+        //     if(i!=cycleIndex)
+        //     {
+        //         tubeBtns[i].GetComponent<Image>().color = Color.white;
+        //     }
+        // }
     }
 
 //  UI BUTTONS
@@ -143,7 +156,8 @@ public class InventoryUI : MonoBehaviour
         Debug.Log("pc inventory: "+pcInventory.playerInventory.Count);
 
         tubeBtns[cycleIndex].SetActive(false);
-    
+
+        UpdateCycleIndex();    
         //updatePCList();
     }
 
@@ -152,6 +166,7 @@ public class InventoryUI : MonoBehaviour
         if(direction=="right")
         {
             cycleIndex++;
+            
         }else{
             cycleIndex--;
         }
@@ -164,7 +179,58 @@ public class InventoryUI : MonoBehaviour
             cycleIndex=(pcInventory.playerInventory.Count)-1;
         }
 
+        for(int i = 0; i < allowedIndices.Count; i++) {
+            if(cycleIndex==allowedIndices[i])
+            {
+                return;
+            }else if(cycleIndex!=allowedIndices[i] && i==(allowedIndices.Count-1))
+            {
+                compare(direction);
+            }
+        }
+
         initialhighlight();
+    }
+
+    public void UpdateCycleIndex()
+    {
+        int index =0;
+
+        foreach(GameObject btn in tubeBtns)
+        {
+            if(btn.activeSelf)
+            {
+                allowedIndices.Add(index);
+                index++;
+            }
+        }
+    }
+
+    public void compare(String direction){
+        if(direction=="left")
+        {
+            for(int i =0; i<allowedIndices.Count; i++)
+            {
+                if((cycleIndex-i)>0)
+                {
+                    cycleIndex=i;
+                    break;
+                }else if(i==(allowedIndices.Count-1)){
+                    cycleIndex=allowedIndices[i];
+                }
+            }
+        }else{
+            for(int i =0; i>allowedIndices.Count; i++)
+            {
+                if((cycleIndex-i)>0)
+                {
+                    cycleIndex=i;
+                    break;
+                }else if(i==(allowedIndices.Count-1)){
+                    cycleIndex = allowedIndices[i];
+                }
+            }
+        }
     }
 
     public void updatePCList() 
@@ -172,6 +238,8 @@ public class InventoryUI : MonoBehaviour
         for(int i = 0; i < pcInventory.playerInventory.Count; i++) {
             tubeBtns[i].SetActive(true);
         }
+
+        UpdateCycleIndex();
     }
 }
 
