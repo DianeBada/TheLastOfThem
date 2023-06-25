@@ -8,6 +8,7 @@ using TMPro;
 public class InventoryUI : MonoBehaviour
 {
     GameObject InventoryPanel;
+    public GameObject HudControls; //Craig
     bool panelOpen;
     PCInventory pcInventory;
     GameObject parentPickUp;
@@ -39,6 +40,8 @@ public class InventoryUI : MonoBehaviour
 
         //sort arrays
 
+        InventoryPanel.SetActive(false); //Craig
+
         updateTestTubeList();
     }
 
@@ -51,9 +54,11 @@ public class InventoryUI : MonoBehaviour
             {
                 InventoryPanel.SetActive(false);
                 panelOpen = false;
+                HudControls.SetActive(true); //Craig
             } else{
                 InventoryPanel.SetActive(true);
                 panelOpen = true;
+                HudControls.SetActive(false); //Craig
             }
         } 
 
