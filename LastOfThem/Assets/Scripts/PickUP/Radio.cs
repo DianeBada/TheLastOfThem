@@ -5,6 +5,7 @@ using UnityEngine;
 public class Radio : MonoBehaviour
 {
     [SerializeField] private GameObject indicator;
+    noiseMeter noiseMeter;
 
     private GameObject player;
     private bool picked = false;
@@ -15,6 +16,7 @@ public class Radio : MonoBehaviour
     {
         indicator.SetActive(false);
         player = GameObject.FindGameObjectWithTag("Player");
+        noiseMeter = player.GetComponent<noiseMeter>();
         picked = false;
         canDrop = false;
     }
@@ -69,10 +71,12 @@ public class Radio : MonoBehaviour
         canDrop = false;
         yield return new WaitForSecondsRealtime(0.5f);
         picked = false;
+        noiseMeter.RadioOff();
     }
 
     public bool IsPicked()
     {
+        noiseMeter.RadioOn();
         return picked;
     }
 

@@ -68,11 +68,11 @@ public class InventoryUI : MonoBehaviour
         hasRadio = pcRadio.Count > 0;
 
         // Update sound meter based on radio possession
-        if (hasRadio)
-        {
-            // Increase sound meter level
-            soundMeter.IncreaseSoundMeter();
-        }
+        // if (hasRadio)
+        // {
+        //     // Increase sound meter level
+        //     soundMeter.IncreaseSoundMeter();
+        // }
     }
 
     public void updateTestTubeList()
