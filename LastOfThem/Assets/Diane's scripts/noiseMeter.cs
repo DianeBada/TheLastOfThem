@@ -3,14 +3,17 @@ using UnityEngine.UI;
 
 public class noiseMeter : MonoBehaviour
 {
-    public float noiseDetectionRange = 10.0f;
-    public float noiseIncreasePerSecond = 0.1f;
+    [SerializeField] private float noiseDetectionRange = 10.0f;
+    [SerializeField] private float noiseIncreasePerSecond = 0.1f;
+    [SerializeField] private float speedIncrease = 2f;
+    [SerializeField] private float noisemeter = 0;
 
     private bool isWalking = false;
     private bool isRunning = false;
     private bool isJumping = false;
-    public float noisemeter = 0;
-    public Slider noiseMeterSlider; // assign this in the Inspector
+   
+
+    [SerializeField] private Slider noiseMeterSlider; // assign this in the Inspector
     // Update is called once per frame
     void Update()
     {
@@ -18,7 +21,7 @@ public class noiseMeter : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
         {
             isWalking = true;
-            Debug.Log("ey i am walking in the noisemeter script");
+            //Debug.Log("ey i am walking in the noisemeter script");
         }
 
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -39,10 +42,15 @@ public class noiseMeter : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             isRunning = true;
+            // noise increase per second when running
+            noiseIncreasePerSecond *= speedIncrease;
         }
+
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             isRunning = false;
+            //  to its original value
+            noiseIncreasePerSecond /= speedIncrease;
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {

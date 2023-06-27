@@ -35,6 +35,17 @@ public class PCInventory : MonoBehaviour
             //addToBag = true;
         }
 
+
+        //unequip
+       /* if(Input.GetKeyDown(KeyCode.L)) {
+            if(handInventory!=null)
+            {
+                handInventory.RemoveAt(0);
+                //place object on ground
+            } else{
+                Debug.Log("There is nothing in your hands to drop");
+            }
+        }*/
     }
 
     // public IEnumerator moveObjToBag(GameObject obj)

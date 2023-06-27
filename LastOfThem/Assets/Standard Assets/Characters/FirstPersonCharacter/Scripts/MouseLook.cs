@@ -16,6 +16,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public float smoothTime = 5f;
         public bool lockCursor = true;
 
+        // Added variables for keyboard controls
+        public float keyboardXSensitivity = 2f;
+        public float keyboardYSensitivity = 2f;
 
         private Quaternion m_CharacterTargetRot;
         private Quaternion m_CameraTargetRot;
@@ -27,23 +30,29 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_CameraTargetRot = camera.localRotation;
         }
 
-
         public void LookRotation(Transform character, Transform camera)
         {
             float yRot = CrossPlatformInputManager.GetAxis("Mouse X") * XSensitivity;
             float xRot = CrossPlatformInputManager.GetAxis("Mouse Y") * YSensitivity;
 
-            m_CharacterTargetRot *= Quaternion.Euler (0f, yRot, 0f);
-            m_CameraTargetRot *= Quaternion.Euler (-xRot, 0f, 0f);
+            // Keyboard controls
+            float keyboardXRot = CrossPlatformInputManager.GetAxis("Keyboard X") * keyboardXSensitivity;
+            float keyboardYRot = CrossPlatformInputManager.GetAxis("Keyboard Y") * keyboardYSensitivity;
 
-            if(clampVerticalRotation)
-                m_CameraTargetRot = ClampRotationAroundXAxis (m_CameraTargetRot);
+            yRot += keyboardXRot;
+            xRot += keyboardYRot;
 
-            if(smooth)
+            m_CharacterTargetRot *= Quaternion.Euler(0f, yRot, 0f);
+            m_CameraTargetRot *= Quaternion.Euler(-xRot, 0f, 0f);
+
+            if (clampVerticalRotation)
+                m_CameraTargetRot = ClampRotationAroundXAxis(m_CameraTargetRot);
+
+            if (smooth)
             {
-                character.localRotation = Quaternion.Slerp (character.localRotation, m_CharacterTargetRot,
+                character.localRotation = Quaternion.Slerp(character.localRotation, m_CharacterTargetRot,
                     smoothTime * Time.deltaTime);
-                camera.localRotation = Quaternion.Slerp (camera.localRotation, m_CameraTargetRot,
+                camera.localRotation = Quaternion.Slerp(camera.localRotation, m_CameraTargetRot,
                     smoothTime * Time.deltaTime);
             }
             else
@@ -52,14 +61,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 camera.localRotation = m_CameraTargetRot;
             }
 
+            // Update cursor lock
             UpdateCursorLock();
         }
 
         public void SetCursorLock(bool value)
         {
             lockCursor = value;
-            if(!lockCursor)
-            {//we force unlock the cursor if the user disable the cursor locking helper
+            if (!lockCursor)
+            {
+                // Force unlock the cursor if the user disables the cursor locking helper
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
             }
@@ -67,18 +78,18 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         public void UpdateCursorLock()
         {
-            //if the user set "lockCursor" we check & properly lock the cursos
+            // If the user set "lockCursor," we check and properly lock the cursor
             if (lockCursor)
                 InternalLockUpdate();
         }
 
         private void InternalLockUpdate()
         {
-            if(Input.GetKeyUp(KeyCode.Escape))
+            if (Input.GetKeyUp(KeyCode.Escape))
             {
                 m_cursorIsLocked = false;
             }
-            else if(Input.GetMouseButtonUp(0))
+            else if (Input.GetMouseButtonUp(0))
             {
                 m_cursorIsLocked = true;
             }
@@ -95,21 +106,20 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
         }
 
-        Quaternion ClampRotationAroundXAxis(Quaternion q)
+        private Quaternion ClampRotationAroundXAxis(Quaternion q)
         {
             q.x /= q.w;
             q.y /= q.w;
             q.z /= q.w;
             q.w = 1.0f;
 
-            float angleX = 2.0f * Mathf.Rad2Deg * Mathf.Atan (q.x);
+            float angleX = 2.0f * Mathf.Rad2Deg * Mathf.Atan(q.x);
 
-            angleX = Mathf.Clamp (angleX, MinimumX, MaximumX);
+            angleX = Mathf.Clamp(angleX, MinimumX, MaximumX);
 
-            q.x = Mathf.Tan (0.5f * Mathf.Deg2Rad * angleX);
+            q.x = Mathf.Tan(0.5f * Mathf.Deg2Rad * angleX);
 
             return q;
         }
-
     }
 }
