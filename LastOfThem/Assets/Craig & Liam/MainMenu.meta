@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LastOfThem/Assets/Craig & Liam/MainMenu.meta
 guid: b954a515bebbda4429a41f52c2c17570
+========
+guid: 8639a68938eadf84fada6aa3628f68b0
+>>>>>>>> main:LastOfThem/Assets/Plugins.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
