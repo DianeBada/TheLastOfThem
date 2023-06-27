@@ -10,6 +10,8 @@ public class Tube : MonoBehaviour
     private PCInventory pcInventory;
     private GameObject player;
 
+    public bool drop;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +19,15 @@ public class Tube : MonoBehaviour
         indicator.SetActive(false);
         pcInventory = FindObjectOfType<PCInventory>();
         player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    private void Update() {
+        if(drop)
+        {
+             testTube.Refresh();
+             Debug.Log("refreshed chemical");
+             drop = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -54,6 +65,11 @@ public class Tube : MonoBehaviour
         }*/
     }
 
+    public TestTube getTestTube()
+    {
+        return testTube;
+    }
+
     private IEnumerator PickUpObject()
     {
         indicator.SetActive(false);
@@ -64,6 +80,5 @@ public class Tube : MonoBehaviour
         pcInventory.RemoveFromHand(this.gameObject);
         
     }
-
 
 }
