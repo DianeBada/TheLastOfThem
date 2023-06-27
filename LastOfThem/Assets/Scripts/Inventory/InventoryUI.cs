@@ -16,17 +16,20 @@ public class InventoryUI : MonoBehaviour
     private GameObject[] tubeImg;
     private GameObject[] tubeBtns;
 
-    private List<GameObject> pcTubes = new List<GameObject>(); //testTubes in the personal inventory
-    private List<GameObject> pcRadio = new List<GameObject>(); //radio in the personal inventory
-    private List<GameObject> pcRocks = new List<GameObject>(); //rocks in the personal inventory
+    private List<int> allowedIndices = new List<int>();
 
-    TextMeshProUGUI radioText;
-    TextMeshProUGUI rockText;
     TextMeshProUGUI tubeText;
 
     private bool hasRadio = false;
     public noiseMeter soundMeter;
+    private bool keyPressed;
 
+    private bool rightPressed;
+    private bool leftPressed;
+
+    int cycleIndex = 0;
+
+    TextMeshProUGUI chemicalName;
 
     void Start()
     {
@@ -37,13 +40,15 @@ public class InventoryUI : MonoBehaviour
         tubeImg = GameObject.FindGameObjectsWithTag("TubeImg");
         tubeBtns = GameObject.FindGameObjectsWithTag("TubeBtn");
 
-        radioText = GameObject.Find("RadioText").GetComponent<TextMeshProUGUI>();
-        rockText = GameObject.Find("RockText").GetComponent<TextMeshProUGUI>();
+        foreach(GameObject btn in tubeBtns) {
+            btn.SetActive(false);  //set active when object added
+        }
+
         tubeText = GameObject.Find("TubeText").GetComponent<TextMeshProUGUI>();
+        chemicalName = GameObject.Find("Chemical Name Text").GetComponent<TextMeshProUGUI>();
 
-        //sort arrays
-
-        updateTestTubeList();
+        updatePCList();
+        initialhighlight();
     }
 
     void Update()
@@ -54,73 +59,190 @@ public class InventoryUI : MonoBehaviour
             if(panelOpen)
             {
                 InventoryPanel.SetActive(false);
+                cycleIndex = 0;
+                initialhighlight();
                 panelOpen = false;
+                //player should not be able to walk with arrow keys
             } else{
                 InventoryPanel.SetActive(true);
                 panelOpen = true;
             }
         } 
 
-        radioText.text = pcRadio.Count.ToString();
-        rockText.text = pcRocks.Count.ToString();
-        tubeText.text = pcTubes.Count.ToString();
-
-        hasRadio = pcRadio.Count > 0;
-
-        // Update sound meter based on radio possession
-        // if (hasRadio)
-        // {
-        //     // Increase sound meter level
-        //     soundMeter.IncreaseSoundMeter();
-        // }
-    }
-
-    public void updateTestTubeList()
-    {
-
-        pcTubes.Clear();
-        for(int i = 0; i < pcInventory.playerInventory.Count; i++) { 
-            
-            if(pcInventory.playerInventory[i].name=="TestTube")
+        tubeText.text = pcInventory.playerInventory.Count.ToString();
+        
+        if(pcInventory.playerInventory.Count>0)
+        {
+            if (cycleIndex >= pcInventory.playerInventory.Count)
             {
-                pcTubes.Add(pcInventory.playerInventory[i]);
-                Debug.Log("Test tubes: "+pcTubes.Count);
+                cycleIndex = 0;
             }
-
-              if(pcInventory.playerInventory[i].name=="Rocks")
+            else if (cycleIndex < 0)
             {
-                pcRocks.Add(pcInventory.playerInventory[i]);
-                Debug.Log("Rocks: "+pcRocks.Count);
+                cycleIndex = (pcInventory.playerInventory.Count) - 1;
             }
+            //Debug.Log(cycleIndex);
+            chemicalName.text = pcInventory.playerInventory[cycleIndex].name;
 
-            if (pcInventory.playerInventory[i].name.Contains("TestTube"))
-            {
-                pcTubes.Add(pcInventory.playerInventory[i]);
+
+            tubeBtns[cycleIndex].GetComponent<Image>().color = Color.yellow;
+
+            for(int i = 0; i < pcInventory.playerInventory.Count; i++) {
+
+                if(i!=cycleIndex)
+                {
+                    tubeBtns[i].GetComponent<Image>().color = Color.white;
+                }
             }
         }
 
-        //update UI
-          for(int i = 0; i < pcTubes.Count; i++) {
-                // tubeBtns[i].SetActive(true);
-                // tubeImg[i].SetActive(true);
-                tubeBtns[i].SetActive(true);
-            }
 
-            for(int i = pcTubes.Count; i < tubeBtns.Length; i++) {
-                // tubeBtns[i].GetComponent<Button>().interactable = false; 
-                tubeBtns[i].SetActive(false);
+        //unequip
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            keyPressed = true;
+
+            if(keyPressed && panelOpen)
+            {
+                keyPressed = false;
+                dropObj();  
             }
+      
+        } else if(Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            rightPressed = true;
+
+            if(rightPressed && panelOpen)
+            {
+                rightPressed = false;
+                cycle("right");
+                
+            }
+        } else if(Input.GetKeyDown(KeyCode.LeftArrow)) {
+             leftPressed = true;
+
+            if(leftPressed && panelOpen)
+            {
+                leftPressed = false;
+                cycle("left");
+            }   
+        }
+
+        //updateCycleInventory();
+        //updatePCList();
+    }
+
+    public void initialhighlight() //selects where the player begins cycling from
+    {
+
+        // tubeBtns[cycleIndex].GetComponent<Image>().color = Color.yellow;
+
+        // for(int i = 0; i < pcInventory.playerInventory.Count; i++) {
+
+        //     if(i!=cycleIndex)
+        //     {
+        //         tubeBtns[i].GetComponent<Image>().color = Color.white;
+        //     }
+        // }
     }
 
 //  UI BUTTONS
-    public void dropTestTube()
+    public void dropObj()
     {
-        pcInventory.playerInventory.Remove(pcTubes[0]);
+        pcInventory.playerInventory[cycleIndex].GetComponent<Tube>().drop=true;
+
+        pcInventory.playerInventory[cycleIndex].transform.SetParent(null);
+        pcInventory.playerInventory[cycleIndex].tag = "PickUp";
+        pcInventory.playerInventory[cycleIndex].SetActive(true);
+        pcInventory.playerInventory.RemoveAt(cycleIndex); //check if this is working
         Debug.Log("pc inventory: "+pcInventory.playerInventory.Count);
-        pcTubes[0].transform.SetParent(null);
-        pcTubes[0].tag = "PickUp";
-        updateTestTubeList();
+
+        tubeBtns[cycleIndex].SetActive(false);
+
+        UpdateCycleIndex();    
+        //updatePCList();
     }
 
+    public void cycle(String direction)
+    {
+        if(direction=="right")
+        {
+            cycleIndex++;
+            
+        }else{
+            cycleIndex--;
+        }
 
+        if(cycleIndex>=pcInventory.playerInventory.Count)
+        {
+            cycleIndex=0;
+        } else if(cycleIndex<0)
+        {
+            cycleIndex=(pcInventory.playerInventory.Count)-1;
+        }
+
+        for(int i = 0; i < allowedIndices.Count; i++) {
+            if(cycleIndex==allowedIndices[i])
+            {
+                return;
+            }else if(cycleIndex!=allowedIndices[i] && i==(allowedIndices.Count-1))
+            {
+                compare(direction);
+            }
+        }
+
+        initialhighlight();
+    }
+
+    public void UpdateCycleIndex()
+    {
+        int index =0;
+
+        foreach(GameObject btn in tubeBtns)
+        {
+            if(btn.activeSelf)
+            {
+                allowedIndices.Add(index);
+                index++;
+            }
+        }
+    }
+
+    public void compare(String direction){
+        if(direction=="left")
+        {
+            for(int i =0; i<allowedIndices.Count; i++)
+            {
+                if((cycleIndex-i)>0)
+                {
+                    cycleIndex=i;
+                    break;
+                }else if(i==(allowedIndices.Count-1)){
+                    cycleIndex=allowedIndices[i];
+                }
+            }
+        }else{
+            for(int i =0; i>allowedIndices.Count; i++)
+            {
+                if((cycleIndex-i)>0)
+                {
+                    cycleIndex=i;
+                    break;
+                }else if(i==(allowedIndices.Count-1)){
+                    cycleIndex = allowedIndices[i];
+                }
+            }
+        }
+    }
+
+    public void updatePCList() 
+    {
+        for(int i = 0; i < pcInventory.playerInventory.Count; i++) {
+            tubeBtns[i].SetActive(true);
+        }
+
+        UpdateCycleIndex();
+    }
 }
+
+  
