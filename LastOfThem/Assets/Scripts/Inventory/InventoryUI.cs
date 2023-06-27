@@ -92,6 +92,8 @@ public class InventoryUI : MonoBehaviour
                     tubeBtns[i].GetComponent<Image>().color = Color.white;
                 }
             }
+
+            updatePCList();
         }
 
 
@@ -235,9 +237,14 @@ public class InventoryUI : MonoBehaviour
 
     public void updatePCList() 
     {
-        for(int i = 0; i < pcInventory.playerInventory.Count; i++) {
-            tubeBtns[i].SetActive(true);
+        for(int i = 0; i < 9; i++) {
+            if(i<pcInventory.playerInventory.Count) {
+                tubeBtns[i].SetActive(true);
+            } else{
+                tubeBtns[i].SetActive(false);
+            }
         }
+
 
         UpdateCycleIndex();
     }
