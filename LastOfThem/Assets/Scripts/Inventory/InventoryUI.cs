@@ -152,8 +152,8 @@ public class InventoryUI : MonoBehaviour
         pcInventory.playerInventory[cycleIndex].GetComponent<Tube>().drop=true;
 
         pcInventory.playerInventory[cycleIndex].transform.SetParent(null);
-        pcInventory.playerInventory[cycleIndex].tag = "PickUp";
         pcInventory.playerInventory[cycleIndex].SetActive(true);
+        pcInventory.playerInventory[cycleIndex].tag = "PickUp";
         pcInventory.playerInventory.RemoveAt(cycleIndex); //check if this is working
         Debug.Log("pc inventory: "+pcInventory.playerInventory.Count);
 
