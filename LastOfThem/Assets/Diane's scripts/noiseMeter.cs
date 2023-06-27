@@ -163,11 +163,11 @@ public class noiseMeter : MonoBehaviour
 
             UpdateZombieDistance(0.8f);
         } 
-        // else if(isCrouching)
+        // else if(FPS.getIsCrouching()) //m_IsCrouching
         // {
         //     noiseOmitted = crouchingNoise;
         //     Debug.Log("crouching");
-        //UpdateZombieDistance(0.2f);
+        //     UpdateZombieDistance(0.2f);
         // }
         else if(isWalking)
         {
@@ -179,8 +179,9 @@ public class noiseMeter : MonoBehaviour
             noiseOmitted = runningNoise;
             Debug.Log("running");
             UpdateZombieDistance(0.6f);
-        }else if((isJumping==false)  && (isWalking==false) && (isRunning==false)){ //&& (isCrouching==false)
+        }else if((isJumping==false)  && (isWalking==false) && (isRunning==false)){ //crouch and still make the affect the noisemeter in the same way
             noiseOmitted = crouchingNoise;
+            UpdateZombieDistance(0.2f);
             Debug.Log("still");
             
         }
