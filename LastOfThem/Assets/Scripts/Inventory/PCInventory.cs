@@ -17,10 +17,13 @@ public class PCInventory : MonoBehaviour
     // bool addToBag;
     // int timeToBag = 2;
 
+    GameObject Player;
+
     private void Start()
     {
         Canvas = GameObject.FindGameObjectWithTag("Canvas");
         inventoryUI = Canvas.GetComponent<InventoryUI>();
+        Player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Update()
@@ -79,6 +82,7 @@ public class PCInventory : MonoBehaviour
     public void AddObjectToInventory(GameObject obj)
     {
         playerInventory.Add(obj);
+        obj.transform.SetParent(Player.transform);
         
         if (handInventory.Count > 0)
         {
