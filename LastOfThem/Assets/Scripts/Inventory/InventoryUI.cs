@@ -20,6 +20,8 @@ public class InventoryUI : MonoBehaviour
 
     TextMeshProUGUI tubeText;
 
+    private bool hasRadio = false;
+    public noiseMeter soundMeter;
     private bool keyPressed;
 
     private bool rightPressed;

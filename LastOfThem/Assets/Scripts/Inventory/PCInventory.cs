@@ -37,7 +37,7 @@ public class PCInventory : MonoBehaviour
 
 
         //unequip
-       /* if(Input.GetKeyDown(KeyCode.L)) {
+        if(Input.GetKeyDown(KeyCode.L)) {
             if(handInventory!=null)
             {
                 handInventory.RemoveAt(0);
@@ -45,7 +45,7 @@ public class PCInventory : MonoBehaviour
             } else{
                 Debug.Log("There is nothing in your hands to drop");
             }
-        }*/
+        }
     }
 
     // public IEnumerator moveObjToBag(GameObject obj)
