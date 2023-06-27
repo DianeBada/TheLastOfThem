@@ -14,8 +14,8 @@ public class PCInventory : MonoBehaviour
     private int maxCapacity = 10;
     //private int maxHand = 1; //for now player can only have one obj in hand. Makes picking and dropping more intuitive for player
 
-    bool addToBag;
-    int timeToBag = 2;
+    // bool addToBag;
+    // int timeToBag = 2;
 
     private void Start()
     {
@@ -28,12 +28,11 @@ public class PCInventory : MonoBehaviour
     
         if(playerInventory.Count >= (maxCapacity))
         {
-
-            addToBag = false;
+            //addToBag = false;
             Debug.Log("Bag full");
 
         } else{
-            addToBag = true;
+            //addToBag = true;
         }
 
 
@@ -49,34 +48,33 @@ public class PCInventory : MonoBehaviour
         }*/
     }
 
-    public IEnumerator moveObjToBag(GameObject obj)
-    {
+    // public IEnumerator moveObjToBag(GameObject obj)
+    // {
 
-        if(addToBag)
-        {
-            //play pick up animation   
+    //     if(addToBag)
+    //     {
+    //         //play pick up animation   
                       
-            playerInventory.Add(handInventory[0]);
-            //change position of child so visible on screen         
-            handInventory[0].transform.SetParent(this.gameObject.transform);
-            handInventory.Clear();
+    //         playerInventory.Add(handInventory[0]);
+    //         //change position of child so visible on screen         
+    //         handInventory[0].transform.SetParent(this.gameObject.transform);
+    //         handInventory.Clear();
 
-            if(obj.name =="TestTube")
-            {
-                inventoryUI.updateTestTubeList();
-            }
+    //         if(obj.name =="TestTube")
+    //         {
+    //             inventoryUI.updateTestTubeList();
+    //         }
 
-            Debug.Log("playerInventory size: "+playerInventory.Count);
+    //         Debug.Log("playerInventory size: "+playerInventory.Count);
 
-            yield return new WaitForSeconds(timeToBag);
-            obj.SetActive(false);
-        }
-        else{
-            handInventory.Clear();
-            Debug.Log("The bag is full, please remove an item"); //leaving object in had so player can drop
-        }
-       
-    }
+    //         yield return new WaitForSeconds(timeToBag);
+    //         obj.SetActive(false);
+    //     }
+    //     else{
+    //         handInventory.Clear();
+    //         Debug.Log("The bag is full, please remove an item"); //leaving object in had so player can drop
+    //     } 
+    // }
 
     public void AddObjectToInventory(GameObject obj)
     {
@@ -90,10 +88,11 @@ public class PCInventory : MonoBehaviour
                 handInventory[i].SetActive(false);
             }
         }
+        
         handInventory.Add(obj);
-        if (obj.name.Contains("TestTube"))
+        if (obj.name.Contains("TestTube") || obj.name.Contains("Radio") || obj.name.Contains("Syringe"))
         {
-            inventoryUI.updateTestTubeList();
+            inventoryUI.updatePCList();
         }
     }
 
@@ -101,8 +100,6 @@ public class PCInventory : MonoBehaviour
     {
         handInventory.Clear();
         obj.SetActive(false);
-    }
-        
-
+    }   
     
 }
