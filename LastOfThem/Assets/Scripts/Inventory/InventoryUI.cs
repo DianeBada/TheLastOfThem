@@ -43,7 +43,7 @@ public class InventoryUI : MonoBehaviour
         }
 
         tubeText = GameObject.Find("TubeText").GetComponent<TextMeshProUGUI>();
-        chemicalName = GameObject.Find("ChemicalName").GetComponent<TextMeshProUGUI>();
+        chemicalName = GameObject.Find("Chemical Name Text").GetComponent<TextMeshProUGUI>();
 
         updatePCList();
         initialhighlight();
