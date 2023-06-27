@@ -139,6 +139,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 speed = m_WalkSpeed;
             else
                 speed = m_RunSpeed;
+
         }
 
         public bool getIsCrouching()

@@ -5,7 +5,8 @@ using UnityEngine.AI;
 
 public class Zombie : MonoBehaviour
 {
-    public float speed = 1.0f;              // zombie movement speed
+    public float speed = 1.0f;     
+    public float maxDetectionDistance = 5.0f;       // zombie movement speed
     public float detectionDistance = 5.0f;  // distance at which the zombie detects the player
     public float attackDistance = 1.5f;     // distance at which the zombie attacks the player
     public float damage = 10.0f;            // amount of damage the zombie inflicts on the player per attack

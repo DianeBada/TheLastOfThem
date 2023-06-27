@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
+using System.Collections;
 
 public class noiseMeter : MonoBehaviour
 {
@@ -9,10 +10,9 @@ public class noiseMeter : MonoBehaviour
     // [SerializeField] private float speedIncrease = 2f;
     [SerializeField] private float noiseOmitted = 0; //value out of 10
 
-
-    private bool isWalking = false;
-    private bool isRunning = false;
-    private bool isJumping = false;
+    private bool isWalking;
+    private bool isRunning;
+    private bool isJumping;
 
     [SerializeField]
     int crouchingNoise = 1;
@@ -25,21 +25,26 @@ public class noiseMeter : MonoBehaviour
     [SerializeField]
     int maxNoise = 10;
 
-    [SerializeField] private Slider noiseMeterSlider; // assign this in the Inspector
+    int waitTime = 2;
+
+    [SerializeField] 
+    private Slider noiseMeterSlider; // assign this in the Inspector
 
     FirstPersonController FPS;
 
     bool radioOn;
 
-    // bool isZombieInRange = false;
+    GameObject[] zombies;
 
     Radio radio;
+
 
     public void Start()
     {
         noiseMeterSlider.maxValue = 10;
         FPS = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
         radio = GameObject.Find("Radio").GetComponent<Radio>();
+        zombies = GameObject.FindGameObjectsWithTag("Zombie");
     }
 
     // public void IncreaseSoundMeter()
@@ -51,48 +56,39 @@ public class noiseMeter : MonoBehaviour
     void Update()
     {
         // Check if player is walking, running or jumping
-        // if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
-        // {
-        //     isWalking = true;
-        //     //Debug.Log("ey i am walking in the noiseOmitted script");
-        // }
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
+        {
+            isWalking = true;
+            //Debug.Log("ey i am walking in the noiseOmitted script");
+        }
 
-        // float horizontalInput = Input.GetAxis("Horizontal");
-        // float verticalInput = Input.GetAxis("Vertical");
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
 
-        // if (Mathf.Abs(horizontalInput) > 0 || Mathf.Abs(verticalInput) > 0)
-        // {
-        //     isWalking = true;
-        // }
-        // else
-        // {
-        //     isWalking = false;
-        // }
-        // if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
-        // {
-        //     isWalking = false;
-        // }
-        // if (Input.GetKeyDown(KeyCode.LeftShift))
-        // {
-        //     isRunning = true;
-        //     // noise increase per second when running
-        //     noiseIncreasePerSecond *= speedIncrease;
-        // }
+        if (Mathf.Abs(horizontalInput) > 0 || Mathf.Abs(verticalInput) > 0)
+        {
+            if(Input.GetKey(KeyCode.LeftShift))
+            {
+                 Debug.Log("should be running");
+                isRunning = true;
+                isWalking = false;
+            }else{
+                isWalking = true;
+                isRunning = false;
+            }
+        }        
+        else{
+            isRunning = false;
+            isWalking = false;
+        }
 
-        // if (Input.GetKeyUp(KeyCode.LeftShift))
-        // {
-        //     isRunning = false;
-        //     //  to its original value
-        //     noiseIncreasePerSecond /= speedIncrease;
-        // }
-        // if (Input.GetKeyDown(KeyCode.Space))
-        // {
-        //     isJumping = true;
-        // }
-        // if (Input.GetKeyUp(KeyCode.Space))
-        // {
-        //     isJumping = false;
-        // }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            isJumping = true;
+        }else if(Input.GetKeyUp(KeyCode.Space)){
+            StartCoroutine("Wait");
+            isJumping=false;
+        }
 
         if(noiseOmitted>=10)
         {
@@ -147,6 +143,7 @@ public class noiseMeter : MonoBehaviour
     {
         noiseOmitted = maxNoise;
         radioOn = true;
+        UpdateZombieDistance(1.0f);
         Debug.Log("max");
     }
 
@@ -159,26 +156,50 @@ public class noiseMeter : MonoBehaviour
 
     void UpdateNoiseMeter()
     {
-        if(FPS.m_Jumping)
+        if(isJumping)
         {
             noiseOmitted = jumpingNoise;
             Debug.Log("jumping");
-        } else if(FPS.getIsCrouching())
-        {
-            noiseOmitted = crouchingNoise;
-            Debug.Log("crouching");
-        }else if(FPS.isWalking)
+
+            UpdateZombieDistance(0.8f);
+        } 
+        // else if(isCrouching)
+        // {
+        //     noiseOmitted = crouchingNoise;
+        //     Debug.Log("crouching");
+        //UpdateZombieDistance(0.2f);
+        // }
+        else if(isWalking)
         {
             noiseOmitted = walkingNoise;
             Debug.Log("walking");
-        }else if(FPS.isRunning)
+            UpdateZombieDistance(0.4f);
+        }else if(isRunning)
         {
             noiseOmitted = runningNoise;
             Debug.Log("running");
-        }else if(!FPS.m_Jumping && !FPS.getIsCrouching() && !FPS.isWalking && !FPS.isRunning){
+            UpdateZombieDistance(0.6f);
+        }else if((isJumping==false)  && (isWalking==false) && (isRunning==false)){ //&& (isCrouching==false)
             noiseOmitted = crouchingNoise;
             Debug.Log("still");
+            
         }
+
+
+    }
+
+    void UpdateZombieDistance(float offsetFactor) //5 different noiseMeter levels, multiplying each level by total distance
+    {
+        foreach(GameObject zombie in zombies)
+        {
+            Zombie script = zombie.GetComponent<Zombie>();
+            script.detectionDistance = script.maxDetectionDistance*offsetFactor; 
+        }
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(waitTime);
     }
 
 }
