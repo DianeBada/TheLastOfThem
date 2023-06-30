@@ -101,6 +101,7 @@ public class noiseMeter : MonoBehaviour
         if(!radioOn)
         {
             UpdateNoiseMeter();
+            CheckTestTubes();
         }
 
         // Check if any zombie is within the noise detection range
@@ -120,7 +121,7 @@ public class noiseMeter : MonoBehaviour
 
         // Do something with the noise meter, such as displaying it on a UI element
         // Debug.Log("Noise meter: " + noiseOmitted);
-
+        
         noiseMeterSlider.value = noiseOmitted;
     }
 
@@ -144,13 +145,20 @@ public class noiseMeter : MonoBehaviour
         noiseOmitted = maxNoise;
         radioOn = true;
         UpdateZombieDistance(1.0f);
-        Debug.Log("max");
     }
 
     public void RadioOff()
     {
         radioOn = false;
         UpdateNoiseMeter();
+    }
+
+    public void CheckTestTubes()
+    {
+        if(playerInventory.pcInventory.Count>=3)
+        {
+            UpdateZombieDistance(1.0f);
+        }
     }
 
 
