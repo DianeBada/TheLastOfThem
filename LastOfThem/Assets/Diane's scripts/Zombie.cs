@@ -74,12 +74,6 @@ public class Zombie : MonoBehaviour
             else
             {
                 StopChasing();
-                isPlayingSound = false;
-            }
-
-            if (distance <= detectionDistance && !isPlayingSound)
-            {
-                PlayZombieSound();
             }
         }
 
@@ -111,18 +105,17 @@ public class Zombie : MonoBehaviour
         {
             WalkBackAndForth();
         }
-
-        if (hasAttackedPlayer)
+        else if (!navMeshAgent.pathPending && navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
         {
-            ReturnToStartPosition();
-
+            if (behavior == ZombieBehavior.Patrol)
+            {
+                RandomDestination();
+            }
+            else if (behavior == ZombieBehavior.WalkBackAndForth)
+            {
+                SwapPatrolPoints();
+            }
         }
-    }
-
-    private void PlayZombieSound()
-    {
-        audioSource.Play();
-        isPlayingSound = true;
     }
 
     private void RandomDestination()
@@ -145,7 +138,11 @@ public class Zombie : MonoBehaviour
         Vector3 temp = startPosition;
         startPosition = patrolPoint;
         patrolPoint = temp;
+    }
 
+    private void AttackPlayer()
+    {
+        player.GetComponent<PlayerHealth>().TakeDamage(damage);
     }
 
     public void StartChasing()
@@ -165,7 +162,7 @@ public class Zombie : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            Debug.Log("enemy is attacking the player");
+            Debug.Log("Enemy is attacking the player");
         }
     }
 
