@@ -94,6 +94,8 @@ public class InventoryUI : MonoBehaviour
                     tubeBtns[i].GetComponent<Image>().color = Color.white;
                 }
             }
+
+            updatePCList();
         }
 
 
@@ -152,8 +154,8 @@ public class InventoryUI : MonoBehaviour
         pcInventory.playerInventory[cycleIndex].GetComponent<Tube>().drop=true;
 
         pcInventory.playerInventory[cycleIndex].transform.SetParent(null);
-        pcInventory.playerInventory[cycleIndex].tag = "PickUp";
         pcInventory.playerInventory[cycleIndex].SetActive(true);
+        pcInventory.playerInventory[cycleIndex].tag = "PickUp";
         pcInventory.playerInventory.RemoveAt(cycleIndex); //check if this is working
         Debug.Log("pc inventory: "+pcInventory.playerInventory.Count);
 
@@ -237,9 +239,14 @@ public class InventoryUI : MonoBehaviour
 
     public void updatePCList() 
     {
-        for(int i = 0; i < pcInventory.playerInventory.Count; i++) {
-            tubeBtns[i].SetActive(true);
+        for(int i = 0; i < 9; i++) {
+            if(i<pcInventory.playerInventory.Count) {
+                tubeBtns[i].SetActive(true);
+            } else{
+                tubeBtns[i].SetActive(false);
+            }
         }
+
 
         UpdateCycleIndex();
     }
