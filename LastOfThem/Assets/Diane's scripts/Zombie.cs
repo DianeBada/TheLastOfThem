@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class Zombie : MonoBehaviour
 {
+
     public AudioSource audioSource;
     private bool isPlayingSound = false;
     private bool hasAttackedPlayer = false;
@@ -38,6 +39,7 @@ public class Zombie : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         navMeshAgent = GetComponent<NavMeshAgent>();
+
         audioSource = GetComponent<AudioSource>();
 
         if (behavior == ZombieBehavior.Patrol)
@@ -49,22 +51,26 @@ public class Zombie : MonoBehaviour
             startPosition = transform.position;
             patrolPoint = startPosition + new Vector3(5f, 0f, 0f);
         }
+
     }
 
     private void Update()
     {
         timeSinceLastCheck += Time.deltaTime;
 
+        // check if it's time to check if the player is within detection distance
         if (timeSinceLastCheck >= chaseInterval)
         {
             timeSinceLastCheck = 0f;
 
             float distance = Vector3.Distance(transform.position, player.position);
 
+            // if the player is within detection distance, start chasing the player
             if (distance <= detectionDistance)
             {
                 StartChasing();
             }
+            // otherwise, stop chasing the player
             else
             {
                 StopChasing();
@@ -81,22 +87,26 @@ public class Zombie : MonoBehaviour
         {
             float distance = Vector3.Distance(transform.position, player.position);
 
+            // if the player is within attack distance, attack the player
             if (distance <= attackDistance)
             {
                 AttackPlayer();
                 navMeshAgent.SetDestination(transform.position);
                 isMoving = false;
             }
+            // otherwise, continue chasing the player
             else
             {
                 navMeshAgent.SetDestination(player.position);
                 isMoving = true;
             }
         }
-        else if (behavior == ZombieBehavior.Patrol && !isMoving)
+        else if (!isMoving)
         {
+            // if the zombie is not already moving, set a new random destination
             RandomDestination();
         }
+
         else if (behavior == ZombieBehavior.WalkBackAndForth && !isMoving)
         {
             WalkBackAndForth();
@@ -105,6 +115,7 @@ public class Zombie : MonoBehaviour
         if (hasAttackedPlayer)
         {
             ReturnToStartPosition();
+
         }
     }
 
@@ -134,6 +145,7 @@ public class Zombie : MonoBehaviour
         Vector3 temp = startPosition;
         startPosition = patrolPoint;
         patrolPoint = temp;
+
     }
 
     public void StartChasing()
@@ -151,9 +163,9 @@ public class Zombie : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "Player")
         {
-            Debug.Log("Enemy is attacking the player");
+            Debug.Log("enemy is attacking the player");
         }
     }
 
