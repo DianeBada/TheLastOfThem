@@ -92,6 +92,10 @@ public class Zombie : MonoBehaviour
     {
         // inflict damage on the player
         player.GetComponent<PlayerHealth>().TakeDamage(damage);
+
+        //setting zombie back to original destination
+        StopChasing();
+        RandomDestination();
     }
 
     public void StartChasing()
