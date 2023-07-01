@@ -11,7 +11,7 @@ public class PCInventory : MonoBehaviour
     InventoryUI inventoryUI;
     GameObject Canvas;
 
-    private int maxCapacity = 10;
+    //private int maxCapacity = 10;
     //private int maxHand = 1; //for now player can only have one obj in hand. Makes picking and dropping more intuitive for player
 
     // bool addToBag;
@@ -26,10 +26,10 @@ public class PCInventory : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    private void Update()
+  /*  private void Update()
     {
     
-        if(playerInventory.Count >= (maxCapacity))
+        /*if(playerInventory.Count >= (maxCapacity))
         {
             //addToBag = false;
             Debug.Log("Bag full");
@@ -40,16 +40,16 @@ public class PCInventory : MonoBehaviour
 
 
         //unequip
-        if(Input.GetKeyDown(KeyCode.L)) {
-            if(handInventory!=null)
-            {
-                handInventory.RemoveAt(0);
-                //place object on ground
-            } else{
-                Debug.Log("There is nothing in your hands to drop");
-            }
-        }
-    }
+        // if(Input.GetKeyDown(KeyCode.L)) {
+        //     if(handInventory!=null)
+        //     {
+        //         handInventory.RemoveAt(0);
+        //         //place object on ground
+        //     } else{
+        //         Debug.Log("There is nothing in your hands to drop");
+        //     }
+        // }
+    }*/
 
     // public IEnumerator moveObjToBag(GameObject obj)
     // {
@@ -81,23 +81,27 @@ public class PCInventory : MonoBehaviour
 
     public void AddObjectToInventory(GameObject obj)
     {
-        playerInventory.Add(obj);
-        obj.transform.SetParent(Player.transform);
-        
-        if (handInventory.Count > 0)
+        if (!playerInventory.Contains(obj))
         {
-            for (int i = 0; i <handInventory.Count-1; i++)
+            playerInventory.Add(obj);
+            obj.transform.SetParent(Player.transform);
+
+            if (handInventory.Count > 0)
             {
-                handInventory.RemoveAt(i);
-                handInventory[i].SetActive(false);
+                for (int i = 0; i < handInventory.Count - 1; i++)
+                {
+                    handInventory.RemoveAt(i);
+                    handInventory[i].SetActive(false);
+                }
+            }
+
+            handInventory.Add(obj);
+            if (obj.name.Contains("TestTube") || obj.name.Contains("Radio") || obj.name.Contains("Syringe"))
+            {
+                inventoryUI.updatePCList();
             }
         }
         
-        handInventory.Add(obj);
-        if (obj.name.Contains("TestTube") || obj.name.Contains("Radio") || obj.name.Contains("Syringe"))
-        {
-            inventoryUI.updatePCList();
-        }
     }
 
     public void RemoveFromHand(GameObject obj)
@@ -120,7 +124,7 @@ public class PCInventory : MonoBehaviour
             }
         }
         playerInventory.Remove(currentTestTube);
-        inventoryUI.updateTestTubeList();
+        inventoryUI.updatePCList();
     }
     
 }
