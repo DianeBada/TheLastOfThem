@@ -22,6 +22,7 @@ public class Zombie : MonoBehaviour
     public float attackDistance = 1.5f;
     public float damage = 10.0f;
     public float chaseInterval = 1.0f;
+    public float maxDetectionDistance = 10f;
 
     public ZombieBehavior behavior;
 
@@ -146,7 +147,11 @@ public class Zombie : MonoBehaviour
         startPosition = patrolPoint;
         patrolPoint = temp;
 
+<<<<<<< HEAD
     }
+=======
+ 
+>>>>>>> parent of 6ec18c8 (Revert "error")
 
     public void StartChasing()
     {
