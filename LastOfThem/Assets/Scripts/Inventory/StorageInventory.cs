@@ -27,12 +27,6 @@ public class StorageInventory : MonoBehaviour
 
     }
 
-   /* // Update is called once per frame
-    void Update()
-    {
-        
-    }*/
-
     private void OnTriggerStay(Collider other)
     {
         if(Input.GetKeyDown(KeyCode.Q)) //button to bring up inventory
