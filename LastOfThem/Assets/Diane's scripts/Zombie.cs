@@ -147,11 +147,8 @@ public class Zombie : MonoBehaviour
         startPosition = patrolPoint;
         patrolPoint = temp;
 
-<<<<<<< HEAD
     }
-=======
  
->>>>>>> parent of 6ec18c8 (Revert "error")
 
     public void StartChasing()
     {
