@@ -87,6 +87,11 @@ public class GameManager : MonoBehaviour
         syringe.SetActive(true);
     }
 
+    public void ClearMixture()
+    {
+        correctChemicalsInSyringe = 0;
+    }
+
     public void ActivateTestTubeInMixingRoom(string testTubeChemical)
     {
         

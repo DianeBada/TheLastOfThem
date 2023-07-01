@@ -60,6 +60,7 @@ public class Syringe : MonoBehaviour
     private void NoCureInjection()
     {
         Debug.Log("Zombie Not Cured");
+        gameManager.ClearMixture();
         Disappear();
         
     }
