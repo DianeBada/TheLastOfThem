@@ -42,6 +42,9 @@ public class noiseMeter : MonoBehaviour
 
     PCInventory PCInventory;
 
+    [SerializeField]
+    AudioSource tubeSound;
+
     public void Start()
     {
         noiseMeterSlider.maxValue = 10;
@@ -167,8 +170,11 @@ public class noiseMeter : MonoBehaviour
         {
             noiseOmitted = maxNoise;
             UpdateZombieDistance(1.0f);
+            tubeSound.Play();
+            //play test tube sound
             return true;
         }else{
+            tubeSound.Stop();
             return false;
 
         }
