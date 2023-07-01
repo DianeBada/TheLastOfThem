@@ -6,14 +6,14 @@ public class Syringe : MonoBehaviour
 {
 
     private Color syringeColor;
-    private bool containsCure;
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
         syringeColor = Color.white;
-        containsCure = false;
-        Disppear();
+        Disappear();
     }
 
 
@@ -42,25 +42,32 @@ public class Syringe : MonoBehaviour
     private void InjectZombie()
     {
         Debug.Log("Zombie Injected");
+        if (gameManager.HasCure())
+        {
+            CureInjection();
+        }
+        else
+        {
+            NoCureInjection();
+        }
     }
 
-    /*public void Appear()
+    private void CureInjection()
     {
-        //set active
-        this.gameObject.SetActive(true);
-        Debug.Log("Syringe has now appeared");
-    }*/
+        Debug.Log("Zombie Cured");
+    }
 
-    private void Disppear()
+    private void NoCureInjection()
     {
-        //set inactive
+        Debug.Log("Zombie Not Cured");
+        Disappear();
+        
+    }
+
+    private void Disappear()
+    {
         this.gameObject.SetActive(false);
         Debug.Log("Syringe has now disappeared");
-    }
-
-    private bool ContainsCure()
-    {
-        return containsCure;
     }
 
 
