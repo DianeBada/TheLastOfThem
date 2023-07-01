@@ -6,13 +6,9 @@ public class Tube : MonoBehaviour
 {
     [SerializeField] private TestTube testTube;
     [SerializeField] private GameObject indicator;
-    [SerializeField] private float deactivationTime = 0.2f;
 
     private PCInventory pcInventory;
     private GameObject player;
-    private GameManager gameManager;
-
-    private Vector3 mousePosition;
 
     public bool drop;
 
@@ -23,7 +19,6 @@ public class Tube : MonoBehaviour
         indicator.SetActive(false);
         pcInventory = FindObjectOfType<PCInventory>();
         player = GameObject.FindGameObjectWithTag("Player");
-        gameManager = FindObjectOfType<GameManager>();
     }
 
     private void Update() {
@@ -53,19 +48,11 @@ public class Tube : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E) && !testTube.Picked())
         {
-            if (Input.GetKeyDown(KeyCode.E) && !testTube.Picked())
-            {
-                StartCoroutine(PickUpObject());
+            StartCoroutine(PickUpObject());
 
-            }
-
-            
         }
-
-       
 
         /*if (other.CompareTag("Player") && !testTube.Picked() )
         {
@@ -89,63 +76,9 @@ public class Tube : MonoBehaviour
         pcInventory.AddObjectToInventory(this.gameObject);
         this.transform.SetParent(player.transform);
         testTube.PickUp();
-        gameManager.ActivateTestTubeInMixingRoom(testTube.GetChemical());
         yield return new WaitForSecondsRealtime(2.5f);
         pcInventory.RemoveFromHand(this.gameObject);
         
     }
 
-    private Vector3 GetMousePositionOfTube()
-    {
-        return Camera.main.WorldToScreenPoint(this.transform.position);
-    }
-
-    private void OnMouseDown()
-    {
-        mousePosition = Input.mousePosition - GetMousePositionOfTube();
-    }
-
-    private void OnMouseDrag()
-    {
-        if (gameManager.IsInMixingRoom() && gameManager.CanMix())
-        {
-            this.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition - mousePosition);
-        }
-        
-
-    }
-
-    public void DropTestTube()
-    {
-        StartCoroutine(DeactivateTestTube());
-        if (testTube.IsInCureFormula())
-        {
-            gameManager.IncrementCorrectChemicals();
-            
-            //make the test tube reappear in leave function
-            //testTube.Drop();
-        }
-        pcInventory.RemoveTestTubeFromInventory(testTube);
-        
-    }
-
-   
-
-    private IEnumerator DeactivateTestTube()
-    {
-        yield return new WaitForSecondsRealtime(deactivationTime);
-        this.gameObject.SetActive(false);
-    }
-
-    public TestTube GetTestTube()
-    {
-        return testTube;
-    }
-
-
 }
-
-
-
-
-

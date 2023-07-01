@@ -4,11 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Craig & Liam/Scenes/MainMenu.unity
-    guid: faa445b677f3016489b28ffb11d0fa98
-  - enabled: 1
-    path: Assets/Craig & Liam/Scenes/Prototype Level.unity
-    guid: 6a0786df284d5094c800d6a4fb75002e
+  m_Scenes: []
   m_configObjects: {}

@@ -15,4 +15,3 @@ MonoBehaviour:
   chemical: Zinc
   collected: 0
   asset: {fileID: 5663914850313861223, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
-  color: {r: 0.09019608, g: 0.14901961, b: 0.7490196, a: 0}
