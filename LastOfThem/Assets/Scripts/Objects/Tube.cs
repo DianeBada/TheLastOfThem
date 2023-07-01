@@ -14,6 +14,8 @@ public class Tube : MonoBehaviour
 
     private Vector3 mousePosition;
 
+    public bool drop;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,15 @@ public class Tube : MonoBehaviour
         pcInventory = FindObjectOfType<PCInventory>();
         player = GameObject.FindGameObjectWithTag("Player");
         gameManager = FindObjectOfType<GameManager>();
+    }
+
+    private void Update() {
+        if(drop)
+        {
+             testTube.Refresh();
+             Debug.Log("refreshed chemical");
+             drop = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -65,6 +76,11 @@ public class Tube : MonoBehaviour
             }
             
         }*/
+    }
+
+    public TestTube getTestTube()
+    {
+        return testTube;
     }
 
     private IEnumerator PickUpObject()

@@ -55,7 +55,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public float crouchFOV = 60f;
         public float normalFOV = 90f;
 
-
         // Use this for initialization
         private void Start()
         {
@@ -84,7 +83,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
                 isJumping = true;
-
             }
 
             if (Input.GetKeyDown(KeyCode.C)) 
@@ -142,6 +140,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 speed = m_WalkSpeed;
             else
                 speed = m_RunSpeed;
+
+        }
+
+        public bool getIsCrouching()
+        {
+            return isCrouching;
         }
 
 
