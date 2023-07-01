@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityStandardAssets.Characters.FirstPerson;
+
 
 public class Zombie : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class Zombie : MonoBehaviour
     public AudioSource audioSource;
     private bool isPlayingSound = false;
     private bool hasAttackedPlayer = false;
+   [SerializeField]private FirstPersonController firstPersonController;
+
 
     public enum ZombieBehavior
     {
@@ -40,6 +44,8 @@ public class Zombie : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         navMeshAgent = GetComponent<NavMeshAgent>();
+        firstPersonController = GetComponent<FirstPersonController>();
+
 
         audioSource = GetComponent<AudioSource>();
 
@@ -67,7 +73,7 @@ public class Zombie : MonoBehaviour
             float distance = Vector3.Distance(transform.position, player.position);
 
             // if the player is within detection distance, start chasing the player
-            if (distance <= detectionDistance)
+            if (distance <= detectionDistance && !player.GetComponent<FirstPersonController>().isCrouching)
             {
                 StartChasing();
             }
