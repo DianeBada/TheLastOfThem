@@ -7,17 +7,25 @@ using UnityEngine.VFX;
 public class Syringe : MonoBehaviour
 {
     public VideoPlayer explosionVideoPlayer;
-    public float vfxDuration = 2.0f; // Duration of the VFX animation in seconds
+    private Animator transformAnimator;
+    private bool isEffectPlaying = false;
     private Color syringeColor;
     private GameManager gameManager;
+    private GameObject gojoRedHollowVariant;
+    private Zombie zombie;
+    public GameObject zombieAvatar;
+    public GameObject curedAvatar;
 
     // Start is called before the first frame update
     void Start()
     {
+        zombie = FindObjectOfType<Zombie>();
         gameManager = FindObjectOfType<GameManager>();
         syringeColor = Color.white;
         Disappear();
-        
+        gojoRedHollowVariant = zombie.transform.Find("Gojo Red Hollow Variant").gameObject;
+        transformAnimator = gojoRedHollowVariant.GetComponent<Animator>();
+        transformAnimator.enabled = false;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -56,7 +64,11 @@ public class Syringe : MonoBehaviour
     private void CureInjection(GameObject zombie)
     {
         Debug.Log("Zombie Cured");
-        // TODO: Implement the cure transformation logic
+        transformAnimator.enabled = true;
+        transformAnimator.Play("Transformation_animation");
+        StartCoroutine(DisableZombieAndShowHumanAvatar(zombie));
+
+
     }
 
     private void NoCureInjection(GameObject zombie)
@@ -64,12 +76,12 @@ public class Syringe : MonoBehaviour
         Debug.Log("Zombie Not Cured");
         gameManager.ClearMixture();
 
+        transformAnimator.enabled = true;
+        isEffectPlaying = true;
+
         // Play the VFX animation for the zombie
-        Animator animator = zombie.GetComponentInChildren<Animator>();
-        if (animator != null)
-        {
-            animator.Play("Gojo Red Hollow Variant Animation");
-        }
+        // Play the particle effect animation
+        transformAnimator.Play("Transformation_animation");
 
         // Disable the zombie game object after the VFX animation duration
         StartCoroutine(DisableZombieAfterVFX(zombie));
@@ -80,36 +92,41 @@ public class Syringe : MonoBehaviour
 
     private IEnumerator DisableZombieAfterVFX(GameObject zombie)
     {
-        yield return new WaitForSeconds(vfxDuration);
+        yield return new WaitForSeconds(transformAnimator.GetCurrentAnimatorStateInfo(0).length);
 
         // Disable the zombie game object
         zombie.SetActive(false);
+
+        // Play the explosion video
+        explosionVideoPlayer.Play();
     }
 
     private IEnumerator ExplosionVideoComplete(GameObject zombie)
     {
-        yield return new WaitForSeconds(vfxDuration + (float)explosionVideoPlayer.length);
-
-        // Play the explosion video
-        explosionVideoPlayer.Play();
-
-        // Disable the explosion video player when it finishes playing
-        StartCoroutine(DisableExplosionVideoPlayer());
-    }
-
-
-    private IEnumerator DisableExplosionVideoPlayer()
-    {
         yield return new WaitForSeconds((float)explosionVideoPlayer.length);
 
-        // Disable the explosion video player
-        explosionVideoPlayer.gameObject.SetActive(false);
-
-        // Disable the VideoPlayer component
+        // Disable the explosion video player when it finishes playing
+        isEffectPlaying = false;
+        transformAnimator.enabled = false;
         explosionVideoPlayer.enabled = false;
-
-        // TODO: Handle any necessary actions after the explosion video finishes playing
     }
+
+    private IEnumerator DisableZombieAndShowHumanAvatar(GameObject zombie)
+    {
+        // Wait for the VFX animation to finish
+        yield return new WaitForSeconds(transformAnimator.GetCurrentAnimatorStateInfo(0).length);
+
+        // Disable the zombie game object
+        zombie.SetActive(false);
+
+        // Instantiate the cured human game object at the same position and rotation
+        GameObject curedHuman = Instantiate(curedAvatar, zombie.transform.position, zombie.transform.rotation);
+
+        // Enable the cured human game object
+        curedHuman.SetActive(true);
+    }
+
+
     private void Disappear()
     {
         this.gameObject.SetActive(false);
