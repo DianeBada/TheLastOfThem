@@ -22,6 +22,7 @@ public class Zombie : MonoBehaviour
     public float attackDistance = 1.5f;
     public float damage = 10.0f;
     public float chaseInterval = 1.0f;
+    public float maxDetectionDistance = 10f;
 
     public ZombieBehavior behavior;
 
@@ -140,10 +141,7 @@ public class Zombie : MonoBehaviour
         patrolPoint = temp;
     }
 
-    private void AttackPlayer()
-    {
-        player.GetComponent<PlayerHealth>().TakeDamage(damage);
-    }
+ 
 
     public void StartChasing()
     {
