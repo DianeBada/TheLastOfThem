@@ -84,6 +84,12 @@ public class Zombie : MonoBehaviour
             }
         }
 
+        if (hasAttackedPlayer)
+        {
+            ReturnToStartPosition();
+
+        }
+
         if (isChasing)
         {
             float distance = Vector3.Distance(transform.position, player.position);
@@ -113,11 +119,7 @@ public class Zombie : MonoBehaviour
             WalkBackAndForth();
         }
 
-        if (hasAttackedPlayer)
-        {
-            ReturnToStartPosition();
-
-        }
+       
     }
 
     private void PlayZombieSound()
