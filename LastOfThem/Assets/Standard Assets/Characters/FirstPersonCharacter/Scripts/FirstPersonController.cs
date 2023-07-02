@@ -106,14 +106,24 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
                 // Adjust camera view or provide a first-person view from inside the locker
                 // Set the camera's rotation to match the locker's rotation
-                m_Camera.transform.rotation = transform.rotation;
+                //m_Camera.transform.rotation = transform.rotation;
 
                 // Set other necessary variables to restrict movements
                 m_Jump = false;
+                m_IsWalking = false;
+                m_WalkSpeed = 0;
+        
                 isJumping = false;
                 isWalking = false;
                 isRunning = false;
                 isCrouching = false;
+            }
+            else
+            {
+                isInsideLocker = false;
+                m_WalkSpeed = 5f;
+
+                Debug.Log("isInside is false");
             }
 
             if (Input.GetKeyDown(KeyCode.C)) 
