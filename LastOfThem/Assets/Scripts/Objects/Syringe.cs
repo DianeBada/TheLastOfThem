@@ -33,6 +33,7 @@ public class Syringe : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Zombie"))
         {
+            Debug.Log("Stabbed Zombie");
             InjectZombie(collision.gameObject);
         }
     }
