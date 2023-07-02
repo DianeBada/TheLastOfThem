@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LastOfThem/Assets/Craig & Liam/Craigs UI/MIST.png.meta
 guid: db85849a9b219a24db4c9bf03d0b7521
+========
+guid: 519694efe2bb2914788b151fbd8c01f4
+>>>>>>>> main:LastOfThem/Assets/Plugins/Demigiant/DOTween/Editor/Imgs/Footer_dark.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -29,8 +33,8 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: 1
-  maxTextureSize: 2048
+  textureFormat: -1
+  maxTextureSize: 1024
   textureSettings:
     serializedVersion: 2
     filterMode: 1
@@ -38,7 +42,11 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
+<<<<<<<< HEAD:LastOfThem/Assets/Craig & Liam/Craigs UI/MIST.png.meta
     wrapW: 0
+========
+    wrapW: 1
+>>>>>>>> main:LastOfThem/Assets/Plugins/Demigiant/DOTween/Editor/Imgs/Footer_dark.png.meta
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -53,7 +61,11 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
+<<<<<<<< HEAD:LastOfThem/Assets/Craig & Liam/Craigs UI/MIST.png.meta
   textureType: 8
+========
+  textureType: 2
+>>>>>>>> main:LastOfThem/Assets/Plugins/Demigiant/DOTween/Editor/Imgs/Footer_dark.png.meta
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -62,12 +74,12 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
-  cookieLightType: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -79,7 +91,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -91,7 +103,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1

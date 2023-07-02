@@ -14,6 +14,8 @@ public class noiseMeter : MonoBehaviour
     private bool isRunning;
     private bool isJumping;
 
+    private bool fullTestTubes;
+
     [SerializeField]
     int crouchingNoise = 1;
     [SerializeField]
@@ -38,11 +40,15 @@ public class noiseMeter : MonoBehaviour
 
     Radio radio;
 
+    PCInventory PCInventory;
 
     public void Start()
     {
         noiseMeterSlider.maxValue = 10;
         FPS = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
+
+        PCInventory = GameObject.FindGameObjectWithTag("ParentPickUp").GetComponent<PCInventory>();
+
         radio = GameObject.Find("Radio").GetComponent<Radio>();
         zombies = GameObject.FindGameObjectsWithTag("Zombie");
     }
@@ -100,7 +106,10 @@ public class noiseMeter : MonoBehaviour
 
         if(!radioOn)
         {
-            UpdateNoiseMeter();
+            if(CheckTestTubes()==false)
+            {
+                UpdateNoiseMeter();
+            }
         }
 
         // Check if any zombie is within the noise detection range
@@ -120,7 +129,7 @@ public class noiseMeter : MonoBehaviour
 
         // Do something with the noise meter, such as displaying it on a UI element
         // Debug.Log("Noise meter: " + noiseOmitted);
-
+        
         noiseMeterSlider.value = noiseOmitted;
     }
 
@@ -144,7 +153,6 @@ public class noiseMeter : MonoBehaviour
         noiseOmitted = maxNoise;
         radioOn = true;
         UpdateZombieDistance(1.0f);
-        Debug.Log("max");
     }
 
     public void RadioOff()
@@ -153,6 +161,18 @@ public class noiseMeter : MonoBehaviour
         UpdateNoiseMeter();
     }
 
+    public bool CheckTestTubes()
+    {
+        if(PCInventory.playerInventory.Count>=3)
+        {
+            noiseOmitted = maxNoise;
+            UpdateZombieDistance(1.0f);
+            return true;
+        }else{
+            return false;
+
+        }
+    }
 
     void UpdateNoiseMeter()
     {

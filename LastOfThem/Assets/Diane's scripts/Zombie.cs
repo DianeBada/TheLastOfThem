@@ -2,31 +2,82 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityStandardAssets.Characters.FirstPerson;
+
 
 public class Zombie : MonoBehaviour
 {
-    public float speed = 1.0f;     
-    public float maxDetectionDistance = 5.0f;       // zombie movement speed
-    public float detectionDistance = 5.0f;  // distance at which the zombie detects the player
-    public float attackDistance = 1.5f;     // distance at which the zombie attacks the player
-    public float damage = 10.0f;            // amount of damage the zombie inflicts on the player per attack
-    public float chaseInterval = 1.0f;      // interval at which the zombie checks if the player is within detection distance
 
-    private Transform player;               // reference to the player's transform component
-    private NavMeshAgent navMeshAgent;      // reference to the zombie's NavMeshAgent component
-    private bool isChasing = false;         // flag to indicate if the zombie is chasing the player
-    private bool isMoving = false;          // flag to indicate if the zombie is moving to a new destination
-    private float timeSinceLastCheck = 0f;  // time since the zombie last checked if the player is within detection distance
+    public AudioSource audioSource;
+    private bool isPlayingSound = false;
+    private bool hasAttackedPlayer = false;
+   [SerializeField]private FirstPersonController firstPersonController;
+
+
+    private Animator animator;
+
+
+    public enum ZombieBehavior
+    {
+        Patrol,
+        Stationary,
+        WalkBackAndForth
+    }
+
+    public float speed = 1.0f;
+    public float detectionDistance = 5.0f;
+    public float attackDistance = 1.5f;
+    public float damage = 10.0f;
+    public float chaseInterval = 1.0f;
+    public float maxDetectionDistance = 10f;
+
+    public ZombieBehavior behavior;
+
+    private Transform player;
+    private NavMeshAgent navMeshAgent;
+    private bool isChasing = false;
+    private bool isMoving = false;
+    private float timeSinceLastCheck = 0f;
+
+    // For WalkBackAndForth behavior
+    private Vector3 startPosition;
+    private Vector3 patrolPoint;
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
+
         player = GameObject.FindGameObjectWithTag("Player").transform;
         navMeshAgent = GetComponent<NavMeshAgent>();
-        RandomDestination();
+        firstPersonController = GetComponent<FirstPersonController>();
+
+
+        audioSource = GetComponent<AudioSource>();
+
+        if (behavior == ZombieBehavior.Patrol)
+        {
+            RandomDestination();
+        }
+        else if (behavior == ZombieBehavior.WalkBackAndForth)
+        {
+            startPosition = transform.position;
+            patrolPoint = startPosition + new Vector3(5f, 0f, 0f);
+        }
+
     }
 
     private void Update()
     {
+        if (this.behavior == Zombie.ZombieBehavior.Stationary)
+        {
+            animator.SetBool("isWalking", false);
+        }
+        else
+        {
+            animator.SetBool("isWalking", this.isMoving);
+
+        }
+
         timeSinceLastCheck += Time.deltaTime;
 
         // check if it's time to check if the player is within detection distance
@@ -37,7 +88,7 @@ public class Zombie : MonoBehaviour
             float distance = Vector3.Distance(transform.position, player.position);
 
             // if the player is within detection distance, start chasing the player
-            if (distance <= detectionDistance)
+            if (distance <= detectionDistance && !player.GetComponent<FirstPersonController>().isCrouching)
             {
                 StartChasing();
             }
@@ -45,7 +96,19 @@ public class Zombie : MonoBehaviour
             else
             {
                 StopChasing();
+                isPlayingSound = false;
             }
+
+            if (distance <= detectionDistance && !isPlayingSound)
+            {
+                PlayZombieSound();
+            }
+        }
+
+        if (hasAttackedPlayer)
+        {
+            ReturnToStartPosition();
+
         }
 
         if (isChasing)
@@ -71,11 +134,19 @@ public class Zombie : MonoBehaviour
             // if the zombie is not already moving, set a new random destination
             RandomDestination();
         }
-        else if (!navMeshAgent.pathPending && navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+
+        else if (behavior == ZombieBehavior.WalkBackAndForth && !isMoving)
         {
-            // if the zombie has reached its destination, set a new random destination
-            RandomDestination();
+            WalkBackAndForth();
         }
+
+       
+    }
+
+    private void PlayZombieSound()
+    {
+        audioSource.Play();
+        isPlayingSound = true;
     }
 
     private void RandomDestination()
@@ -88,11 +159,19 @@ public class Zombie : MonoBehaviour
         isMoving = true;
     }
 
-    private void AttackPlayer()
+    private void WalkBackAndForth()
     {
-        // inflict damage on the player
-        player.GetComponent<PlayerHealth>().TakeDamage(damage);
+        transform.position = Vector3.Lerp(startPosition, patrolPoint, Mathf.PingPong(Time.time * speed, 1f));
     }
+
+    private void SwapPatrolPoints()
+    {
+        Vector3 temp = startPosition;
+        startPosition = patrolPoint;
+        patrolPoint = temp;
+
+    }
+ 
 
     public void StartChasing()
     {
@@ -112,6 +191,35 @@ public class Zombie : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             Debug.Log("enemy is attacking the player");
+        }
+    }
+
+    public void AttackPlayer()
+    {
+        if (!hasAttackedPlayer)
+        {
+            animator.SetBool("isAttacking", true);
+            player.GetComponent<PlayerHealth>().TakeDamage(damage);
+            hasAttackedPlayer = true;
+            navMeshAgent.SetDestination(startPosition);
+            isChasing = false;
+            isMoving = true;
+        }
+    }
+
+    private void ReturnToStartPosition()
+    {
+        if (!navMeshAgent.pathPending && navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+        {
+            hasAttackedPlayer = false;
+            if (behavior == ZombieBehavior.Patrol)
+            {
+                RandomDestination();
+            }
+            else if (behavior == ZombieBehavior.WalkBackAndForth)
+            {
+                SwapPatrolPoints();
+            }
         }
     }
 }
