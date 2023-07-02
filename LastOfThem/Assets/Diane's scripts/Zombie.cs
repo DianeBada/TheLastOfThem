@@ -192,6 +192,7 @@ public class Zombie : MonoBehaviour
     {
         if (!hasAttackedPlayer)
         {
+            animator.SetBool("isAttacking", true);
             player.GetComponent<PlayerHealth>().TakeDamage(damage);
             hasAttackedPlayer = true;
             navMeshAgent.SetDestination(startPosition);
