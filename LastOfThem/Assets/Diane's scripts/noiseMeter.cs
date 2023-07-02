@@ -192,18 +192,14 @@ public class noiseMeter : MonoBehaviour
         else if(isWalking)
         {
             noiseOmitted = walkingNoise;
-            Debug.Log("walking");
             UpdateZombieDistance(0.7f);
         }else if(isRunning)
         {
             noiseOmitted = runningNoise;
-            Debug.Log("running");
             UpdateZombieDistance(0.8f);
         }else if((isJumping==false)  && (isWalking==false) && (isRunning==false)){ //crouch and still make the affect the noisemeter in the same way
             noiseOmitted = crouchingNoise;
-            UpdateZombieDistance(0.6f);
-            Debug.Log("still");
-            
+            UpdateZombieDistance(0.6f);            
         }
 
 
