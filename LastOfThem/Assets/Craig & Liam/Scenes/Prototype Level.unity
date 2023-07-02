@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1164.5405, g: 870.79297, b: 711.44385, a: 1}
+  m_IndirectSpecularColor: {r: 1164.2222, g: 870.25977, b: 710.6284, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,120 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: b21596abbb9d7044fb5bb53ce241f329, type: 2}
+--- !u!1001 &5051774
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1178332736}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+--- !u!1001 &41292492
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 293128274}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &54947498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -144,7 +258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -701,6 +815,63 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &75731254
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1230602299}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -40.53691
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7069969
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.83097
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.10754621
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9942001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1 &78389954 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 793572807232087888, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
@@ -800,7 +971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1357,6 +1528,68 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &97534905
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 287643404}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+--- !u!4 &97534906 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+  m_PrefabInstance: {fileID: 97534905}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &106200305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1378,7 +1611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1960,7 +2193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2582,6 +2815,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &200891173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 708481994}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1 &217813530 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 0362bac363d427044bebec705849e38a, type: 3}
@@ -2738,7 +3028,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3295,6 +3585,120 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &228492560
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 492003549}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+--- !u!1001 &267213961
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1609465470}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1 &275896239 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 0362bac363d427044bebec705849e38a, type: 3}
@@ -3435,7 +3839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4033,8 +4437,10 @@ Transform:
   - {fileID: 1331871755}
   - {fileID: 1558897919}
   - {fileID: 1955297451}
+  - {fileID: 97534906}
   - {fileID: 1141403072}
   - {fileID: 1501121614}
+  - {fileID: 1312913482}
   - {fileID: 93694879}
   - {fileID: 54947499}
   - {fileID: 2098994716}
@@ -4074,7 +4480,7 @@ Transform:
   - {fileID: 529282510}
   - {fileID: 1084451728}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &288155006 stripped
 Transform:
@@ -4102,7 +4508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4787,6 +5193,63 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &303210100
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2090432763}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.934021
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -24.574001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 35.243427
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.72328335
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.69055146
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &327804726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4808,7 +5271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5447,7 +5910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6025,7 +6488,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6658,6 +7121,63 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.43, y: 1.89, z: 0.48}
   m_Center: {x: 0, y: 0.95, z: 0.01}
+--- !u!1001 &401641117
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1550498248}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!4 &415678171 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
@@ -6668,6 +7188,120 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3078726840563173317, guid: 55c31d4dc083d484796a661be1a74367, type: 3}
   m_PrefabInstance: {fileID: 1881241201}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &428279743
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 895717011}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+--- !u!1001 &430194635
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 93694879}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 28.516209
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -20.150002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.805208
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9997322
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.023143508
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &446245555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6689,7 +7323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7246,6 +7880,63 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &491521852
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 373836719}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &492003548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7267,7 +7958,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7941,7 +8632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 669155096683042439, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 669155096683042439, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8011,7 +8702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 47
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8593,7 +9284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9150,6 +9841,120 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &549456082
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 729024390}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.424181
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -24.574001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -36.223618
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6905518
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.723283
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+--- !u!1001 &562743220
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2098994716}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &570024028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9171,7 +9976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9749,7 +10554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10310,6 +11115,63 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &592527279
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1084451728}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &615195930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10331,7 +11193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10909,7 +11771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11487,7 +12349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12065,7 +12927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 46
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12647,7 +13509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13209,6 +14071,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
   m_PrefabInstance: {fileID: 1178628036}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &711042318
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 532947339}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 66.86165
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7069969
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 34.61197
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9997322
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.023143457
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &722202574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13230,7 +14149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14004,6 +14923,63 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
+--- !u!1001 &727662596
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 570024029}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.60524
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -20.154001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 34.74363
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.023144512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99973214
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &729024389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14025,7 +15001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14582,71 +15558,177 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &764842974
-GameObject:
+--- !u!1001 &735354749
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 764842976}
-  - component: {fileID: 764842975}
-  m_Layer: 0
-  m_Name: videoTransform
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!328 &764842975
-VideoPlayer:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 636983145}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.605595
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0100002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.509266
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6087613
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7933534
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+--- !u!1001 &770274801
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 764842974}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: e8e81724a3664b14fb4c06f19620a417, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 2
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
-  m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
-  m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
-  m_Looping: 0
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
---- !u!4 &764842976
-Transform:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 991708124}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+--- !u!1001 &783943392
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 764842974}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.972687, y: 16.807758, z: 51.136547}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1933196742}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &785432403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14668,7 +15750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15384,6 +16466,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 762380492481631229, guid: 52c51744944b30b4395badb88a68a18b, type: 3}
   m_PrefabInstance: {fileID: 810676635}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &846436439
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 446245556}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.822197
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7069969
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.498482
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.40396246
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9147756
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1 &850396119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1446169954100244953, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
@@ -15410,7 +16549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16709,6 +17848,177 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
   m_PrefabInstance: {fileID: 1643611707}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &952673766
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 676646929}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+--- !u!1001 &964796754
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1141403072}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+--- !u!1001 &989682598
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 284548924}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &991708123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16730,7 +18040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17287,6 +18597,120 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &993170173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 529282510}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+--- !u!1001 &999365112
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2082172257}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1 &1002041824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1507797827977212343, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
@@ -17339,8 +18763,65 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1026715311
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1558897919}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &1028211731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17362,7 +18843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17919,6 +19400,63 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &1043933801
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1926259696}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1 &1080376860
 GameObject:
   m_ObjectHideFlags: 0
@@ -18406,7 +19944,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 48
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18967,6 +20505,63 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &1085042367
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 106200306}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &1101997841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19076,6 +20671,128 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
+--- !u!1 &1124013914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1124013916}
+  - component: {fileID: 1124013915}
+  m_Layer: 0
+  m_Name: bloodExplosion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!328 &1124013915
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124013914}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: e8e81724a3664b14fb4c06f19620a417, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 217813533}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 1
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
+  m_Url: 
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!4 &1124013916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124013914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 31.801506, y: -19.844791, z: 59.4279}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1134068473
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 219495733}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &1141403071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19097,7 +20814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19654,6 +21371,63 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &1168134032
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 590144650}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &1169044425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19744,7 +21518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20400,7 +22174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21556,7 +23330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22113,6 +23887,63 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &1266753718
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1742816863}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &1276367716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22210,6 +24041,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
+--- !u!1001 &1280012045
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1216362957}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1 &1291162218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6360566818951569017, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
@@ -22304,6 +24192,68 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
   m_PrefabInstance: {fileID: 1718466987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1312913481
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 287643404}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+--- !u!4 &1312913482 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+  m_PrefabInstance: {fileID: 1312913481}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1320423365 stripped
 Transform:
@@ -22893,6 +24843,63 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &1374196233
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1189229144}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &1472686241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23172,6 +25179,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3418708187556559481, guid: a157851e6c66e1545ae48d5a470cdc64, type: 3}
   m_PrefabInstance: {fileID: 1485697249}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1486461558
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 722202575}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &1501121613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23193,7 +25257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23776,7 +25840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24354,7 +26418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25510,7 +27574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26171,7 +28235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26728,6 +28792,63 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &1617662163
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 54947499}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1 &1617907223
 GameObject:
   m_ObjectHideFlags: 0
@@ -26766,7 +28887,7 @@ Transform:
   - {fileID: 792990839}
   - {fileID: 709247911}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1643611707
 PrefabInstance:
@@ -26861,6 +28982,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
+--- !u!1001 &1652809674
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 615195931}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1 &1694762424
 GameObject:
   m_ObjectHideFlags: 1
@@ -26909,6 +29087,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1701345407
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1822917449}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &1718466987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26981,24 +29216,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 9c16cbe9d6bf61147a34a923e2ec60bf, type: 3}
     - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
-      propertyPath: crouchFOV
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
-      propertyPath: normalFOV
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
-      propertyPath: crouchSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_IsWalking
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
-      propertyPath: normalHeight
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 321796239405964584, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_RootOrder
@@ -27019,15 +29238,15 @@ PrefabInstance:
     - target: {fileID: 5162889969175113059, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: curedAvatar
       value: 
-      objectReference: {fileID: 612835936003780890, guid: fc93098f9619d314c8a2dc7323218f91, type: 3}
+      objectReference: {fileID: 919132149155446097, guid: 8652d26d6bffe81448d5d8dc09190221, type: 3}
     - target: {fileID: 5162889969175113059, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: zombieAvatar
       value: 
-      objectReference: {fileID: 2701140742703984181, guid: 026aae5578aee4249bcde72ede821ff1, type: 3}
+      objectReference: {fileID: 919132149155446097, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
     - target: {fileID: 5162889969175113059, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: explosionVideoPlayer
       value: 
-      objectReference: {fileID: 764842975}
+      objectReference: {fileID: 1124013915}
     - target: {fileID: 6062330126967726726, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: fp
       value: 
@@ -27123,6 +29342,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2065e8f29774454889634d57ec0a96f, type: 3}
+--- !u!1001 &1738146722
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1028211732}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &1742816862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27701,6 +29977,120 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &1764142000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 690487242}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+--- !u!1001 &1789566274
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1576042664}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &1792113784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27782,6 +30172,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
+--- !u!1001 &1794638105
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 137074264}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &1814647787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27815,7 +30262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3359592859699528235, guid: eda0952cf5a37e7468eaa83758c501ee, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3359592859699528235, guid: eda0952cf5a37e7468eaa83758c501ee, type: 3}
       propertyPath: m_AnchorMax.x
@@ -27895,6 +30342,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eda0952cf5a37e7468eaa83758c501ee, type: 3}
+--- !u!1001 &1814963781
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1515281993}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &1822917448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28546,6 +31050,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
+--- !u!1001 &1879369424
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 327804727}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &1881241201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28555,7 +31116,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3078726840563173305, guid: 55c31d4dc083d484796a661be1a74367, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3078726840563173305, guid: 55c31d4dc083d484796a661be1a74367, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28601,6 +31162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mixing Room Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 3078726840563173317, guid: 55c31d4dc083d484796a661be1a74367, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55c31d4dc083d484796a661be1a74367, type: 3}
 --- !u!1001 &1926259695
@@ -28624,7 +31189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30380,6 +32945,120 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 840ad0343f427a7498ad80061f309321, type: 3}
+--- !u!1001 &2029013916
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 785432404}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+--- !u!1001 &2029312624
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1331871755}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1 &2075211854 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5941176126268632304, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
@@ -30984,7 +33663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31562,7 +34241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32193,6 +34872,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3418708187556559481, guid: a157851e6c66e1545ae48d5a470cdc64, type: 3}
   m_PrefabInstance: {fileID: 2103680685}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2138511683
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 368919691}
+    m_Modifications:
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
+      propertyPath: m_Name
+      value: Gojo Red Hollow Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
 --- !u!1001 &4370715872428937379
 PrefabInstance:
   m_ObjectHideFlags: 0
