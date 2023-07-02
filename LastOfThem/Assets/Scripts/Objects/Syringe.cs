@@ -26,7 +26,6 @@ public class Syringe : MonoBehaviour
         gojoRedHollowVariant = zombie.transform.Find("Gojo Red Hollow Variant").gameObject;
         transformAnimator = gojoRedHollowVariant.GetComponent<Animator>();
         transformAnimator.enabled = false;
-        explosionVideoPlayer.Stop();
     }
 
     private void OnCollisionEnter(Collision collision)
