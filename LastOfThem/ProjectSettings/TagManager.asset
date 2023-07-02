@@ -15,6 +15,7 @@ TagManager:
   - Canvas
   - TubeBtn
   - Picked
+  - locker
   layers:
   - Default
   - TransparentFX
