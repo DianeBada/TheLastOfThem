@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraShake : MonoBehaviour
+public class CameraShaker : MonoBehaviour
 {
     public float shakeDuration = 0.5f;     // Duration of the shake effect
     public float shakeIntensity = 0.1f;    // Intensity of the shake effect
