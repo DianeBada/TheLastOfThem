@@ -28,6 +28,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
+        private Rigidbody m_Rigidbody;
+        [SerializeField] private float crouchingFootstepVolume = 0.5f;
+
 
         private Camera m_Camera;
         public bool m_Jump;
@@ -48,13 +51,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public bool isWalking;
         private bool m_IsCrouching;
 
-        private bool isCrouching = false;
+        public bool isCrouching = false;
         public float crouchSpeed = 2f;
         public float crouchHeight = 0.01f;
         public float normalHeight = 5f;
         public float crouchFOV = 60f;
         public float normalFOV = 90f;
 
+        public float currentSpeed =5f;
 
         // Use this for initialization
         private void Start()
@@ -70,6 +74,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
             isCrouching = false;
+            m_Rigidbody = GetComponent<Rigidbody>();
+            m_WalkSpeed = currentSpeed;
+
+
 
         }
 
@@ -83,7 +91,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
                 isJumping = true;
-
             }
 
             if (Input.GetKeyDown(KeyCode.C)) 
@@ -141,6 +148,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 speed = m_WalkSpeed;
             else
                 speed = m_RunSpeed;
+
+        }
+
+        public bool getIsCrouching()
+        {
+            return isCrouching;
         }
 
 
@@ -155,25 +168,38 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             if (m_IsCrouching)
             {
+                isCrouching = false;
                 // Uncrouch
-                m_CharacterController.height = normalHeight;
-                m_Camera.fieldOfView = normalFOV;
+                m_Rigidbody.transform.localScale = new Vector3(1f, 1f, 1f);
                 m_Camera.transform.localPosition = m_OriginalCameraPosition;
+                m_Rigidbody.drag = 0f;
+                m_Rigidbody.mass = 1f;
+                m_CharacterController.stepOffset = 0.3f;
+                m_WalkSpeed = currentSpeed;
+
             }
             else
             {
+                isCrouching = true;
                 // Crouch
-                m_CharacterController.height = crouchHeight;
-                m_Camera.fieldOfView = crouchFOV;
+                m_Rigidbody.transform.localScale = new Vector3(1f, crouchHeight / normalHeight, 1f);
                 m_Camera.transform.localPosition = new Vector3(
                     m_Camera.transform.localPosition.x,
                     crouchHeight - m_OriginalCameraPosition.y,
                     m_Camera.transform.localPosition.z
                 );
+                m_Rigidbody.drag = 150f;
+                m_Rigidbody.mass = 150f;
+                m_CharacterController.stepOffset = 0f;
+                m_WalkSpeed = crouchSpeed;
             }
 
             m_IsCrouching = !m_IsCrouching;
         }
+
+
+
+
 
 
         private void FixedUpdate()
