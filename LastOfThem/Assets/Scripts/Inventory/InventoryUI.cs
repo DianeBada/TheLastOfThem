@@ -21,7 +21,7 @@ public class InventoryUI : MonoBehaviour
     TextMeshProUGUI tubeText;
 
     private bool hasRadio = false;
-    public noiseMeter soundMeter;
+   noiseMeter soundMeter;
     private bool keyPressed;
 
     private bool rightPressed;
@@ -36,6 +36,7 @@ public class InventoryUI : MonoBehaviour
         InventoryPanel = GameObject.FindGameObjectWithTag("InventoryPanel");
         parentPickUp = GameObject.FindGameObjectWithTag("ParentPickUp");
         pcInventory = parentPickUp.GetComponent<PCInventory>();
+        soundMeter = FindObjectOfType<noiseMeter>();
 
         tubeImg = GameObject.FindGameObjectsWithTag("TubeImg");
         tubeBtns = GameObject.FindGameObjectsWithTag("TubeBtn");
@@ -161,8 +162,9 @@ public class InventoryUI : MonoBehaviour
 
         tubeBtns[cycleIndex].SetActive(false);
 
-        UpdateCycleIndex();    
+        UpdateCycleIndex();
         //updatePCList();
+        soundMeter.CheckTestTubes();
     }
 
     public void cycle(String direction)

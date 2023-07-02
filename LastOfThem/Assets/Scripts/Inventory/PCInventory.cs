@@ -18,26 +18,22 @@ public class PCInventory : MonoBehaviour
     // int timeToBag = 2;
 
     GameObject Player;
+    noiseMeter NoiseMeter;
+
+
 
     private void Start()
     {
         Canvas = GameObject.FindGameObjectWithTag("Canvas");
         inventoryUI = Canvas.GetComponent<InventoryUI>();
         Player = GameObject.FindGameObjectWithTag("Player");
+       NoiseMeter = GameObject.FindObjectOfType<noiseMeter>();
+        
+
     }
 
     private void Update()
     {
-    
-        if(playerInventory.Count >= (maxCapacity))
-        {
-            //addToBag = false;
-            Debug.Log("Bag full");
-
-        } else{
-            //addToBag = true;
-        }
-
 
         //unequip
         if(Input.GetKeyDown(KeyCode.L)) {
@@ -50,34 +46,6 @@ public class PCInventory : MonoBehaviour
             }
         }
     }
-
-    // public IEnumerator moveObjToBag(GameObject obj)
-    // {
-
-    //     if(addToBag)
-    //     {
-    //         //play pick up animation   
-                      
-    //         playerInventory.Add(handInventory[0]);
-    //         //change position of child so visible on screen         
-    //         handInventory[0].transform.SetParent(this.gameObject.transform);
-    //         handInventory.Clear();
-
-    //         if(obj.name =="TestTube")
-    //         {
-    //             inventoryUI.updateTestTubeList();
-    //         }
-
-    //         Debug.Log("playerInventory size: "+playerInventory.Count);
-
-    //         yield return new WaitForSeconds(timeToBag);
-    //         obj.SetActive(false);
-    //     }
-    //     else{
-    //         handInventory.Clear();
-    //         Debug.Log("The bag is full, please remove an item"); //leaving object in had so player can drop
-    //     } 
-    // }
 
     public void AddObjectToInventory(GameObject obj)
     {
@@ -98,7 +66,11 @@ public class PCInventory : MonoBehaviour
         {
             inventoryUI.updatePCList();
         }
+
+        NoiseMeter.CheckTestTubes();
+       
     }
+
 
     public void RemoveFromHand(GameObject obj)
     {

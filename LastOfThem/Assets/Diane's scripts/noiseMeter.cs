@@ -108,50 +108,9 @@ public class noiseMeter : MonoBehaviour
         {
             noiseOmitted=0;
         }
-
-        if(!radioOn)
-        {
-            if(CheckTestTubes()==false)
-            {
-                UpdateNoiseMeter();
-            }
-        }
-
-        // Check if any zombie is within the noise detection range
-        // bool isZombieInRange = false;
-        //CheckZombieRange();
-  
-
-        // Increase noise meter gradually if player is making noise and a zombie is in range
-        // if (isWalking || isRunning || isJumping)
-        // {
-        //     noiseOmitted += noiseIncreasePerSecond * Time.deltaTime;
-        // }
-        // else
-        // {
-        //     noiseOmitted = Mathf.Max(0.0f, noiseOmitted - noiseIncreasePerSecond * Time.deltaTime);
-        // }
-
-        // Do something with the noise meter, such as displaying it on a UI element
-        // Debug.Log("Noise meter: " + noiseOmitted);
         
         noiseMeterSlider.value = noiseOmitted;
     }
-
-    //  void CheckZombieRange()
-    // {
-    //     foreach (GameObject zombie in GameObject.FindGameObjectsWithTag("Zombie"))
-    //     {
-    //         float distanceToZombie = Vector3.Distance(transform.position, zombie.transform.position);
-    //         if (distanceToZombie < noiseDetectionRange)
-    //         {
-    //             isZombieInRange = true;
-    //             break;
-    //         }else{
-    //             isZombieInRange = false;
-    //         }
-    //     }
-    // }
 
     public void RadioOn() //radio off -> code path 
     {
@@ -170,18 +129,26 @@ public class noiseMeter : MonoBehaviour
 
     public bool CheckTestTubes()
     {
-        if(PCInventory.playerInventory.Count>=3)
+        if(PCInventory.playerInventory.Count>=1)
         {
             noiseOmitted = maxNoise;
             UpdateZombieDistance(1.0f);
-            tubeSound.Play();
-            //play test tube sound
+            PlayTestTubes();
             return true;
         }else{
             tubeSound.Stop();
             return false;
 
         }
+    }
+
+    public void PlayTestTubes()
+    {
+        if (!tubeSound.isPlaying)
+        { 
+            tubeSound.Play();
+        }
+        
     }
 
     void UpdateNoiseMeter()
