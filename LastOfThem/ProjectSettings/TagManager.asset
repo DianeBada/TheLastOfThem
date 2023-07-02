@@ -15,7 +15,6 @@ TagManager:
   - Canvas
   - TubeBtn
   - Picked
-  - SecondaryCamera
   layers:
   - Default
   - TransparentFX
