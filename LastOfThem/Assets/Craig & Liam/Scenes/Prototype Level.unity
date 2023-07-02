@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1044.96, g: 729.07715, b: 492.56958, a: 1}
+  m_IndirectSpecularColor: {r: 1166.417, g: 871.2754, b: 710.4453, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -664,12 +664,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &54947503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -713,7 +715,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1318,12 +1320,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &93694883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1898,12 +1902,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &106200310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2474,12 +2480,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &137074268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3250,12 +3258,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &219495737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3949,12 +3959,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &284548928
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4610,12 +4622,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &293128278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5314,12 +5328,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &327804731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5951,12 +5967,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &368919695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6527,12 +6545,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &373836723
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6579,12 +6599,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!195 &380282012
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7187,12 +7209,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &446245560
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7763,12 +7787,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &492003553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8509,12 +8535,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &529282514
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9085,12 +9113,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &532947343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9661,12 +9691,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &570024033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10241,12 +10273,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &590144654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10817,12 +10851,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &615195935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11393,12 +11429,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &636983149
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11969,12 +12007,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &676646933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12549,12 +12589,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &690487246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13125,12 +13167,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &708481998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13706,12 +13750,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &722202579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14499,12 +14545,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &729024394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15075,12 +15123,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &785432408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15819,12 +15869,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &895717015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16395,12 +16447,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &899447883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16513,7 +16567,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17131,12 +17185,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &991708128
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17761,12 +17817,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1028211736
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18807,12 +18865,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1084451732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18875,7 +18935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19492,12 +19552,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1141403076
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20137,12 +20199,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1178332740
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20181,7 +20245,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20791,12 +20855,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1189229148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21367,12 +21433,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1216362961
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21943,12 +22011,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1230602303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22019,7 +22089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22721,12 +22791,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1331871759
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23576,12 +23648,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1501121618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24157,12 +24231,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1515281997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24733,12 +24809,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1550498252
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25309,12 +25387,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1558897923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25889,12 +25969,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1576042668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26544,12 +26626,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1609465474
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26648,7 +26732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26832,8 +26916,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 9c16cbe9d6bf61147a34a923e2ec60bf, type: 3}
     - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
+      propertyPath: crouchFOV
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
+      propertyPath: normalFOV
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
+      propertyPath: crouchSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_IsWalking
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
+      propertyPath: normalHeight
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 321796239405964584, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_RootOrder
@@ -27487,12 +27587,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1742816867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27531,7 +27633,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28257,12 +28359,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1822917453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28301,7 +28405,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28963,12 +29067,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1926259700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30098,12 +30204,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1955297455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30741,12 +30849,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &2082172261
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31317,12 +31427,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &2090432767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31893,12 +32005,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &2098994720
 BoxCollider:
   m_ObjectHideFlags: 0
