@@ -38,15 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 1045.1704, g: 729.2051, b: 492.5337, a: 1}
-=======
-<<<<<<< HEAD
-  m_IndirectSpecularColor: {r: 1164.5405, g: 870.79297, b: 711.44385, a: 1}
-=======
-  m_IndirectSpecularColor: {r: 1164.2222, g: 870.25977, b: 710.6284, a: 1}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -710,69 +702,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &75731254
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1230602299}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -40.53691
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.7069969
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 20.83097
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.10754621
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.9942001
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1 &78389954 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 793572807232087888, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
@@ -1430,74 +1359,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &97534905
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 287643404}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
---- !u!4 &97534906 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-  m_PrefabInstance: {fileID: 97534905}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1001 &106200305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3458,126 +3319,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &228492560
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 492003549}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
---- !u!1001 &267213961
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1609465470}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1 &275896239 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 0362bac363d427044bebec705849e38a, type: 3}
@@ -7536,69 +7277,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &491521852
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 373836719}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1001 &492003548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9506,126 +9184,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &549456082
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 729024390}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.424181
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -24.574001
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -36.223618
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.6905518
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.723283
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
---- !u!1001 &562743220
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2098994716}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1001 &570024028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10788,69 +10346,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &592527279
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1084451728}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1001 &615195930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15130,79 +14625,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
---- !u!1 &764842974
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 764842976}
-  - component: {fileID: 764842975}
-  m_Layer: 0
-  m_Name: videoTransform
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!328 &764842975
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 764842974}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: e8e81724a3664b14fb4c06f19620a417, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 2
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
-  m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
-  m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
-  m_Looping: 0
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
---- !u!4 &764842976
-Transform:
-=======
---- !u!1001 &735354749
-PrefabInstance:
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 764842974}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.972687, y: 16.807758, z: 51.136547}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1001 &785432403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17108,7 +16530,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
 --- !u!1001 &910590924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17178,8 +16599,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
-=======
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1001 &929742090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17919,126 +17338,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &993170173
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 529282510}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
---- !u!1001 &999365112
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2082172257}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1 &1002041824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1507797827977212343, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
@@ -18672,69 +17971,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &1043933801
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1926259696}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1 &1080376860
 GameObject:
   m_ObjectHideFlags: 0
@@ -19784,69 +19020,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &1085042367
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 106200306}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1001 &1101997841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19956,7 +19129,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
-<<<<<<< HEAD
 --- !u!1 &1104035759 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
@@ -19977,8 +19149,6 @@ MonoBehaviour:
   cameraShaker: {fileID: 217813539}
   startDelay: 0.001
   stopDelay: 0.001
-=======
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1001 &1141403071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20558,69 +19728,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &1168134032
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 590144650}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1001 &1169044425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23084,69 +22191,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &1266753718
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1742816863}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1001 &1276367716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23339,74 +22383,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
   m_PrefabInstance: {fileID: 1718466987}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &1312913481
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 287643404}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
---- !u!4 &1312913482 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-  m_PrefabInstance: {fileID: 1312913481}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!4 &1320423365 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
@@ -23996,7 +22972,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
 --- !u!1 &1355728325
 GameObject:
   m_ObjectHideFlags: 0
@@ -24046,68 +23021,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &1374196233
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1189229144}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1001 &1472686241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27949,69 +26862,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &1617662163
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 54947499}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1 &1617907223
 GameObject:
   m_ObjectHideFlags: 0
@@ -28265,24 +27115,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 9c16cbe9d6bf61147a34a923e2ec60bf, type: 3}
     - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
-      propertyPath: crouchFOV
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
-      propertyPath: normalFOV
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
-      propertyPath: crouchSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_IsWalking
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
-      propertyPath: normalHeight
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 321796239405964584, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_RootOrder
@@ -28300,21 +27134,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-=======
-    - target: {fileID: 5162889969175113059, guid: 0362bac363d427044bebec705849e38a, type: 3}
-      propertyPath: curedAvatar
-      value: 
-      objectReference: {fileID: 612835936003780890, guid: fc93098f9619d314c8a2dc7323218f91, type: 3}
-    - target: {fileID: 5162889969175113059, guid: 0362bac363d427044bebec705849e38a, type: 3}
-      propertyPath: zombieAvatar
-      value: 
-      objectReference: {fileID: 2701140742703984181, guid: 026aae5578aee4249bcde72ede821ff1, type: 3}
-    - target: {fileID: 5162889969175113059, guid: 0362bac363d427044bebec705849e38a, type: 3}
-      propertyPath: explosionVideoPlayer
-      value: 
-      objectReference: {fileID: 764842975}
->>>>>>> parent of f953cd4 (Revert "fixes")
     - target: {fileID: 6062330126967726726, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: fp
       value: 
@@ -28989,126 +27808,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
---- !u!1001 &1764142000
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 690487242}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
---- !u!1001 &1789566274
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1576042664}
-    m_Modifications:
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138986, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5821627069818138987, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
-      propertyPath: m_Name
-      value: Gojo Red Hollow Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a2b23dd47e8e1242b4f263e28b45081, type: 3}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
 --- !u!1001 &1792113784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30010,16 +28709,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mixing Room Camera
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    - target: {fileID: 3078726840563173317, guid: 55c31d4dc083d484796a661be1a74367, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
->>>>>>> parent of 9ea390a (add zombie audio and fix mixing room camera)
->>>>>>> parent of f953cd4 (Revert "fixes")
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55c31d4dc083d484796a661be1a74367, type: 3}
 --- !u!1001 &1926259695
