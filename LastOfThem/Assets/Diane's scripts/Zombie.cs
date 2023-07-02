@@ -14,6 +14,9 @@ public class Zombie : MonoBehaviour
    [SerializeField]private FirstPersonController firstPersonController;
 
 
+    private Animator animator;
+
+
     public enum ZombieBehavior
     {
         Patrol,
@@ -42,6 +45,8 @@ public class Zombie : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
+
         player = GameObject.FindGameObjectWithTag("Player").transform;
         navMeshAgent = GetComponent<NavMeshAgent>();
         firstPersonController = GetComponent<FirstPersonController>();
@@ -63,6 +68,16 @@ public class Zombie : MonoBehaviour
 
     private void Update()
     {
+        if (this.behavior == Zombie.ZombieBehavior.Stationary)
+        {
+            animator.SetBool("isWalking", false);
+        }
+        else
+        {
+            animator.SetBool("isWalking", this.isMoving);
+
+        }
+
         timeSinceLastCheck += Time.deltaTime;
 
         // check if it's time to check if the player is within detection distance
@@ -183,6 +198,7 @@ public class Zombie : MonoBehaviour
     {
         if (!hasAttackedPlayer)
         {
+            animator.SetBool("isAttacking", true);
             player.GetComponent<PlayerHealth>().TakeDamage(damage);
             hasAttackedPlayer = true;
             navMeshAgent.SetDestination(startPosition);
