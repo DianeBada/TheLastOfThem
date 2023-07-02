@@ -71,7 +71,6 @@ public class GameManager : MonoBehaviour
     {
         inMixingRoom = true;
         FirstPersonController.SetActive(false);
-        mixingRoomCamera.tag = "MainCamera";
         mixingRoomCamera.SetActive(true);
     }
 
