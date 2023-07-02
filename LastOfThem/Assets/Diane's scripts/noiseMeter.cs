@@ -44,6 +44,8 @@ public class noiseMeter : MonoBehaviour
 
     [SerializeField]
     AudioSource tubeSound;
+    [SerializeField]
+    AudioSource radioSound;
 
     public void Start()
     {
@@ -154,12 +156,14 @@ public class noiseMeter : MonoBehaviour
     public void RadioOn() //radio off -> code path 
     {
         noiseOmitted = maxNoise;
+        radioSound.Play();
         radioOn = true;
         UpdateZombieDistance(1.0f);
     }
 
     public void RadioOff()
     {
+        radioSound.Stop();
         radioOn = false;
         UpdateNoiseMeter();
     }
