@@ -39,13 +39,10 @@ public class ZombieManager : MonoBehaviour
         zombiePercentage = ((totalNum/startingNum)*100);
         zombiesLeftTxt.text =  Mathf.Round(zombiePercentage)+"% of zombies left";
 
-        //Debug.Log("total zombies "+totalZombies);
-         Debug.Log("zombie decimal count "+startingNum/totalNum+" , zombie percentage"+((startingNum/totalNum)/100)+" , zombie percentage"+zombiePercentage);
-
-        if(zombiePercentage<80)
+        if(zombiePercentage<=80)
         {
             LoseState();
-        }else if(zombiePercentage<85)
+        }else if(zombiePercentage<90)
         {
             zombiesLeftTxt.color = Color.red; //warning sign for users
         }
