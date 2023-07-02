@@ -10,6 +10,9 @@ public class Zombie : MonoBehaviour
     private bool isPlayingSound = false;
     private bool hasAttackedPlayer = false;
 
+    private Animator animator;
+
+
     public enum ZombieBehavior
     {
         Patrol,
@@ -38,6 +41,8 @@ public class Zombie : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
+
         player = GameObject.FindGameObjectWithTag("Player").transform;
         navMeshAgent = GetComponent<NavMeshAgent>();
 
@@ -57,6 +62,8 @@ public class Zombie : MonoBehaviour
 
     private void Update()
     {
+        animator.SetBool("isWalking", this.isMoving);
+
         timeSinceLastCheck += Time.deltaTime;
 
         // check if it's time to check if the player is within detection distance
