@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using System;
+using UnityStandardAssets.Characters.FirstPerson;
+
+
 public class Zombie : MonoBehaviour
 {
 
@@ -11,6 +14,10 @@ public class Zombie : MonoBehaviour
     private bool hasAttackedPlayer = false;
     private CameraShake cameraShaker;
     public ParticleEffectController particle;
+   [SerializeField]private FirstPersonController firstPersonController;
+
+
+    private Animator animator;
 
 
     public enum ZombieBehavior
@@ -43,10 +50,13 @@ public class Zombie : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
+
         player = GameObject.FindGameObjectWithTag("Player").transform;
         navMeshAgent = GetComponent<NavMeshAgent>();
         cameraShaker = Camera.main.GetComponent<CameraShake>();
 
+        firstPersonController = GetComponent<FirstPersonController>();
 
 
         audioSource = GetComponent<AudioSource>();
@@ -65,6 +75,16 @@ public class Zombie : MonoBehaviour
 
     private void Update()
     {
+        if (this.behavior == Zombie.ZombieBehavior.Stationary)
+        {
+            animator.SetBool("isWalking", false);
+        }
+        else
+        {
+            animator.SetBool("isWalking", this.isMoving);
+
+        }
+
         timeSinceLastCheck += Time.deltaTime;
 
         // check if it's time to check if the player is within detection distance
@@ -75,7 +95,7 @@ public class Zombie : MonoBehaviour
             float distance = Vector3.Distance(transform.position, player.position);
 
             // if the player is within detection distance, start chasing the player
-            if (distance <= detectionDistance)
+            if (distance <= detectionDistance && !player.GetComponent<FirstPersonController>().isCrouching)
             {
                 StartChasing();
             }
@@ -189,6 +209,7 @@ public class Zombie : MonoBehaviour
         if (!hasAttackedPlayer)
         {
 
+            animator.SetBool("isAttacking", true);
             player.GetComponent<PlayerHealth>().TakeDamage(damage);
          
             hasAttackedPlayer = true;
