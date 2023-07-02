@@ -62,7 +62,15 @@ public class Zombie : MonoBehaviour
 
     private void Update()
     {
-        animator.SetBool("isWalking", this.isMoving);
+        if (this.behavior == Zombie.ZombieBehavior.Stationary)
+        {
+            animator.SetBool("isWalking", false);
+        }
+        else
+        {
+            animator.SetBool("isWalking", this.isMoving);
+
+        }
 
         timeSinceLastCheck += Time.deltaTime;
 
