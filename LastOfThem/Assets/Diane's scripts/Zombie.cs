@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using System;
 public class Zombie : MonoBehaviour
 {
 
     public AudioSource audioSource;
     private bool isPlayingSound = false;
     private bool hasAttackedPlayer = false;
+    private CameraShake cameraShaker;
+    public ParticleEffectController particle;
+
 
     public enum ZombieBehavior
     {
@@ -32,6 +35,8 @@ public class Zombie : MonoBehaviour
     private bool isMoving = false;
     private float timeSinceLastCheck = 0f;
 
+
+
     // For WalkBackAndForth behavior
     private Vector3 startPosition;
     private Vector3 patrolPoint;
@@ -40,6 +45,9 @@ public class Zombie : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         navMeshAgent = GetComponent<NavMeshAgent>();
+        cameraShaker = Camera.main.GetComponent<CameraShake>();
+
+
 
         audioSource = GetComponent<AudioSource>();
 
@@ -130,7 +138,7 @@ public class Zombie : MonoBehaviour
 
     private void RandomDestination()
     {
-        Vector3 randomDirection = Random.insideUnitSphere * detectionDistance;
+        Vector3 randomDirection = UnityEngine.Random.insideUnitSphere * detectionDistance;
         randomDirection += transform.position;
         NavMeshHit hit;
         NavMesh.SamplePosition(randomDirection, out hit, detectionDistance, 1);
@@ -175,13 +183,24 @@ public class Zombie : MonoBehaviour
 
     public void AttackPlayer()
     {
+        particle.PlayParticleSystem(); // Start the particle system
+        Debug.Log("blood spluttering");
+        cameraShaker.ShakeCamera();
         if (!hasAttackedPlayer)
         {
+
             player.GetComponent<PlayerHealth>().TakeDamage(damage);
+         
             hasAttackedPlayer = true;
             navMeshAgent.SetDestination(startPosition);
+          
+
+
             isChasing = false;
             isMoving = true;
+
+            //ZombieAttackEffect attackEffect = playerCamera.GetComponent<ZombieAttackEffect>();
+            //attackEffect.StartAttackEffect();
         }
     }
 
@@ -193,10 +212,12 @@ public class Zombie : MonoBehaviour
             if (behavior == ZombieBehavior.Patrol)
             {
                 RandomDestination();
+                particle.StopParticleSystem();
             }
             else if (behavior == ZombieBehavior.WalkBackAndForth)
             {
                 SwapPatrolPoints();
+                particle.StopParticleSystem();
             }
         }
     }

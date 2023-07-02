@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1044.96, g: 729.07715, b: 492.56958, a: 1}
+  m_IndirectSpecularColor: {r: 1045.1704, g: 729.2051, b: 492.5337, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -664,12 +664,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &54947503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1318,12 +1321,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &93694883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1898,12 +1904,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &106200310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2474,12 +2483,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &137074268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2709,6 +2721,25 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!114 &217813539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217813530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1e78d166283d6d41ba96e1101396532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 0.6
+  shakeIntensity: 0.4
+--- !u!4 &217813540 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 0362bac363d427044bebec705849e38a, type: 3}
+  m_PrefabInstance: {fileID: 1718466987}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &219495732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3250,12 +3281,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &219495737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3949,12 +3983,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &284548928
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4610,12 +4647,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &293128278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5314,12 +5354,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &327804731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5951,12 +5994,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &368919695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6527,12 +6573,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &373836723
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6579,12 +6628,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!195 &380282012
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7187,12 +7239,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &446245560
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7763,12 +7818,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &492003553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8509,12 +8567,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &529282514
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9085,12 +9146,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &532947343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9661,12 +9725,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &570024033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10241,12 +10308,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &590144654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10817,12 +10887,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &615195935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11393,12 +11466,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &636983149
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11969,12 +12045,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &676646933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12549,12 +12628,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &690487246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13125,12 +13207,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &708481998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13706,12 +13791,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &722202579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14499,12 +14587,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &729024394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15075,12 +15166,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &785432408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15819,12 +15913,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &895717015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16395,12 +16492,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &899447883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16430,6 +16530,75 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &910590924
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 217813540}
+    m_Modifications:
+    - target: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_Name
+      value: BloodSprayFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199000011344805796, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199000011716699732, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199000012850912754, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
 --- !u!1001 &929742090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17131,12 +17300,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &991708128
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17761,12 +17933,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1028211736
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18807,12 +18982,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1084451732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18951,6 +19129,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
+--- !u!1 &1104035759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+  m_PrefabInstance: {fileID: 910590924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1104035761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104035759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb97ceccaafc854c9f0209b8ae491cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShaker: {fileID: 217813539}
+  startDelay: 0.001
+  stopDelay: 0.001
 --- !u!1001 &1141403071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19492,12 +19690,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1141403076
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20137,12 +20338,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1178332740
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20791,12 +20995,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1189229148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21367,12 +21574,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1216362961
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21943,12 +22153,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1230602303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22721,12 +22934,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1331871759
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22756,6 +22972,55 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1355728325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1355728327}
+  - component: {fileID: 1355728326}
+  m_Layer: 0
+  m_Name: Postprocess
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1355728326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355728325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 0}
+  isGlobal: 0
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!4 &1355728327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355728325}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.53228, y: 2.3916514, z: 77.83452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1472686241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23576,12 +23841,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1501121618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24157,12 +24425,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1515281997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24733,12 +25004,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1550498252
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25309,12 +25583,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1558897923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25889,12 +26166,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1576042668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26544,12 +26824,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1609465474
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27487,12 +27770,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1742816867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28257,12 +28543,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1822917453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28963,12 +29252,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1926259700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30098,12 +30390,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &1955297455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30741,12 +31036,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &2082172261
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31317,12 +31615,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &2090432767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31893,12 +32194,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990556af8314ad46b6e681b76e9ec27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  particle: {fileID: 1104035761}
   speed: 1
-  maxDetectionDistance: 5
   detectionDistance: 5
   attackDistance: 1.5
   damage: 10
   chaseInterval: 1
+  maxDetectionDistance: 5
+  behavior: 0
 --- !u!65 &2098994720
 BoxCollider:
   m_ObjectHideFlags: 0
