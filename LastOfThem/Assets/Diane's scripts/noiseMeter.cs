@@ -13,7 +13,6 @@ public class noiseMeter : MonoBehaviour
     private bool isWalking;
     private bool isRunning;
     private bool isJumping;
-    private bool isCrouching;
 
     private bool fullTestTubes;
 
@@ -42,13 +41,11 @@ public class noiseMeter : MonoBehaviour
     Radio radio;
 
     PCInventory PCInventory;
-    GameObject player;
 
     public void Start()
     {
         noiseMeterSlider.maxValue = 10;
-        player = GameObject.FindGameObjectWithTag("Player");
-        FPS = player.GetComponent<FirstPersonController>();
+        FPS = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
 
         PCInventory = GameObject.FindGameObjectWithTag("ParentPickUp").GetComponent<PCInventory>();
 
@@ -81,25 +78,14 @@ public class noiseMeter : MonoBehaviour
                  Debug.Log("should be running");
                 isRunning = true;
                 isWalking = false;
-                isCrouching = false;
-            }else if(isCrouching)
-            {
-                isRunning = false;
-                isWalking = false;
             }else{
                 isWalking = true;
                 isRunning = false;
-                isCrouching = false;
             }
-        }    
+        }        
         else{
             isRunning = false;
             isWalking = false;
-        }
-
-        if(Input.GetKeyDown(KeyCode.C)){
-            isCrouching = !isCrouching;
-            Debug.Log("player is crouching: "+isCrouching);
         }
 
         if (Input.GetKey(KeyCode.Space))
@@ -197,12 +183,12 @@ public class noiseMeter : MonoBehaviour
 
             UpdateZombieDistance(0.9f);
         } 
-        else if(isCrouching) 
-        {
-            noiseOmitted = crouchingNoise;
-            Debug.Log("crouching");
-            UpdateZombieDistance(0.60f);
-        }
+        // else if(FPS.getIsCrouching()) //m_IsCrouching
+        // {
+        //     noiseOmitted = crouchingNoise;
+        //     Debug.Log("crouching");
+        //     UpdateZombieDistance(0.2f);
+        // }
         else if(isWalking)
         {
             noiseOmitted = walkingNoise;
@@ -213,10 +199,10 @@ public class noiseMeter : MonoBehaviour
             noiseOmitted = runningNoise;
             Debug.Log("running");
             UpdateZombieDistance(0.8f);
-        }else if((isJumping==false)  && (isWalking==false) && (isRunning==false) && (isCrouching==false)){ 
+        }else if((isJumping==false)  && (isWalking==false) && (isRunning==false)){ //crouch and still make the affect the noisemeter in the same way
             noiseOmitted = crouchingNoise;
             UpdateZombieDistance(0.6f);
-            //Debug.Log("still");
+            Debug.Log("still");
             
         }
 
