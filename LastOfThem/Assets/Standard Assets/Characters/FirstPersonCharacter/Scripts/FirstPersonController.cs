@@ -32,7 +32,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private float crouchingFootstepVolume = 0.5f;
 
 
-        private Camera m_Camera;
+        public Camera m_Camera;
         public bool m_Jump;
         private float m_YRotation;
         private Vector2 m_Input;
@@ -59,6 +59,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public float normalFOV = 90f;
 
         public float currentSpeed = 5f;
+        public bool isInsideLocker = false; // track if the player is inside a locker
 
         // Use this for initialization
         private void Start()
@@ -76,7 +77,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             isCrouching = false;
             m_Rigidbody = GetComponent<Rigidbody>();
             m_WalkSpeed = currentSpeed;
-
+            m_Camera = Camera.main;
 
 
         }
@@ -85,6 +86,34 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
+            if (isInsideLocker == true)
+            {
+                // Disable player controls or restrict movement
+                m_Input = Vector2.zero; // Stop player movement
+
+                // Adjust camera view or provide a first-person view from inside the locker
+                // Set the camera's rotation to match the locker's rotation
+                //m_Camera.transform.rotation = transform.rotation;
+
+                // Set other necessary variables to restrict movements
+                m_Jump = false;
+                m_IsWalking = false;
+                m_WalkSpeed = 0;
+
+                isJumping = false;
+                isWalking = false;
+                isRunning = false;
+                isCrouching = false;
+            }
+            else
+            {
+                isInsideLocker = false;
+                m_WalkSpeed = 5f;
+
+                Debug.Log("isInside is false");
+            }
+
+
             RotateView();
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
