@@ -134,7 +134,10 @@ public class Tube : MonoBehaviour
     private IEnumerator DeactivateTestTube()
     {
         yield return new WaitForSecondsRealtime(deactivationTime);
-        this.gameObject.SetActive(false);
+        if(testTube.Picked())
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     public TestTube GetTestTube()
