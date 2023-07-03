@@ -16,6 +16,7 @@ TagManager:
   - TubeBtn
   - Picked
   - locker
+  - SecondaryCamera
   layers:
   - Default
   - TransparentFX

@@ -28,11 +28,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
-        private Rigidbody m_Rigidbody;
-        [SerializeField] private float crouchingFootstepVolume = 0.5f;
 
-
-        public Camera m_Camera;
+        private Camera m_Camera;
         public bool m_Jump;
         private float m_YRotation;
         private Vector2 m_Input;
@@ -40,9 +37,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private CharacterController m_CharacterController;
         private CollisionFlags m_CollisionFlags;
         private bool m_PreviouslyGrounded;
-        public Vector3 m_OriginalCameraPosition;
-        public Quaternion m_OriginalCameraRotation; // New variable to store original camera rotation
-
+        private Vector3 m_OriginalCameraPosition;
         private float m_StepCycle;
         private float m_NextStep;
         public bool m_Jumping;
@@ -53,17 +48,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public bool isWalking;
         private bool m_IsCrouching;
 
-        public bool isCrouching = false;
+        private bool isCrouching = false;
         public float crouchSpeed = 2f;
         public float crouchHeight = 0.01f;
         public float normalHeight = 5f;
         public float crouchFOV = 60f;
         public float normalFOV = 90f;
-
-        public float currentSpeed =5f;
-        public bool isInsideLocker = false; // Added variable to track if the player is inside a locker
-
-
 
         // Use this for initialization
         private void Start()
@@ -71,7 +61,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_CharacterController = GetComponent<CharacterController>();
             m_Camera = Camera.main;
             m_OriginalCameraPosition = m_Camera.transform.localPosition;
-            m_OriginalCameraRotation = m_Camera.transform.rotation;
             m_FovKick.Setup(m_Camera);
             m_HeadBob.Setup(m_Camera, m_StepInterval);
             m_StepCycle = 0f;
@@ -80,10 +69,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
             isCrouching = false;
-            m_Rigidbody = GetComponent<Rigidbody>();
-            m_WalkSpeed = currentSpeed;
-
-
 
         }
 
@@ -92,38 +77,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void Update()
         {
             RotateView();
+
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
                 isJumping = true;
-            }
-
-            if (isInsideLocker == true)
-            {
-                // Disable player controls or restrict movement
-                m_Input = Vector2.zero; // Stop player movement
-
-                // Adjust camera view or provide a first-person view from inside the locker
-                // Set the camera's rotation to match the locker's rotation
-                //m_Camera.transform.rotation = transform.rotation;
-
-                // Set other necessary variables to restrict movements
-                m_Jump = false;
-                m_IsWalking = false;
-                m_WalkSpeed = 0;
-        
-                isJumping = false;
-                isWalking = false;
-                isRunning = false;
-                isCrouching = false;
-            }
-            else
-            {
-                isInsideLocker = false;
-                m_WalkSpeed = 5f;
-
-                Debug.Log("isInside is false");
             }
 
             if (Input.GetKeyDown(KeyCode.C)) 
@@ -201,44 +160,29 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             if (m_IsCrouching)
             {
-                isCrouching = false;
                 // Uncrouch
-                m_Rigidbody.transform.localScale = new Vector3(1f, 1f, 1f);
+                m_CharacterController.height = normalHeight;
+                m_Camera.fieldOfView = normalFOV;
                 m_Camera.transform.localPosition = m_OriginalCameraPosition;
-                m_Rigidbody.drag = 0f;
-                m_Rigidbody.mass = 1f;
-                m_CharacterController.stepOffset = 0.3f;
-                m_WalkSpeed = currentSpeed;
-
             }
             else
             {
-                isCrouching = true;
                 // Crouch
-                m_Rigidbody.transform.localScale = new Vector3(1f, crouchHeight / normalHeight, 1f);
+                m_CharacterController.height = crouchHeight;
+                m_Camera.fieldOfView = crouchFOV;
                 m_Camera.transform.localPosition = new Vector3(
                     m_Camera.transform.localPosition.x,
                     crouchHeight - m_OriginalCameraPosition.y,
                     m_Camera.transform.localPosition.z
                 );
-                m_Rigidbody.drag = 150f;
-                m_Rigidbody.mass = 150f;
-                m_CharacterController.stepOffset = 0f;
-                m_WalkSpeed = crouchSpeed;
             }
 
             m_IsCrouching = !m_IsCrouching;
         }
 
 
-
-
-
-
         private void FixedUpdate()
         {
-
-
             float speed;
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
@@ -331,7 +275,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         }
 
 
-        public void UpdateCameraPosition(float speed)
+        private void UpdateCameraPosition(float speed)
         {
             Vector3 newCameraPosition;
             if (!m_UseHeadBob)
@@ -390,7 +334,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
-            m_MouseLook.LookRotation (transform, m_Camera.transform);
+            m_MouseLook.LookRotation(transform, m_Camera.transform);
         }
 
 
