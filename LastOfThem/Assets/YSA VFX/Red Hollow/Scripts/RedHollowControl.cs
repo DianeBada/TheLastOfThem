@@ -33,8 +33,8 @@ public class RedHollowControl : MonoBehaviour
 
     public void Burst_Beam() {
         animator.Play("Red Hollow - Burst");
-	if(Camera.main.transform.GetComponent<CameraShake>() != null){
-		Camera.main.transform.GetComponent<CameraShake>().Shake(0.5f, 1f);
+	if(Camera.main.transform.GetComponent<CameraShaker>() != null){
+		Camera.main.transform.GetComponent<CameraShaker>().Shake(0.5f, 1f);
 	}
     }
 

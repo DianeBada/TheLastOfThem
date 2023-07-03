@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEngine.ParticleSystem;
 
 public class Zombie : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Zombie : MonoBehaviour
     public AudioSource audioSource;
     private bool isPlayingSound = false;
     private bool hasAttackedPlayer = false;
+    private ParticleEffectController particle;
+    private CamShaker cameraShaker;
 
     public enum ZombieBehavior
     {
@@ -42,6 +45,7 @@ public class Zombie : MonoBehaviour
     private void Start()
 
     {
+
         animator = gameObject.GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         noiseMeter = player.gameObject.GetComponent<noiseMeter>();
@@ -193,7 +197,11 @@ public class Zombie : MonoBehaviour
     {
         if (!hasAttackedPlayer)
         {
-            animator.SetBool("isAttacking", true);
+animator.SetBool("isAttacking", true);
+            particle.PlayParticleSystem(); // Start the particle system
+            Debug.Log("blood spluttering");
+            cameraShaker.ShakeCamera();
+
 
             player.GetComponent<PlayerHealth>().TakeDamage(damage);
             hasAttackedPlayer = true;
@@ -211,10 +219,12 @@ public class Zombie : MonoBehaviour
             if (behavior == ZombieBehavior.Patrol)
             {
                 RandomDestination();
+                particle.StopParticleSystem();
             }
             else if (behavior == ZombieBehavior.WalkBackAndForth)
             {
                 SwapPatrolPoints();
+                particle.StopParticleSystem();
             }
         }
     }
