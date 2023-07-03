@@ -52,6 +52,7 @@ public class Zombie : MonoBehaviour
         }
         else if (behavior == ZombieBehavior.WalkBackAndForth)
         {
+
             startPosition = transform.position;
             patrolPoint = startPosition + new Vector3(5f, 0f, 0f);
         }
