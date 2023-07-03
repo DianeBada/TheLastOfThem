@@ -14,7 +14,11 @@ public class LockerFunction : MonoBehaviour
     private bool isByLocker;
     private float repelDuration = 3f;
     private float repelDistance = 10f;
-
+    public Light mainLight;
+    private Vector3 originalPosition;
+    private Quaternion originalRotation;
+    private float originalLightIntensity;
+    private float originalFOV;
     private void Start()
     {
         isByLocker = false;
@@ -23,6 +27,9 @@ public class LockerFunction : MonoBehaviour
     private void Awake()
     {
         lockers = GameObject.FindGameObjectsWithTag("locker");
+        originalLightIntensity = mainLight.intensity;
+        originalFOV = 90;
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -60,6 +67,9 @@ public class LockerFunction : MonoBehaviour
 
     public void HidePlayer()
     {
+        originalPosition = firstPersonController.transform.position;
+        originalRotation = firstPersonController.transform.rotation;
+
         firstPersonController.isInsideLocker = true;
         closestLocker = GetClosestLocker();
 
@@ -67,19 +77,33 @@ public class LockerFunction : MonoBehaviour
         {
             isOccupied = true;
 
-            // Calculate the offset between player and locker
-            Vector3 playerOffset = firstPersonController.transform.position - closestLocker.transform.position;
+            // Darken the environment
+            mainLight.intensity = 0.1f; // Adjust the intensity as desired
+                                        // Disable other lights if necessary
+
+            // Limit the field of view (FOV)
+            firstPersonController.m_Camera.fieldOfView = 20f; // Adjust the FOV as desired
 
             // Face the camera towards the locker's forward direction
             Vector3 lockerDirection = closestLocker.transform.forward;
             Quaternion targetRotation = Quaternion.LookRotation(lockerDirection);
             firstPersonController.m_Camera.transform.rotation = targetRotation;
 
-            // Place the player in the middle of the locker
-            Vector3 lockerCenter = closestLocker.transform.position;
-            firstPersonController.transform.position = lockerCenter + playerOffset;
+            // Move the player forward by a few steps
+            Vector3 forwardDirection = closestLocker.transform.forward;
+            Vector3 newPosition = closestLocker.transform.position + forwardDirection * 5f;
+            firstPersonController.transform.position = newPosition;
+
+            // Rotate the player 180 degrees
+            Quaternion reverseRotation = Quaternion.LookRotation(-forwardDirection);
+            firstPersonController.transform.rotation = reverseRotation;
+
+            // Disable player controls
+            firstPersonController.enabled = false;
+
         }
     }
+
 
     public void ExitLocker()
     {
@@ -88,33 +112,19 @@ public class LockerFunction : MonoBehaviour
         firstPersonController.isInsideLocker = false;
         isOccupied = false;
 
-        // Get the position of the exitPos child object
-        Transform exitPos = closestLocker.transform.Find("exitPos");
+        // Restore the original position and rotation
+        firstPersonController.transform.position = originalPosition;
+        firstPersonController.transform.rotation = originalRotation;
 
-        // Move the player to the exit position
-        firstPersonController.transform.position = exitPos.position;
-        firstPersonController.transform.rotation = exitPos.rotation;
+        // Restore the original camera properties
+        mainLight.intensity = originalLightIntensity;
+        firstPersonController.m_Camera.fieldOfView = originalFOV;
 
-        // Restore the original camera position and rotation
-        // firstPersonController.m_Camera.transform.position = firstPersonController.m_OriginalCameraPosition;
-        // firstPersonController.m_Camera.transform.rotation = firstPersonController.m_OriginalCameraRotation;
+        // Enable player controls
+        firstPersonController.enabled = true;
 
-        // Repel nearby zombies
-        Zombie[] zombies = FindObjectsOfType<Zombie>();
-        foreach (Zombie zombie in zombies)
-        {
-            Vector3 repelDirection = zombie.transform.position - transform.position;
-            Vector3 repelForce = repelDirection.normalized * repelDistance;
-
-            // Apply repel force to push the zombie away from the locker
-            Rigidbody zombieRigidbody = zombie.GetComponent<Rigidbody>();
-            if (zombieRigidbody != null)
-            {
-                zombieRigidbody.AddForce(repelForce, ForceMode.Impulse);
-            }
-        }
+       
     }
-
 
     private IEnumerator ResumeChasing(Zombie zombie)
     {
