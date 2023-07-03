@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LastOfThem/Assets/pREFABS/Radio.prefab.meta
+guid: 9dfbef73930ad0a4cb5dfdcd31226dd1
+PrefabImporter:
+========
 guid: a86ddcfac93830748bfd2e48c070d690
 folderAsset: yes
 DefaultImporter:
+>>>>>>>> main:LastOfThem/Assets/Resources.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

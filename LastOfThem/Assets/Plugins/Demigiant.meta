@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LastOfThem/Assets/Craig & Liam/Scenes/MainMenu.unity.meta
+guid: 31e8902cb3e14412f9f6c8f0eb42bb4b
+========
 guid: 77bcc14007ed0dc4d8ea4aa1a7edb355
 folderAsset: yes
+>>>>>>>> main:LastOfThem/Assets/Plugins/Demigiant.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
