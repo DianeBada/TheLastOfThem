@@ -149,7 +149,7 @@ public class Tube : MonoBehaviour
         if(testTube.Picked())
         {
             this.gameObject.SetActive(false);
-            Destroy(this.gameObject);
+            
            
         }
     }
