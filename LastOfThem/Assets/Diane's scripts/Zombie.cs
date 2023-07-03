@@ -36,9 +36,12 @@ public class Zombie : MonoBehaviour
     private Vector3 startPosition;
     private Vector3 patrolPoint;
 
+    noiseMeter noiseMeter;
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        noiseMeter = player.gameObject.GetComponent<noiseMeter>();
         navMeshAgent = GetComponent<NavMeshAgent>();
 
         audioSource = GetComponent<AudioSource>();
@@ -67,7 +70,7 @@ public class Zombie : MonoBehaviour
             float distance = Vector3.Distance(transform.position, player.position);
 
             // if the player is within detection distance, start chasing the player
-            if (distance <= detectionDistance)
+            if (distance <= detectionDistance && !noiseMeter.isCrouching)
             {
                 StartChasing();
             }

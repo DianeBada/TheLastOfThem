@@ -1,8 +1,12 @@
 fileFormatVersion: 2
-guid: b8a2cfea9263305409495917b1fff91b
+<<<<<<<< HEAD:LastOfThem/Assets/ZombieAnimationPackFree/Models/Appearance/BH-2/Textures/Default/Erlenmayer.mat.meta
+guid: 3b285b5ddf01d344e801e8bdaeb6a4ee
+========
+guid: 336af2cf970b95f46aec26056f05da00
+>>>>>>>> main:LastOfThem/Assets/ZombieAnimationPackFree/Models/Appearance/BH-2/Material/BH_2_GLASS.mat.meta
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 7400000
+  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
