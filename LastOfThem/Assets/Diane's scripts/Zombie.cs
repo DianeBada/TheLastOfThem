@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class Zombie : MonoBehaviour
 {
 
+    Animator animator;
     public AudioSource audioSource;
     private bool isPlayingSound = false;
     private bool hasAttackedPlayer = false;
@@ -39,7 +40,9 @@ public class Zombie : MonoBehaviour
     noiseMeter noiseMeter;
 
     private void Start()
+
     {
+        animator = gameObject.GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         noiseMeter = player.gameObject.GetComponent<noiseMeter>();
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -57,10 +60,20 @@ public class Zombie : MonoBehaviour
             patrolPoint = startPosition + new Vector3(5f, 0f, 0f);
         }
 
-    }
+    
+}
 
     private void Update()
     {
+
+        if(behavior == ZombieBehavior.Patrol)
+        {
+            animator.SetBool("isWalking", false);
+        }
+        else
+        {
+            animator.SetBool("isWalking", true);
+        }
         timeSinceLastCheck += Time.deltaTime;
 
         // check if it's time to check if the player is within detection distance
@@ -181,6 +194,8 @@ public class Zombie : MonoBehaviour
     {
         if (!hasAttackedPlayer)
         {
+            animator.SetBool("isAttacking", true);
+
             player.GetComponent<PlayerHealth>().TakeDamage(damage);
             hasAttackedPlayer = true;
             navMeshAgent.SetDestination(startPosition);
