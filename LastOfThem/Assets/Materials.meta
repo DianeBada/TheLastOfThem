@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LastOfThem/Assets/Plugins/Demigiant/DOTween.meta
+guid: c2a82c2dc10704743864669a07ca5d5f
+========
 guid: 0f0e7755aa58d354fa3e273d7126c923
+>>>>>>>> main:LastOfThem/Assets/Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

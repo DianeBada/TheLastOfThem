@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1044.9404, g: 729.08496, b: 492.531, a: 1}
+  m_IndirectSpecularColor: {r: 1177.978, g: 889.50195, b: 735.02344, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -673,7 +673,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &54947503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -717,14 +717,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -799,11 +799,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &78389954 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 793572807232087888, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
-  m_PrefabInstance: {fileID: 4370715872428937379}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &81020416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1427,7 +1422,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &93694883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1471,14 +1466,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -2107,7 +2102,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &106200310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2151,14 +2146,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -2783,7 +2778,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &137074268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2827,14 +2822,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -2972,7 +2967,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &217813530 stripped
 GameObject:
@@ -3678,7 +3673,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &219495737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3722,14 +3717,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -4477,7 +4472,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &284548928
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4521,14 +4516,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -4681,7 +4676,7 @@ Transform:
   - {fileID: 529282510}
   - {fileID: 1084451728}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &288155006 stripped
 Transform:
@@ -5238,7 +5233,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &293128278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5282,14 +5277,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -5492,6 +5487,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &311602877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5972641623864600408, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
+  m_PrefabInstance: {fileID: 4370715872428937379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &327804726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6086,14 +6086,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -6201,7 +6201,7 @@ Transform:
   - {fileID: 2103680686}
   - {fileID: 929742091}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &328209741
 Animator:
@@ -6224,9 +6224,14 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &330989151 stripped
+--- !u!1 &363354726 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3801439197689370703, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
+  m_CorrespondingSourceObject: {fileID: 2214576679183251644, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
+  m_PrefabInstance: {fileID: 4370715872428937379}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &366253605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1446169954100244953, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
   m_PrefabInstance: {fileID: 4370715872428937379}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &368919690
@@ -6779,7 +6784,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &368919695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6823,14 +6828,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -6942,7 +6947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.28110418
+      value: -0.026458586
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6950,7 +6955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.95967734
+      value: -0.99964994
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.z
@@ -6962,7 +6967,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -212.652
+      value: -183.032
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -7455,7 +7460,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &373836723
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7499,14 +7504,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -8263,14 +8268,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -8895,7 +8900,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &492003553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8939,14 +8944,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -9054,7 +9059,7 @@ Transform:
   - {fileID: 1584229556}
   - {fileID: 810676636}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!95 &499342522
 Animator:
@@ -9087,7 +9092,7 @@ PrefabInstance:
     - target: {fileID: 669155096683042432, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: syringe
       value: 
-      objectReference: {fileID: 1181926032}
+      objectReference: {fileID: 1917543371}
     - target: {fileID: 669155096683042432, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: mixingRoomCamera
       value: 
@@ -9099,46 +9104,46 @@ PrefabInstance:
     - target: {fileID: 669155096683042432, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: testTubesInMixingRoom.Array.data[0]
       value: 
-      objectReference: {fileID: 850396119}
+      objectReference: {fileID: 366253605}
     - target: {fileID: 669155096683042432, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: testTubesInMixingRoom.Array.data[1]
       value: 
-      objectReference: {fileID: 518963144}
+      objectReference: {fileID: 311602877}
     - target: {fileID: 669155096683042432, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: testTubesInMixingRoom.Array.data[2]
       value: 
-      objectReference: {fileID: 2075211854}
+      objectReference: {fileID: 1572669972}
     - target: {fileID: 669155096683042432, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: testTubesInMixingRoom.Array.data[3]
       value: 
-      objectReference: {fileID: 1002041824}
+      objectReference: {fileID: 1901255037}
     - target: {fileID: 669155096683042432, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: testTubesInMixingRoom.Array.data[4]
       value: 
-      objectReference: {fileID: 1507763615}
+      objectReference: {fileID: 363354726}
     - target: {fileID: 669155096683042432, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: testTubesInMixingRoom.Array.data[5]
       value: 
-      objectReference: {fileID: 78389954}
+      objectReference: {fileID: 1148556798}
     - target: {fileID: 669155096683042432, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: testTubesInMixingRoom.Array.data[6]
       value: 
-      objectReference: {fileID: 330989151}
+      objectReference: {fileID: 1329115025}
     - target: {fileID: 669155096683042432, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: testTubesInMixingRoom.Array.data[7]
       value: 
-      objectReference: {fileID: 1331014174}
+      objectReference: {fileID: 542627145}
     - target: {fileID: 669155096683042432, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: testTubesInMixingRoom.Array.data[8]
       value: 
-      objectReference: {fileID: 1291162218}
+      objectReference: {fileID: 1332841255}
     - target: {fileID: 669155096683042433, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: m_Name
       value: Game Manager
       objectReference: {fileID: 0}
     - target: {fileID: 669155096683042439, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 669155096683042439, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9182,11 +9187,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
---- !u!1 &518963144 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5972641623864600408, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
-  m_PrefabInstance: {fileID: 4370715872428937379}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &529282509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9785,14 +9785,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -10417,7 +10417,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &532947343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10461,14 +10461,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -10543,6 +10543,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &542627145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6224225798622645675, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
+  m_PrefabInstance: {fileID: 4370715872428937379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &570024028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11093,7 +11098,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &570024033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11137,14 +11142,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -11773,7 +11778,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &590144654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11817,14 +11822,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -12449,7 +12454,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &615195935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12493,14 +12498,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -13125,7 +13130,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &636983149
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13169,14 +13174,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -13251,71 +13256,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1001 &657790984
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3620952177839743736, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
-      propertyPath: m_Name
-      value: Radio
-      objectReference: {fileID: 0}
-    - target: {fileID: 3620952177839743736, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078520861949624055, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078520861949624055, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 28.448635
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078520861949624055, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.3925025
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078520861949624055, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 61.889633
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078520861949624055, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078520861949624055, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078520861949624055, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078520861949624055, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078520861949624055, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078520861949624055, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078520861949624055, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5233074576464732217, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dd77c833c85562d42913e3d3e6292f44, type: 3}
 --- !u!1001 &676646928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13866,7 +13806,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &676646933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13910,14 +13850,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -14546,7 +14486,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &690487246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14590,14 +14530,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -15266,14 +15206,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -15390,7 +15330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.69055253
+      value: 0.9716576
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -15398,7 +15338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7232823
+      value: 0.23639306
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.z
@@ -15410,7 +15350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -92.652
+      value: 27.348
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -15903,7 +15843,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &722202579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15947,14 +15887,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -16796,7 +16736,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &729024394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16840,14 +16780,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -16922,6 +16862,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &755822122 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 403285008470711397, guid: 0362bac363d427044bebec705849e38a, type: 3}
+  m_PrefabInstance: {fileID: 1718466987}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &785432403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17472,7 +17417,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &785432408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17516,14 +17461,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -17756,11 +17701,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 762380492481631229, guid: 52c51744944b30b4395badb88a68a18b, type: 3}
   m_PrefabInstance: {fileID: 810676635}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &850396119 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1446169954100244953, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
-  m_PrefabInstance: {fileID: 4370715872428937379}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &895717010
 PrefabInstance:
@@ -18316,7 +18256,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &895717015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18360,14 +18300,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -18992,7 +18932,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &899447883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19036,14 +18976,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -19941,14 +19881,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -20023,11 +19963,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1002041824 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1507797827977212343, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
-  m_PrefabInstance: {fileID: 4370715872428937379}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1011432579
 GameObject:
   m_ObjectHideFlags: 0
@@ -20075,7 +20010,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1028211731
 PrefabInstance:
@@ -20671,14 +20606,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -21217,7 +21152,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1084451727
 PrefabInstance:
@@ -21773,7 +21708,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &1084451732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21817,14 +21752,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -22622,14 +22557,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -22704,6 +22639,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1148556798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 793572807232087888, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
+  m_PrefabInstance: {fileID: 4370715872428937379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1169044425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23323,7 +23263,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1178332740
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23367,14 +23307,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -23522,11 +23462,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
---- !u!1 &1181926032 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4401822833054275200, guid: 0362bac363d427044bebec705849e38a, type: 3}
-  m_PrefabInstance: {fileID: 1718466987}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1189229143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24077,7 +24012,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &1189229148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24121,14 +24056,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -24753,7 +24688,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1216362961
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24797,14 +24732,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -25429,7 +25364,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1230602303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25473,14 +25408,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -25652,11 +25587,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
---- !u!1 &1291162218 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6360566818951569017, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
-  m_PrefabInstance: {fileID: 4370715872428937379}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1301675069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25752,9 +25682,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 758413197065299563, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
   m_PrefabInstance: {fileID: 1276367716}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1331014174 stripped
+--- !u!1 &1329115025 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6224225798622645675, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3801439197689370703, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
   m_PrefabInstance: {fileID: 4370715872428937379}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1331871754
@@ -26307,7 +26237,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1331871759
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26351,14 +26281,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -26433,6 +26363,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1332841255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6360566818951569017, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
+  m_PrefabInstance: {fileID: 4370715872428937379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1355728325
 GameObject:
   m_ObjectHideFlags: 0
@@ -26480,7 +26415,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1472686241
 PrefabInstance:
@@ -26685,7 +26620,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1485697249
 PrefabInstance:
@@ -27311,7 +27246,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &1501121618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27355,14 +27290,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -27437,11 +27372,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1507763615 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2214576679183251644, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
-  m_PrefabInstance: {fileID: 4370715872428937379}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1515281992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27992,7 +27922,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1515281997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28036,14 +27966,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -28668,7 +28598,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1550498252
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28712,14 +28642,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -29344,7 +29274,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1558897923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29388,14 +29318,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -29470,6 +29400,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1572669972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5941176126268632304, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
+  m_PrefabInstance: {fileID: 4370715872428937379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1576042663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30068,14 +30003,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -30823,14 +30758,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -30943,7 +30878,7 @@ Transform:
   - {fileID: 792990839}
   - {fileID: 709247911}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1643611707
 PrefabInstance:
@@ -31084,7 +31019,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1718466987
 PrefabInstance:
@@ -31103,7 +31038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31190,8 +31125,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6062330126967726726, guid: 0362bac363d427044bebec705849e38a, type: 3}
+      propertyPath: tubeSound
+      value: 
+      objectReference: {fileID: 755822122}
+    - target: {fileID: 6062330126967726726, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: noiseSlider
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062330126967726726, guid: 0362bac363d427044bebec705849e38a, type: 3}
+      propertyPath: testTubeLimit
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6062330126967726726, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: noiseMeterSlider
@@ -31822,7 +31765,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1742816867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31866,14 +31809,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -32062,7 +32005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3359592859699528235, guid: eda0952cf5a37e7468eaa83758c501ee, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3359592859699528235, guid: eda0952cf5a37e7468eaa83758c501ee, type: 3}
       propertyPath: m_AnchorMax.x
@@ -32692,7 +32635,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &1822917453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32736,14 +32679,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -32948,6 +32891,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55c31d4dc083d484796a661be1a74367, type: 3}
+--- !u!1 &1901255037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1507797827977212343, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
+  m_PrefabInstance: {fileID: 4370715872428937379}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1917543371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4401822833054275200, guid: 0362bac363d427044bebec705849e38a, type: 3}
+  m_PrefabInstance: {fileID: 1718466987}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1926259695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33542,14 +33495,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -34140,14 +34093,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -34873,14 +34826,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -34969,7 +34922,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4123755655252827573, guid: 840ad0343f427a7498ad80061f309321, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4123755655252827573, guid: 840ad0343f427a7498ad80061f309321, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35017,11 +34970,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 840ad0343f427a7498ad80061f309321, type: 3}
---- !u!1 &2075211854 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5941176126268632304, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
-  m_PrefabInstance: {fileID: 4370715872428937379}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2082172256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35572,7 +35520,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &2082172261
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35616,14 +35564,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -36248,7 +36196,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &2090432767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36292,14 +36240,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -36924,7 +36872,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &2098994720
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36968,14 +36916,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -39057,7 +39005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5290503772741732186, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5290503772741732186, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
       propertyPath: m_LocalPosition.x
