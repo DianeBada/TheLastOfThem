@@ -183,7 +183,7 @@ public class noiseMeter : MonoBehaviour
 
     public bool CheckTestTubes()
     {
-        if(PCInventory.playerInventory.Count>=1)
+        if(PCInventory.playerInventory.Count>=3)
         {
             noiseOmitted = maxNoise;
             UpdateZombieDistance(1.0f);
