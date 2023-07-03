@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("PrototypeLevel");
+        SceneManager.LoadScene("Prototype Level");
     }
 
     public void Quit()
