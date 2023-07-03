@@ -194,7 +194,7 @@ Transform:
   m_GameObject: {fileID: 5505715895728226601}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -0.076, y: 0.667, z: -0.41}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 758413197065299563}
@@ -451,6 +451,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testTube: {fileID: 11400000, guid: a73b51ab266ee3c429e027a72aed0b3d, type: 2}
   indicator: {fileID: 6680183494153113257}
+  deactivationTime: 0.2
+  drop: 0
 --- !u!1001 &8943712171519904108
 PrefabInstance:
   m_ObjectHideFlags: 0
