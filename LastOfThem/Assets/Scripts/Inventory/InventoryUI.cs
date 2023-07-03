@@ -50,7 +50,6 @@ public class InventoryUI : MonoBehaviour
         chemicalName = GameObject.Find("Chemical Name Text").GetComponent<TextMeshProUGUI>();
 
         updatePCList();
-        initialhighlight();
     }
 
     void Update()
@@ -62,7 +61,6 @@ public class InventoryUI : MonoBehaviour
             {
                 InventoryPanel.SetActive(false);
                 cycleIndex = 0;
-                initialhighlight();
                 panelOpen = false;
                 //player should not be able to walk with arrow keys
             }
@@ -103,20 +101,18 @@ public class InventoryUI : MonoBehaviour
             updatePCList();
         }
 
-
-        //unequip
-        if (Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.R))
         {
             keyPressed = true;
 
-            if (keyPressed && panelOpen)
+            if (keyPressed && panelOpen && pcInventory.playerInventory.Count>0)
             {
                 keyPressed = false;
                 dropObj();
             }
-
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             rightPressed = true;
 
@@ -137,23 +133,6 @@ public class InventoryUI : MonoBehaviour
                 cycle("left");
             }
         }
-
-        //updateCycleInventory();
-        //updatePCList();
-    }
-
-    public void initialhighlight() //selects where the player begins cycling from
-    {
-
-        // tubeBtns[cycleIndex].GetComponent<Image>().color = Color.yellow;
-
-        // for(int i = 0; i < pcInventory.playerInventory.Count; i++) {
-
-        //     if(i!=cycleIndex)
-        //     {
-        //         tubeBtns[i].GetComponent<Image>().color = Color.white;
-        //     }
-        // }
     }
 
     //  UI BUTTONS
@@ -206,8 +185,6 @@ public class InventoryUI : MonoBehaviour
                 compare(direction);
             }
         }
-
-        initialhighlight();
     }
 
     public void UpdateCycleIndex()
