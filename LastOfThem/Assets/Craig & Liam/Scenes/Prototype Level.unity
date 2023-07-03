@@ -9906,6 +9906,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 669155096683042432, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
+      propertyPath: argon
+      value: 
+      objectReference: {fileID: 1484271751}
+    - target: {fileID: 669155096683042432, guid: 0c85382c14cb81d4aa2c6b33167fc518, type: 3}
       propertyPath: syringe
       value: 
       objectReference: {fileID: 1917543371}
@@ -27947,7 +27951,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: a4736ed95e8f46048a67419f8214f826, type: 2}
     - target: {fileID: 2067315467999423547, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: deactivationTime
-      value: 0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5505715895728226606, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
       propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Value.y
@@ -29130,6 +29134,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1484271751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5663914850313861223, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
+  m_PrefabInstance: {fileID: 1276367716}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1484730168
 PrefabInstance:
   m_ObjectHideFlags: 0
