@@ -673,7 +673,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &54947503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1331,7 +1331,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &93694883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1915,7 +1915,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &106200310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2495,7 +2495,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &137074268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3294,7 +3294,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &219495737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3997,7 +3997,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &284548928
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4662,7 +4662,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &293128278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6011,7 +6011,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &368919695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6078,7 +6078,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.28110418
+      value: -0.026458586
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6086,7 +6086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.95967734
+      value: -0.99964994
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.z
@@ -6098,7 +6098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -212.652
+      value: -183.032
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -6591,7 +6591,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &373836723
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7839,7 +7839,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &492003553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9169,7 +9169,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &532947343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9749,7 +9749,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &570024033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10333,7 +10333,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &590144654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10913,7 +10913,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &615195935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11493,7 +11493,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &636983149
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12073,7 +12073,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &676646933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12657,7 +12657,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &690487246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13309,7 +13309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.69055253
+      value: 0.9716576
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -13317,7 +13317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7232823
+      value: 0.23639306
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalRotation.z
@@ -13329,7 +13329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -92.652
+      value: 27.348
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fef1c0b20c36a2646804169c98bd3be6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -13822,7 +13822,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &722202579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14619,7 +14619,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &729024394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15199,7 +15199,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &785432408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15947,7 +15947,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &895717015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16527,7 +16527,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &899447883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19020,7 +19020,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &1084451732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20378,7 +20378,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1178332740
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21041,7 +21041,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &1189229148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21621,7 +21621,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1216362961
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22201,7 +22201,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1230602303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22983,7 +22983,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1331871759
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23891,7 +23891,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &1501121618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24476,7 +24476,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1515281997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25146,7 +25146,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1550498252
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25726,7 +25726,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1558897923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28051,7 +28051,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &1742816867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28825,7 +28825,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &1822917453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31321,7 +31321,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &2082172261
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31901,7 +31901,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 2
 --- !u!65 &2090432767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32481,7 +32481,7 @@ MonoBehaviour:
   damage: 10
   chaseInterval: 1
   maxDetectionDistance: 5
-  behavior: 0
+  behavior: 1
 --- !u!65 &2098994720
 BoxCollider:
   m_ObjectHideFlags: 0

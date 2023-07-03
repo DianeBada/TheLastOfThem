@@ -44,6 +44,11 @@ public class noiseMeter : MonoBehaviour
     PCInventory PCInventory;
     GameObject player;
 
+    [SerializeField]
+    AudioSource tubeSound;
+    [SerializeField]
+    AudioSource radioSound;
+
     public void Start()
     {
         noiseMeterSlider.maxValue = 10;
