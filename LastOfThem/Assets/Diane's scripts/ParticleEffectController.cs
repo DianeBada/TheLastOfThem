@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ParticleEffectController : MonoBehaviour
 {
-    public CameraShaker cameraShaker; // Reference to the CameraShake script
+    public CameraShake cameraShaker; // Reference to the CameraShake script
     public float startDelay = 0.001f; // Delay before starting the particle system
     public float stopDelay = 0.001f; // Delay before stopping the particle system
 

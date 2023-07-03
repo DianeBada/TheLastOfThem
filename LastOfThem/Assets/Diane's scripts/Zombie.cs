@@ -12,7 +12,7 @@ public class Zombie : MonoBehaviour
     public AudioSource audioSource;
     private bool isPlayingSound = false;
     private bool hasAttackedPlayer = false;
-    private CameraShaker cameraShaker;
+    private CameraShake cameraShaker;
     public ParticleEffectController particle;
    [SerializeField]private FirstPersonController firstPersonController;
 
@@ -54,7 +54,7 @@ public class Zombie : MonoBehaviour
 
         player = GameObject.FindGameObjectWithTag("Player").transform;
         navMeshAgent = GetComponent<NavMeshAgent>();
-        cameraShaker = Camera.main.GetComponent<CameraShaker>();
+        cameraShaker = Camera.main.GetComponent<CameraShake>();
 
         firstPersonController = GetComponent<FirstPersonController>();
 
