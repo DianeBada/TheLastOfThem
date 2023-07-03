@@ -13,6 +13,7 @@ public class noiseMeter : MonoBehaviour
     private bool isWalking;
     private bool isRunning;
     private bool isJumping;
+    public bool isCrouching;
 
     private bool fullTestTubes;
 
@@ -27,11 +28,9 @@ public class noiseMeter : MonoBehaviour
     [SerializeField]
     int maxNoise = 10;
 
-    [SerializeField] private int testTubeLimit = 3;
-
     int waitTime = 2;
 
-    [SerializeField]
+    [SerializeField] 
     private Slider noiseMeterSlider; // assign this in the Inspector
 
     FirstPersonController FPS;
@@ -43,6 +42,7 @@ public class noiseMeter : MonoBehaviour
     Radio radio;
 
     PCInventory PCInventory;
+    GameObject player;
 
     [SerializeField]
     AudioSource tubeSound;
@@ -52,7 +52,8 @@ public class noiseMeter : MonoBehaviour
     public void Start()
     {
         noiseMeterSlider.maxValue = 10;
-        FPS = GameObject.FindGameObjectWithTag("Player").GetComponent<FirstPersonController>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        FPS = player.GetComponent<FirstPersonController>();
 
         PCInventory = GameObject.FindGameObjectWithTag("ParentPickUp").GetComponent<PCInventory>();
 
@@ -80,120 +81,148 @@ public class noiseMeter : MonoBehaviour
 
         if (Mathf.Abs(horizontalInput) > 0 || Mathf.Abs(verticalInput) > 0)
         {
-            if (Input.GetKey(KeyCode.LeftShift))
+            if(Input.GetKey(KeyCode.LeftShift))
             {
-                Debug.Log("should be running");
+                 Debug.Log("should be running");
                 isRunning = true;
                 isWalking = false;
-            }
-            else
+                isCrouching = false;
+            }else if(isCrouching)
             {
+                isRunning = false;
+                isWalking = false;
+            }else{
                 isWalking = true;
                 isRunning = false;
+                isCrouching = false;
             }
-        }
-        else
-        {
+        }    
+        else{
             isRunning = false;
             isWalking = false;
+        }
+
+        if(Input.GetKeyDown(KeyCode.C)){
+            isCrouching = !isCrouching;
+            Debug.Log("player is crouching: "+isCrouching);
         }
 
         if (Input.GetKey(KeyCode.Space))
         {
             isJumping = true;
-        }
-        else if (Input.GetKeyUp(KeyCode.Space))
-        {
+        }else if(Input.GetKeyUp(KeyCode.Space)){
             StartCoroutine("Wait");
-            isJumping = false;
+            isJumping=false;
         }
 
-        if (noiseOmitted >= 10)
+        if(noiseOmitted>=10)
         {
-            noiseOmitted = 10;
-        }
-        else if (noiseOmitted <= 0)
+            noiseOmitted=10;
+        }else if(noiseOmitted<=0)
         {
-            noiseOmitted = 0;
+            noiseOmitted=0;
         }
 
+        if(!radioOn)
+        {
+            if(CheckTestTubes()==false)
+            {
+                UpdateNoiseMeter();
+            }
+        }
+
+        // Check if any zombie is within the noise detection range
+        // bool isZombieInRange = false;
+        //CheckZombieRange();
+  
+
+        // Increase noise meter gradually if player is making noise and a zombie is in range
+        // if (isWalking || isRunning || isJumping)
+        // {
+        //     noiseOmitted += noiseIncreasePerSecond * Time.deltaTime;
+        // }
+        // else
+        // {
+        //     noiseOmitted = Mathf.Max(0.0f, noiseOmitted - noiseIncreasePerSecond * Time.deltaTime);
+        // }
+
+        // Do something with the noise meter, such as displaying it on a UI element
+        // Debug.Log("Noise meter: " + noiseOmitted);
+        
         noiseMeterSlider.value = noiseOmitted;
     }
+
+    //  void CheckZombieRange()
+    // {
+    //     foreach (GameObject zombie in GameObject.FindGameObjectsWithTag("Zombie"))
+    //     {
+    //         float distanceToZombie = Vector3.Distance(transform.position, zombie.transform.position);
+    //         if (distanceToZombie < noiseDetectionRange)
+    //         {
+    //             isZombieInRange = true;
+    //             break;
+    //         }else{
+    //             isZombieInRange = false;
+    //         }
+    //     }
+    // }
 
     public void RadioOn() //radio off -> code path 
     {
         noiseOmitted = maxNoise;
-        radioSound.Play();
         radioOn = true;
         UpdateZombieDistance(1.0f);
     }
 
     public void RadioOff()
     {
-        radioSound.Stop();
         radioOn = false;
         UpdateNoiseMeter();
     }
 
     public bool CheckTestTubes()
     {
-        if (PCInventory.playerInventory.Count >= testTubeLimit)
+        if(PCInventory.playerInventory.Count>=3)
         {
             noiseOmitted = maxNoise;
             UpdateZombieDistance(1.0f);
-            PlayTestTubes();
             return true;
-        }
-        else
-        {
-            tubeSound.Stop();
+        }else{
             return false;
 
         }
     }
 
-    public void PlayTestTubes()
-    {
-        if (!tubeSound.isPlaying)
-        {
-            tubeSound.Play();
-        }
-
-    }
-
     void UpdateNoiseMeter()
     {
-        if (isJumping)
+        if(isJumping)
         {
             noiseOmitted = jumpingNoise;
             Debug.Log("jumping");
 
             UpdateZombieDistance(0.9f);
+        } 
+        else if(isCrouching) 
+        {
+            noiseOmitted = crouchingNoise;
+            Debug.Log("crouching");
+            UpdateZombieDistance(0.60f);
         }
-        // else if(FPS.getIsCrouching()) //m_IsCrouching
-        // {
-        //     noiseOmitted = crouchingNoise;
-        //     Debug.Log("crouching");
-        //     UpdateZombieDistance(0.2f);
-        // }
-        else if (isWalking)
+        else if(isWalking)
         {
             noiseOmitted = walkingNoise;
             Debug.Log("walking");
             UpdateZombieDistance(0.7f);
-        }
-        else if (isRunning)
+        }else if(isRunning)
         {
             noiseOmitted = runningNoise;
             Debug.Log("running");
             UpdateZombieDistance(0.8f);
-        }
-        else if ((isJumping == false) && (isWalking == false) && (isRunning == false))
-        { //crouch and still make the affect the noisemeter in the same way
+        }else if((isJumping==false)  && (isWalking==false) && (isRunning==false) && (isCrouching==false)){ 
             noiseOmitted = crouchingNoise;
             UpdateZombieDistance(0.6f);
-            Debug.Log("still");
-
+            //Debug.Log("still");
+            
         }
 
 
@@ -201,10 +230,10 @@ public class noiseMeter : MonoBehaviour
 
     void UpdateZombieDistance(float offsetFactor) //5 different noiseMeter levels, multiplying each level by total distance
     {
-        foreach (GameObject zombie in zombies)
+        foreach(GameObject zombie in zombies)
         {
             Zombie script = zombie.GetComponent<Zombie>();
-            script.detectionDistance = script.maxDetectionDistance * offsetFactor;
+            script.detectionDistance = script.maxDetectionDistance*offsetFactor; 
         }
     }
 
