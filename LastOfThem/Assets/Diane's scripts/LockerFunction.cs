@@ -19,9 +19,11 @@ public class LockerFunction : MonoBehaviour
     private Quaternion originalRotation;
     private float originalLightIntensity;
     private float originalFOV;
+    GameManager manager;
     private void Start()
     {
         isByLocker = false;
+        manager = FindObjectOfType<GameManager>();
     }
 
     private void Awake()
@@ -37,6 +39,7 @@ public class LockerFunction : MonoBehaviour
         if (other.CompareTag("Player") && !isOccupied)
         {
             DisplayPrompt();
+            manager.SetInstructionPanelText("Zombies can't find you in the locker", "location: locker", "L - exit locker");
             isByLocker = true;
         }
     }
@@ -61,6 +64,7 @@ public class LockerFunction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             indicator.SetActive(false);
+            manager.DeactivateInstructionPanel();
             isByLocker = false;
         }
     }
