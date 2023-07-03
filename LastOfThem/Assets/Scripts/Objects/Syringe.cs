@@ -6,11 +6,11 @@ using UnityEngine.VFX;
 
 public class Syringe : MonoBehaviour
 {
-    public Animator transformAnimator;
+   // public Animator transformAnimator;
     private bool isEffectPlaying = false;
     private Color syringeColor;
     private GameManager gameManager;
-    private GameObject gojoRedHollowVariant;
+   // private GameObject gojoRedHollowVariant;
     private Zombie zombie;
     public GameObject zombieAvatar;
     public GameObject curedAvatar;
@@ -23,9 +23,9 @@ public class Syringe : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
         syringeColor = Color.white;
         Disappear();
-        gojoRedHollowVariant = zombie.transform.Find("Gojo Red Hollow Variant").gameObject;
-        transformAnimator = gojoRedHollowVariant.GetComponent<Animator>();
-        transformAnimator.enabled = false;
+        //gojoRedHollowVariant = zombie.transform.Find("Gojo Red Hollow Variant").gameObject;
+        //transformAnimator = gojoRedHollowVariant.GetComponent<Animator>();
+        //transformAnimator.enabled = false;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -65,8 +65,8 @@ public class Syringe : MonoBehaviour
     private void CureInjection(GameObject zombie)
     {
         Debug.Log("Zombie Cured");
-        transformAnimator.enabled = true;
-        transformAnimator.Play("transformation_animation");
+        //transformAnimator.enabled = true;
+        //transformAnimator.Play("transformation_animation");
         StartCoroutine(DisableZombieAndShowHumanAvatar(zombie));
     }
 
@@ -75,11 +75,11 @@ public class Syringe : MonoBehaviour
         //Debug.Log("Zombie Not Cured");
         gameManager.ClearMixture();
 
-        transformAnimator.enabled = true;
+       // transformAnimator.enabled = true;
         isEffectPlaying = true;
 
         // Play the VFX animation for the zombie
-        transformAnimator.Play("transformation_animation");
+      //  transformAnimator.Play("transformation_animation");
 
         // Disable the zombie game object after the VFX animation duration
         StartCoroutine(DisableZombieAfterVFX(zombie));
@@ -92,7 +92,7 @@ public class Syringe : MonoBehaviour
 
     private IEnumerator DisableZombieAfterVFX(GameObject zombie)
     {
-        yield return new WaitForSeconds(transformAnimator.GetCurrentAnimatorStateInfo(0).length);
+        yield return new WaitForSeconds(1f);
 
         // Disable the zombie game object
         zombie.SetActive(false);
@@ -101,7 +101,7 @@ public class Syringe : MonoBehaviour
     private IEnumerator PlayExplosionVideo()
     {
         // Wait for the VFX animation to finish
-        yield return new WaitForSeconds(transformAnimator.GetCurrentAnimatorStateInfo(0).length);
+        yield return new WaitForSeconds(1f);
 
         // Enable the explosion video player and play the video
         explosionVideoPlayer.gameObject.SetActive(true);
@@ -115,13 +115,13 @@ public class Syringe : MonoBehaviour
 
         // Perform any necessary actions after the explosion video finishes playing
         isEffectPlaying = false;
-        transformAnimator.enabled = false;
+        //transformAnimator.enabled = false;
     }
 
     private IEnumerator DisableZombieAndShowHumanAvatar(GameObject zombie)
     {
         // Wait for the VFX animation to finish
-        yield return new WaitForSeconds(transformAnimator.GetCurrentAnimatorStateInfo(0).length);
+        yield return new WaitForSeconds(1f);
 
         // Disable the zombie game object
         zombie.SetActive(false);

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1165.2444, g: 870.00574, b: 709.2814, a: 1}
+  m_IndirectSpecularColor: {r: 1166.4434, g: 871.2949, b: 710.4546, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -766,8 +766,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -1574,8 +1572,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -2308,8 +2304,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -3152,8 +3146,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -4300,8 +4292,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -5267,8 +5257,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -6183,8 +6171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -7041,8 +7027,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -7909,8 +7893,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -8639,8 +8621,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -8845,8 +8825,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -9540,8 +9518,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -10301,8 +10277,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -11201,8 +11175,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -11931,8 +11903,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -12739,8 +12709,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -13473,8 +13441,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -14203,8 +14169,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -14933,8 +14897,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -15779,8 +15741,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -16513,8 +16473,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -17243,8 +17201,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -17978,8 +17934,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -18925,8 +18879,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -19686,8 +19638,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -20584,8 +20534,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -21314,8 +21262,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -22282,8 +22228,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -23066,8 +23010,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -24271,8 +24213,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -25110,8 +25050,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -26174,8 +26112,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -26982,8 +26918,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -27826,8 +27760,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -28639,8 +28571,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -29571,8 +29501,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -31023,8 +30951,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -31758,8 +31684,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -32722,8 +32646,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -33452,8 +33374,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -34186,8 +34106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -34995,8 +34913,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -35556,6 +35472,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5162889969175113059, guid: 0362bac363d427044bebec705849e38a, type: 3}
+      propertyPath: curedAvatar
+      value: 
+      objectReference: {fileID: 5136507415565098372, guid: f87743286cae8524187c257bb0c457b8, type: 3}
+    - target: {fileID: 5162889969175113059, guid: 0362bac363d427044bebec705849e38a, type: 3}
+      propertyPath: zombieAvatar
+      value: 
+      objectReference: {fileID: 2701140742703984181, guid: 026aae5578aee4249bcde72ede821ff1, type: 3}
+    - target: {fileID: 5162889969175113059, guid: 0362bac363d427044bebec705849e38a, type: 3}
+      propertyPath: explosionVideoPlayer
+      value: 
+      objectReference: {fileID: 2095305764}
     - target: {fileID: 6062330126967726726, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: fp
       value: 
@@ -36193,8 +36121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -37276,8 +37202,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -37464,17 +37388,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1843602916 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7160978171832841132, guid: 0362bac363d427044bebec705849e38a, type: 3}
-  m_PrefabInstance: {fileID: 1718466987}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fb97ceccaafc854c9f0209b8ae491cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1868770846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38147,8 +38060,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -39586,8 +39497,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -40461,8 +40370,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -41191,8 +41098,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -41379,6 +41284,71 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &2095305763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2095305765}
+  - component: {fileID: 2095305764}
+  m_Layer: 0
+  m_Name: videoExplosion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!328 &2095305764
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095305763}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: e8e81724a3664b14fb4c06f19620a417, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
+  m_Url: 
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!4 &2095305765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095305763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 33.08987, y: 2.0480797, z: 64.54444}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2098994715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41921,8 +41891,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  particle: {fileID: 1843602916}
-  firstPersonController: {fileID: 1303283060}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
