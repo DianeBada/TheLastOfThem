@@ -29,7 +29,7 @@ public class ZombieManager : MonoBehaviour
 
     public void LoseState()
     {
-
+        SceneManager.LoadScene("Lose_Screen");
     }
 
     public void CalcZombies()
