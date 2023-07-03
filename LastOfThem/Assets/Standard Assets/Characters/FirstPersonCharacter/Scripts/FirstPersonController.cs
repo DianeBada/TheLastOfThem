@@ -29,7 +29,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
 
-        private Camera m_Camera;
+        public Camera m_Camera;
         public bool m_Jump;
         private float m_YRotation;
         private Vector2 m_Input;
@@ -37,7 +37,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private CharacterController m_CharacterController;
         private CollisionFlags m_CollisionFlags;
         private bool m_PreviouslyGrounded;
-        private Vector3 m_OriginalCameraPosition;
+        public Vector3 m_OriginalCameraPosition;
+        public Quaternion m_OriginalCameraRotation; // New variable to store original camera rotation
+
         private float m_StepCycle;
         private float m_NextStep;
         public bool m_Jumping;
@@ -55,12 +57,18 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public float crouchFOV = 60f;
         public float normalFOV = 90f;
 
+        public float currentSpeed =5f;
+        public bool isInsideLocker = false; // Added variable to track if the player is inside a locker
+
+
+
         // Use this for initialization
         private void Start()
         {
             m_CharacterController = GetComponent<CharacterController>();
             m_Camera = Camera.main;
             m_OriginalCameraPosition = m_Camera.transform.localPosition;
+            m_OriginalCameraRotation = m_Camera.transform.rotation;
             m_FovKick.Setup(m_Camera);
             m_HeadBob.Setup(m_Camera, m_StepInterval);
             m_StepCycle = 0f;
@@ -83,6 +91,33 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
                 isJumping = true;
+            }
+
+            if (isInsideLocker == true)
+            {
+                // Disable player controls or restrict movement
+                m_Input = Vector2.zero; // Stop player movement
+
+                // Adjust camera view or provide a first-person view from inside the locker
+                // Set the camera's rotation to match the locker's rotation
+                //m_Camera.transform.rotation = transform.rotation;
+
+                // Set other necessary variables to restrict movements
+                m_Jump = false;
+                m_IsWalking = false;
+                m_WalkSpeed = 0;
+        
+                isJumping = false;
+                isWalking = false;
+                isRunning = false;
+                isCrouching = false;
+            }
+            else
+            {
+                isInsideLocker = false;
+                m_WalkSpeed = 5f;
+
+                Debug.Log("isInside is false");
             }
 
             if (Input.GetKeyDown(KeyCode.C)) 
@@ -183,6 +218,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void FixedUpdate()
         {
+
+
             float speed;
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
@@ -275,7 +312,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         }
 
 
-        private void UpdateCameraPosition(float speed)
+        public void UpdateCameraPosition(float speed)
         {
             Vector3 newCameraPosition;
             if (!m_UseHeadBob)
