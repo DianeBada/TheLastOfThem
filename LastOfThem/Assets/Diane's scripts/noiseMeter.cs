@@ -51,6 +51,8 @@ public class noiseMeter : MonoBehaviour
 
     private GameManager gameManager;
 
+    private bool notCarrying;
+
     public void Start()
     {
         noiseMeterSlider.maxValue = 10;
@@ -62,6 +64,7 @@ public class noiseMeter : MonoBehaviour
         radio = GameObject.Find("Radio").GetComponent<Radio>();
         zombies = GameObject.FindGameObjectsWithTag("Zombie");
         gameManager = FindObjectOfType<GameManager>();
+        notCarrying = true;
     }
 
     
@@ -125,7 +128,7 @@ public class noiseMeter : MonoBehaviour
         if (!radioOn)
         {
             //UpdateNoiseMeter();
-            if (PCInventory.playerInventory.Count !>= 3)
+            if (notCarrying)
             {
                 UpdateNoiseMeter();
             }
@@ -158,9 +161,11 @@ public class noiseMeter : MonoBehaviour
             UpdateZombieDistance(1.0f);
             PlayTestTubes();
             StartCoroutine(SetInstructionText());
+            notCarrying = false;
             return true;
         }else{
             tubeSound.Stop();
+            notCarrying = true;
             return false;
 
         }
