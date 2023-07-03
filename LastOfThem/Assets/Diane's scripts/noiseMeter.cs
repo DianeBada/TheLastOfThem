@@ -180,17 +180,29 @@ public class noiseMeter : MonoBehaviour
         UpdateNoiseMeter();
     }
 
+
     public bool CheckTestTubes()
     {
         if(PCInventory.playerInventory.Count>=3)
         {
             noiseOmitted = maxNoise;
             UpdateZombieDistance(1.0f);
+            PlayTestTubes();
             return true;
         }else{
+            tubeSound.Stop();
             return false;
 
         }
+    }
+
+    public void PlayTestTubes()
+    {
+        if (!tubeSound.isPlaying)
+        { 
+            tubeSound.Play();
+        }
+        
     }
 
     void UpdateNoiseMeter()
