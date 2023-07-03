@@ -18632,6 +18632,7 @@ GameObject:
   - component: {fileID: 824554531}
   - component: {fileID: 824554530}
   - component: {fileID: 824554529}
+  - component: {fileID: 824554532}
   m_Layer: 5
   m_Name: ZombieInfoPanel
   m_TagString: InventoryPanel
@@ -18717,6 +18718,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824554527}
   m_CullTransparentMesh: 1
+--- !u!114 &824554532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824554527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 109c55100fcb94d189e6cd2fd768409e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &836341447
 PrefabInstance:
   m_ObjectHideFlags: 0
