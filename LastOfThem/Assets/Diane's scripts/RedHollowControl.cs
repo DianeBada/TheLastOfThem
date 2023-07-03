@@ -9,11 +9,12 @@ public class RedHollowControl : MonoBehaviour
 
     Animator animator;
 
+
     // Start is called before the first frame update
     void Start()
     {
         animator = transform.GetChild(0).GetComponent<Animator>();
-        animator.enabled = false;
+        
     }
 
     // Update is called once per frame

@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1677334750579945605, guid: c02d9ef745b89564b82fa23b1939b5fb, type: 3}
       propertyPath: m_Name
-      value: transformation
+      value: gwojoEffect
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c02d9ef745b89564b82fa23b1939b5fb, type: 3}
