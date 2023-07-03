@@ -8,6 +8,8 @@ public class Tube : MonoBehaviour
     [SerializeField] private GameObject indicator;
     [SerializeField] private float deactivationTime = 0.2f;
 
+   
+
     private PCInventory pcInventory;
     private GameObject player;
     private GameManager gameManager;
@@ -15,6 +17,8 @@ public class Tube : MonoBehaviour
     private Vector3 mousePosition;
 
     public bool drop;
+
+    private Vector3 originalPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +28,7 @@ public class Tube : MonoBehaviour
         pcInventory = FindObjectOfType<PCInventory>();
         player = GameObject.FindGameObjectWithTag("Player");
         gameManager = FindObjectOfType<GameManager>();
+        originalPosition = this.gameObject.transform.position;
     }
 
     private void Update() {
@@ -65,17 +70,12 @@ public class Tube : MonoBehaviour
             
         }
 
-       
+    
+    }
 
-        /*if (other.CompareTag("Player") && !testTube.Picked() )
-        {
-            if (this.gameObject.activeInHierarchy)
-            {
-                Debug.Log("bugggy");
-                StartCoroutine(PickUpObject());
-            }
-            
-        }*/
+    public void ResetTestTubeInTray()
+    {
+        this.gameObject.transform.position =originalPosition;
     }
 
     public TestTube getTestTube()
@@ -100,6 +100,15 @@ public class Tube : MonoBehaviour
         return Camera.main.WorldToScreenPoint(this.transform.position);
     }
 
+   private void OnMouseOver()
+   {
+        if (gameManager.IsInMixingRoom())
+        {
+            gameManager.SetInstructionPanelText(testTube.GetChemical(), "Location: Mixing Room", "Drag and Drop after pressing Esc, X - Exit");
+        }
+        
+   }
+
     private void OnMouseDown()
     {
         mousePosition = Input.mousePosition - GetMousePositionOfTube();
@@ -109,6 +118,7 @@ public class Tube : MonoBehaviour
     {
         if (gameManager.IsInMixingRoom() && gameManager.CanMix())
         {
+            
             this.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition - mousePosition);
         }
         
@@ -117,14 +127,16 @@ public class Tube : MonoBehaviour
 
     public void DropTestTube()
     {
-        StartCoroutine(DeactivateTestTube());
+        gameManager.SetInstructionPanelText("Drag and Drop test tubes into white mould to make cure.", "Location: Mixing Room", "Drag and Drop after pressing Esc, X - Exit");
+        
         if (testTube.IsInCureFormula())
         {
+            gameManager.AddToKeepPanel(testTube.GetChemical());
             gameManager.IncrementCorrectChemicals();
             
-            //make the test tube reappear in leave function
-            //testTube.Drop();
+          
         }
+        StartCoroutine(DeactivateTestTube());
         pcInventory.RemoveTestTubeFromInventory(testTube);
         
     }
@@ -137,6 +149,8 @@ public class Tube : MonoBehaviour
         if(testTube.Picked())
         {
             this.gameObject.SetActive(false);
+            Destroy(this.gameObject);
+           
         }
     }
 

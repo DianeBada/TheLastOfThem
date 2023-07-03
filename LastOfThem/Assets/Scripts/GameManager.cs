@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-using DG.Tweening;
+using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,6 +15,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI locationText;
     [SerializeField] private TextMeshProUGUI controlText;
     [SerializeField] private GameObject instructionPanel;
+
+    private List<GameObject> testTubesToKeepInPanel = new();
 
 
 
@@ -36,9 +36,20 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if(inMixingRoom && Input.GetKeyDown(KeyCode.X))
+        if (inMixingRoom && Input.GetKeyDown(KeyCode.X))
         {
             ExitMixingRoom();
+        }
+    }
+
+    public void AddToKeepPanel(string testTubeChemical)
+    {
+        foreach (GameObject testTubeObject in testTubesInMixingRoom)
+        {
+            if (testTubeObject.name.Contains(testTubeChemical))
+            {
+                testTubesToKeepInPanel.Add(testTubeObject);
+            }
         }
     }
 
@@ -51,7 +62,7 @@ public class GameManager : MonoBehaviour
     }
 
     private void ActivateInstructionPanel()
-    {       
+    {
         instructionPanel.SetActive(true);
     }
 
@@ -63,7 +74,7 @@ public class GameManager : MonoBehaviour
 
     private void ClearInstructionPanelText()
     {
-        instructionText.text ="";
+        instructionText.text = "";
         locationText.text = "";
         controlText.text = "";
     }
@@ -77,8 +88,8 @@ public class GameManager : MonoBehaviour
     {
         return canMix;
     }
-    
-    public void SetCanMix( bool value)
+
+    public void SetCanMix(bool value)
     {
         canMix = value;
     }
@@ -90,7 +101,7 @@ public class GameManager : MonoBehaviour
 
     public bool HasCure()
     {
-        if(correctChemicalsInSyringe == 3)
+        if (correctChemicalsInSyringe >= 3)
         {
             return true;
         }
@@ -117,6 +128,18 @@ public class GameManager : MonoBehaviour
         FirstPersonController.SetActive(true);
         mixingRoomCamera.SetActive(false);
         DeactivateInstructionPanel();
+        ActivateTestTubesToKeep();
+
+    }
+
+    private void ActivateTestTubesToKeep()
+    {
+
+        foreach (GameObject testTubeObject in testTubesToKeepInPanel)
+        {
+            testTubeObject.SetActive(true);
+            testTubeObject.GetComponent<Tube>().ResetTestTubeInTray();
+        }
     }
 
     public void AppearSyringe()
@@ -131,7 +154,7 @@ public class GameManager : MonoBehaviour
 
     public void ActivateTestTubeInMixingRoom(string testTubeChemical)
     {
-        
+
         foreach (GameObject testTubeObject in testTubesInMixingRoom)
         {
             if (testTubeObject.name.Contains(testTubeChemical))
@@ -141,5 +164,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-    
+
+
+
 }
