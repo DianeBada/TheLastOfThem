@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
 
     private List<GameObject> testTubesToKeepInPanel = new();
 
+    [SerializeField] private GameObject argon;
+
 
 
     // Start is called before the first frame update
@@ -125,6 +127,7 @@ public class GameManager : MonoBehaviour
     {
         inMixingRoom = false;
         FirstPersonController.transform.SetPositionAndRotation(this.transform.position, this.transform.rotation);
+        argon.SetActive(false);
         FirstPersonController.SetActive(true);
         mixingRoomCamera.SetActive(false);
         DeactivateInstructionPanel();
