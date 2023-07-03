@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1165.6528, g: 870.4697, b: 709.6719, a: 1}
+  m_IndirectSpecularColor: {r: 1166.3271, g: 871.2246, b: 710.42773, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -669,6 +669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -1425,6 +1426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -2103,6 +2105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -2781,6 +2784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -3170,6 +3174,20 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!114 &217813535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217813530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f246fab5a9f91f24b8a7898de7eb33f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 0.5
+  shakeIntensity: 0.5
 --- !u!1001 &219495732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3716,6 +3734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -4627,6 +4646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -5390,6 +5410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -6253,6 +6274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -7059,6 +7081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -7737,6 +7760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -7944,6 +7968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -8615,6 +8640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -9350,6 +9376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -10364,6 +10391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -11042,6 +11070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -11834,6 +11863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -12512,6 +12542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -13190,6 +13221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -13868,6 +13900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -14546,6 +14579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -15224,6 +15258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -15902,6 +15937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -16585,6 +16621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -17480,6 +17517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -18272,6 +18310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -18673,13 +18712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88af80c1fac3e46198886eb1babef17b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalZombies: []
-  totalNum: 0
-  startingZombies: []
-  startingNum: 0
-  zombieCount: 0
-  zombiePercentage: 0
-  zombiesLeftTxt: {fileID: 0}
 --- !u!114 &824554530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19447,6 +19479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -20125,6 +20158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -21077,6 +21111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -21861,6 +21896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -23005,6 +23041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -23857,6 +23894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -25003,6 +25041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -25811,6 +25850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -26546,6 +26586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -27224,6 +27265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -28104,6 +28146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -29289,6 +29332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -29967,6 +30011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -30099,6 +30144,131 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &1541386683
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1718466988}
+    m_Modifications:
+    - target: {fileID: 1000011105442200, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012188286968, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_Name
+      value: BloodSprayFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013555257782, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011382548710, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000010219076908, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000010219076908, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: lengthInSec
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000010219076908, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000010219076908, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000010219076908, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: InitialModule.startRotation.scalar
+      value: -1.0751228
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000010745951568, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000010745951568, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000010745951568, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: InitialModule.startRotation.scalar
+      value: -0.73984504
+      objectReference: {fileID: 0}
+    - target: {fileID: 199000012850912754, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+--- !u!1 &1541386684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
+  m_PrefabInstance: {fileID: 1541386683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1541386685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541386684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb97ceccaafc854c9f0209b8ae491cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShaker: {fileID: 217813535}
+  startDelay: 0.001
+  stopDelay: 0.001
 --- !u!1001 &1546897156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30702,6 +30872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -31437,6 +31608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -32120,6 +32292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -32934,6 +33107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -33507,6 +33681,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0362bac363d427044bebec705849e38a, type: 3}
+--- !u!4 &1718466988 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 0362bac363d427044bebec705849e38a, type: 3}
+  m_PrefabInstance: {fileID: 1718466987}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1735334078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34122,6 +34301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -35061,6 +35241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -36136,6 +36317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -37668,6 +37850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -38465,6 +38648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -39143,6 +39327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -39821,6 +40006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  particle: {fileID: 1541386685}
   speed: 1
   detectionDistance: 5
   attackDistance: 1.5
@@ -42065,7 +42251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5290503773453166390, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
       propertyPath: m_Intensity
-      value: 685727.06
+      value: 685727.1
       objectReference: {fileID: 0}
     - target: {fileID: 5382672325057717297, guid: 36ef78eec9283144da8b739be2fdd007, type: 3}
       propertyPath: m_StaticEditorFlags
