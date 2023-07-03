@@ -14,7 +14,7 @@ public class RedHollowControl : MonoBehaviour
     void Start()
     {
         animator = transform.GetChild(0).GetComponent<Animator>();
-        
+        animator.enabled = false;
     }
 
     // Update is called once per frame

@@ -6,7 +6,7 @@ using UnityEngine.VFX;
 
 public class Syringe : MonoBehaviour
 {
-    public Animator transformAnimator;
+    private Animator transformAnimator;
     private bool isEffectPlaying = false;
     private Color syringeColor;
     private GameManager gameManager;
@@ -90,7 +90,7 @@ public class Syringe : MonoBehaviour
 
     private IEnumerator DisableZombieAfterVFX(GameObject zombie)
     {
-        yield return new WaitForSeconds(transformAnimator.GetCurrentAnimatorStateInfo(0).length);
+        yield return new WaitForSeconds(2f);
 
         // Disable the zombie game object
         zombie.SetActive(false);
@@ -99,7 +99,7 @@ public class Syringe : MonoBehaviour
     private IEnumerator PlayExplosionVideo()
     {
         // Wait for the VFX animation to finish
-        yield return new WaitForSeconds(transformAnimator.GetCurrentAnimatorStateInfo(0).length);
+        yield return new WaitForSeconds(2f);
 
         // Enable the explosion video player and play the video
         explosionVideoPlayer.gameObject.SetActive(true);
