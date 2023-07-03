@@ -1,5 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LastOfThem/Assets/Plugins/Demigiant/DOTween/Editor.meta
 guid: b27f58ae5d5c33a4bb2d1f4f34bd036d
+========
+guid: 8639a68938eadf84fada6aa3628f68b0
+>>>>>>>> main:LastOfThem/Assets/Plugins.meta
 folderAsset: yes
 DefaultImporter:
+  externalObjects: {}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
