@@ -1,5 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -11,6 +11,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject mixingRoomCamera;
     [SerializeField] private GameObject syringe;
     [SerializeField] private List<GameObject> testTubesInMixingRoom;
+    [SerializeField] private TextMeshProUGUI instructionText;
+    [SerializeField] private TextMeshProUGUI locationText;
+    [SerializeField] private TextMeshProUGUI controlText;
+    [SerializeField] private GameObject instructionPanel;
+
+    private List<GameObject> testTubesToKeepInPanel = new();
+
 
 
     // Start is called before the first frame update
@@ -24,14 +31,52 @@ public class GameManager : MonoBehaviour
         {
             testTube.SetActive(false);
         }
+        DeactivateInstructionPanel();
     }
 
     private void Update()
     {
-        if(inMixingRoom && Input.GetKeyDown(KeyCode.X))
+        if (inMixingRoom && Input.GetKeyDown(KeyCode.X))
         {
             ExitMixingRoom();
         }
+    }
+
+    public void AddToKeepPanel(string testTubeChemical)
+    {
+        foreach (GameObject testTubeObject in testTubesInMixingRoom)
+        {
+            if (testTubeObject.name.Contains(testTubeChemical))
+            {
+                testTubesToKeepInPanel.Add(testTubeObject);
+            }
+        }
+    }
+
+    public void SetInstructionPanelText(string instruction, string location, string control)
+    {
+        instructionText.text = instruction;
+        locationText.text = location;
+        controlText.text = control;
+        ActivateInstructionPanel();
+    }
+
+    private void ActivateInstructionPanel()
+    {
+        instructionPanel.SetActive(true);
+    }
+
+    public void DeactivateInstructionPanel()
+    {
+        ClearInstructionPanelText();
+        instructionPanel.SetActive(false);
+    }
+
+    private void ClearInstructionPanelText()
+    {
+        instructionText.text = "";
+        locationText.text = "";
+        controlText.text = "";
     }
 
     public bool IsInMixingRoom()
@@ -43,8 +88,8 @@ public class GameManager : MonoBehaviour
     {
         return canMix;
     }
-    
-    public void SetCanMix( bool value)
+
+    public void SetCanMix(bool value)
     {
         canMix = value;
     }
@@ -56,7 +101,7 @@ public class GameManager : MonoBehaviour
 
     public bool HasCure()
     {
-        if(correctChemicalsInSyringe == 3)
+        if (correctChemicalsInSyringe >= 3)
         {
             return true;
         }
@@ -73,6 +118,7 @@ public class GameManager : MonoBehaviour
         FirstPersonController.SetActive(false);
         mixingRoomCamera.tag = "MainCamera";
         mixingRoomCamera.SetActive(true);
+        SetInstructionPanelText("Drag and Drop test tubes into white mould to make cure.", "Location: Mixing Room", "Drag and Drop after pressing Esc, X - Exit");
     }
 
     public void ExitMixingRoom()
@@ -81,6 +127,19 @@ public class GameManager : MonoBehaviour
         FirstPersonController.transform.SetPositionAndRotation(this.transform.position, this.transform.rotation);
         FirstPersonController.SetActive(true);
         mixingRoomCamera.SetActive(false);
+        DeactivateInstructionPanel();
+        ActivateTestTubesToKeep();
+
+    }
+
+    private void ActivateTestTubesToKeep()
+    {
+
+        foreach (GameObject testTubeObject in testTubesToKeepInPanel)
+        {
+            testTubeObject.SetActive(true);
+            testTubeObject.GetComponent<Tube>().ResetTestTubeInTray();
+        }
     }
 
     public void AppearSyringe()
@@ -95,7 +154,7 @@ public class GameManager : MonoBehaviour
 
     public void ActivateTestTubeInMixingRoom(string testTubeChemical)
     {
-        
+
         foreach (GameObject testTubeObject in testTubesInMixingRoom)
         {
             if (testTubeObject.name.Contains(testTubeChemical))
@@ -105,5 +164,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-    
+
+
+
 }

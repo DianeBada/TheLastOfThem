@@ -12,6 +12,7 @@ public class TestTube : ScriptableObject
     [SerializeField] private GameObject asset;
     [SerializeField] private Color color;
     [SerializeField] private bool isInCure = false;
+    [SerializeField] private Vector3 originalPositionInTray;
 
     public void PrintChemical()
     {
@@ -27,6 +28,11 @@ public class TestTube : ScriptableObject
     public void Drop()
     {
         this.collected = false;
+    }
+
+    public Vector3 GetOriginalPositionInTray()
+    {
+        return originalPositionInTray;
     }
 
     public bool Picked()

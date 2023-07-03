@@ -53,11 +53,14 @@ public class Decanter : MonoBehaviour
 
     private IEnumerator ThreeTestTubesDropped()
     {
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(0.8f);
         testTubesDropped = 0;
         gameManager.ExitMixingRoom();
         gameManager.AppearSyringe();
         syringe.SetSyringeColor(GetDecanterCurrentColor());
+        gameManager.SetInstructionPanelText("Inject zombies with chemical mixture to cure curable zombies.", "Location: Lab facility", "Move syringe onto zombies.");
+        yield return new WaitForSecondsRealtime(3.5f);
+        gameManager.DeactivateInstructionPanel();
     }
 
     private void MoveTestTubeDown(GameObject testTube)
