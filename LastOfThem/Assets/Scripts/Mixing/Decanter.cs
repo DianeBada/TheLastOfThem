@@ -58,6 +58,9 @@ public class Decanter : MonoBehaviour
         gameManager.ExitMixingRoom();
         gameManager.AppearSyringe();
         syringe.SetSyringeColor(GetDecanterCurrentColor());
+        gameManager.SetInstructionPanelText("Inject zombies with chemical mixture to cure curable zombies.", "Location: Lab facility", "Move syringe onto zombies.");
+        yield return new WaitForSecondsRealtime(3f);
+        gameManager.DeactivateInstructionPanel();
     }
 
     private void MoveTestTubeDown(GameObject testTube)
