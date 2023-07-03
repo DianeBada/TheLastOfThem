@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LastOfThem/Assets/ZombieAnimationPackFree/Models/Appearance/BH-2/Textures/Default/Beaker.mat.meta
+guid: 51502d363349930409f1bdb7656079df
+========
 guid: bc543340f91946447bf113c297d38869
+>>>>>>>> main:LastOfThem/Assets/Materials/DecanterMaterial.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000
