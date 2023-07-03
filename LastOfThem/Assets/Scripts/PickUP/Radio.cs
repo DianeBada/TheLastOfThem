@@ -57,6 +57,7 @@ public class Radio : MonoBehaviour
     private IEnumerator PickUpObject()
     {
         indicator.SetActive(false);
+        noiseMeter.RadioOn();
         picked = true;
         this.transform.SetParent(player.transform);
         yield return new WaitForSecondsRealtime(0.5f);
@@ -76,7 +77,7 @@ public class Radio : MonoBehaviour
 
     public bool IsPicked()
     {
-        noiseMeter.RadioOn();
+        
         return picked;
     }
 
