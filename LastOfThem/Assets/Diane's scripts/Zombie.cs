@@ -11,7 +11,7 @@ public class Zombie : MonoBehaviour
     public AudioSource audioSource;
     private bool isPlayingSound = false;
     private bool hasAttackedPlayer = false;
-    private ParticleEffectController particle;
+    public ParticleEffectController particle;
     private CamShaker cameraShaker;
 
     public enum ZombieBehavior
@@ -50,6 +50,7 @@ public class Zombie : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         noiseMeter = player.gameObject.GetComponent<noiseMeter>();
         navMeshAgent = GetComponent<NavMeshAgent>();
+        cameraShaker = Camera.main.GetComponent<CamShaker>();
 
         audioSource = GetComponent<AudioSource>();
 
