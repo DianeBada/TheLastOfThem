@@ -33349,7 +33349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4401822833054275200, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5162889969175113059, guid: 0362bac363d427044bebec705849e38a, type: 3}
       propertyPath: curedAvatar

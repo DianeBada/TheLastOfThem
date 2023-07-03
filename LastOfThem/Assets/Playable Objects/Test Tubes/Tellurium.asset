@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Tellurium
   m_EditorClassIdentifier: 
   chemical: Tellurium
-  collected: 0
+  collected: 1
   asset: {fileID: 5663914850313861223, guid: b02e3f6f95fecbc49b0d7600315fee57, type: 3}
   color: {r: 1, g: 0.11698109, b: 0.12561779, a: 0}
+  isInCure: 1
