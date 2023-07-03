@@ -183,20 +183,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
-  crouchingFootstepVolume: 0.5
   m_Jump: 0
   m_Jumping: 0
   isMoving: 0
   isJumping: 0
   isRunning: 0
   isWalking: 0
-  isCrouching: 0
   crouchSpeed: 2
   crouchHeight: 0.01
   normalHeight: 5
   crouchFOV: 60
   normalFOV: 90
-  currentSpeed: 5
 --- !u!54 &5400000
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -322,12 +319,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noiseOmitted: 0
+  isCrouching: 0
   crouchingNoise: 1
   walkingNoise: 3
   runningNoise: 5
   jumpingNoise: 7
   maxNoise: 10
   noiseMeterSlider: {fileID: 0}
+  tubeSound: {fileID: 0}
+  radioSound: {fileID: 0}
 --- !u!136 &7066143906829671828
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -662,7 +662,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 3
+  m_Radius: 5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
@@ -678,6 +678,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c860b3f4236f8a04eb5d3e9ea81379ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zombieAvatar: {fileID: 0}
+  curedAvatar: {fileID: 0}
+  explosionVideoPlayer: {fileID: 0}
 --- !u!54 &6433791413340259830
 Rigidbody:
   m_ObjectHideFlags: 0

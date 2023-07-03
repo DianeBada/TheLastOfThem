@@ -49,6 +49,8 @@ public class noiseMeter : MonoBehaviour
     [SerializeField]
     AudioSource radioSound;
 
+    private GameManager gameManager;
+
     public void Start()
     {
         noiseMeterSlider.maxValue = 10;
@@ -59,13 +61,10 @@ public class noiseMeter : MonoBehaviour
 
         radio = GameObject.Find("Radio").GetComponent<Radio>();
         zombies = GameObject.FindGameObjectsWithTag("Zombie");
+        gameManager = FindObjectOfType<GameManager>();
     }
 
-    // public void IncreaseSoundMeter()
-    // {
-    //     noiseOmitted += noiseIncreasePerSecond * Time.deltaTime;
-    //     noiseMeterSlider.value = noiseOmitted;
-    // }
+    
     // Update is called once per frame
     void Update()
     {
@@ -123,49 +122,19 @@ public class noiseMeter : MonoBehaviour
             noiseOmitted=0;
         }
 
-        if(!radioOn)
+        if (!radioOn)
         {
-            if(CheckTestTubes()==false)
+            //UpdateNoiseMeter();
+            if (PCInventory.playerInventory.Count !>= 3)
             {
                 UpdateNoiseMeter();
             }
         }
-
-        // Check if any zombie is within the noise detection range
-        // bool isZombieInRange = false;
-        //CheckZombieRange();
-  
-
-        // Increase noise meter gradually if player is making noise and a zombie is in range
-        // if (isWalking || isRunning || isJumping)
-        // {
-        //     noiseOmitted += noiseIncreasePerSecond * Time.deltaTime;
-        // }
-        // else
-        // {
-        //     noiseOmitted = Mathf.Max(0.0f, noiseOmitted - noiseIncreasePerSecond * Time.deltaTime);
-        // }
-
-        // Do something with the noise meter, such as displaying it on a UI element
-        // Debug.Log("Noise meter: " + noiseOmitted);
+;
         
         noiseMeterSlider.value = noiseOmitted;
     }
 
-    //  void CheckZombieRange()
-    // {
-    //     foreach (GameObject zombie in GameObject.FindGameObjectsWithTag("Zombie"))
-    //     {
-    //         float distanceToZombie = Vector3.Distance(transform.position, zombie.transform.position);
-    //         if (distanceToZombie < noiseDetectionRange)
-    //         {
-    //             isZombieInRange = true;
-    //             break;
-    //         }else{
-    //             isZombieInRange = false;
-    //         }
-    //     }
-    // }
 
     public void RadioOn() //radio off -> code path 
     {
@@ -188,12 +157,20 @@ public class noiseMeter : MonoBehaviour
             noiseOmitted = maxNoise;
             UpdateZombieDistance(1.0f);
             PlayTestTubes();
+            StartCoroutine(SetInstructionText());
             return true;
         }else{
             tubeSound.Stop();
             return false;
 
         }
+    }
+
+    private IEnumerator SetInstructionText()
+    {
+        gameManager.SetInstructionPanelText("Carrying a lot of test tubes that are now making noise.", "Take them to the mixing room.", "Q- Open Inventory, R - Drop Test Tube");
+        yield return new WaitForSecondsRealtime(3.5f);
+        gameManager.DeactivateInstructionPanel();
     }
 
     public void PlayTestTubes()
