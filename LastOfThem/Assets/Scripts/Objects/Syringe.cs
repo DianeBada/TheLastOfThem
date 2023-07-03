@@ -72,7 +72,7 @@ public class Syringe : MonoBehaviour
 
     private void NoCureInjection(GameObject zombie)
     {
-        Debug.Log("Zombie Not Cured");
+        //Debug.Log("Zombie Not Cured");
         gameManager.ClearMixture();
 
         transformAnimator.enabled = true;
@@ -86,6 +86,8 @@ public class Syringe : MonoBehaviour
 
         // Call a method to handle the explosion video playback
         StartCoroutine(PlayExplosionVideo());
+
+        this.gameObject.SetActive(false);
     }
 
     private IEnumerator DisableZombieAfterVFX(GameObject zombie)
