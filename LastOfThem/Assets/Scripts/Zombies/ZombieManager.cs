@@ -13,12 +13,16 @@ public class ZombieManager : MonoBehaviour
     float zombieCount; //current zombie count
     float zombiePercentage;
     TextMeshProUGUI zombiesLeftTxt;
+
+    GameManager GameManager;
     // Start is called before the first frame update
     void Start()
     {
         startingZombies = GameObject.FindGameObjectsWithTag("Zombie"); //total zombies at the begining of the scene
         startingNum = startingZombies.Length;
         zombiesLeftTxt = GameObject.Find("ZombiePercentage").GetComponent<TextMeshProUGUI>();
+
+        GameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -32,6 +36,11 @@ public class ZombieManager : MonoBehaviour
         SceneManager.LoadScene("Lose_Screen");
     }
 
+    public void WinState()
+    {
+        SceneManager.LoadScene("Win_Screen"); 
+    }
+
     public void CalcZombies()
     {
         totalZombies = GameObject.FindGameObjectsWithTag("Zombie"); //zombies in scene at current time
@@ -39,12 +48,21 @@ public class ZombieManager : MonoBehaviour
         zombiePercentage = ((totalNum/startingNum)*100);
         zombiesLeftTxt.text =  Mathf.Round(zombiePercentage)+"% of zombies left";
 
-        if(zombiePercentage<=80)
+        if(GameManager.HasCure())
         {
-            LoseState();
-        }else if(zombiePercentage<90)
-        {
-            zombiesLeftTxt.color = Color.red; //warning sign for users
+            if(zombiePercentage==0)
+            {
+                WinState();
+            }
+        }else{
+            if(zombiePercentage<=80)
+            {
+                LoseState();
+            }else if(zombiePercentage<90)
+            {
+                zombiesLeftTxt.color = Color.red; //warning sign for users
+            }
         }
+
     }
 }
